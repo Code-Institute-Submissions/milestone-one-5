@@ -1,0 +1,15 @@
+
+
+
+/* ------------------------------ Underlay styling */
+
+#underlay-photo-1 {
+    background-image: url(/assets/images/band_live.jpg);
+}
+.underlay {
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
