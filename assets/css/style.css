@@ -1,13 +1,24 @@
+/* ------------------------------ Welcome/Navbar */
 
+.hero-welcome {
+    
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fafafa;
 
+}
 
 /* ------------------------------ Underlay styling */
 
 #underlay-photo-1 {
-    background-image: url(/assets/images/band_live.jpg);
+    background-image: url('../images/band_live.jpg');
+    opacity: 0.65;
 }
 .underlay {
-    height: 300px;
+    height: 500px;
+    padding: 0;
+    margin: 0;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
