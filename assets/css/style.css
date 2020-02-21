@@ -48,6 +48,7 @@ body, html {
 
 .bg-one {
   background-image: url("../images/logo_main.jpg");
+  background-size: contain;
   height: auto;
   min-height: 90%;
   top: 0;
@@ -79,6 +80,7 @@ body, html {
 .story-about {
     color: #777;
     background-color: #fff;
+    opacity: 0.90;
     text-align: center;
     padding: 50px 80px;
 }
@@ -105,13 +107,21 @@ body, html {
     padding: 25px 80px 50px;
 }
 
-.span .border {
-    background-color:transparent;
-    font-size:25px;
-    color: #f7f7f7;
+/* ------------------------------ Scroll Icons*/
+
+.hvr-color {
+    color: #282E34;
 }
 
-/* ------------------------------ Scroll Icons*/
+/* ------------------------------ Media Player */
+
+.media-player {
+    display: inline-block; 
+    width: 50%;
+    margin: auto;
+    background-color: #fff;
+    padding: 5px;
+}
 
 /* ------------------------------ Captions and Headers */
 
@@ -126,17 +136,23 @@ body, html {
     color: #000;
 }
 
-#band-name {
-    opacity: 0.65;
+
+#band-name, #band-name-bottom {
+    background-color: #fff;
+    color: #111;
+    font-size: 30px;
+    letter-spacing: 10px;
+    padding: 5px 15px;
 }
+
 #band-name-bottom {
-    opacity: 0.65;
+    opacity: 0.90;
 }
 
 .caption span.border {
     background-color: #111;
     color: #fff;
-    padding: 18px;
+    padding: 1px 18px;
     font-size: 25px;
     letter-spacing: 10px;
 }

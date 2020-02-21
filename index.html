@@ -9,16 +9,26 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+	<link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
+
+	<script src="audioplayerengine/jquery.js"></script>
+	<script src="audioplayerengine/amazingaudioplayer.js"></script>
+	<script src="audioplayerengine/initaudioplayer-1.js"></script>
+
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Darwiche</title>
 </head>
 
 <body>
 
+	<!-- *********************** Parallax background one-->
+
 	<div class="bg-one" id="home">
-		<!---------------------------------------Navbar -->
+
+		<!-- *********************** Navbar -->
 		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
-			<a class="nav-home" href="#home">Home</a>
+			<a class="nav-home" href="#home">
+				<i class="fa fa-home" aria-hidden="true"></i></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -44,13 +54,14 @@
 		</nav>
 
 
-		<div class="caption">
-			<span class="border" id="band-name">DARWICHE</span>
-		</div>
+
 	</div>
-	<!---------------------------------------About -->
+	<!-- ******************************* About -->
 	<div class="story-about" id="about">
-		<a href="#about" class="hvr-icon-bob">
+		<div class="caption">
+			<span id="band-name">DARWICHE</span>
+		</div>
+		<a href="#about" class="hvr-icon-bob hvr-color">
 			<i class="fa fa-chevron-down hvr-icon"></i>
 		</a>
 		<h3>About</h3>
@@ -58,7 +69,9 @@
 			Originally formed in the 80's the band is back writing
 			new music and paying tribute to the Rock that made us.</p>
 	</div>
-	<!---------------------------------------Music -->
+
+	<!-- *********************** Parallax background two-->
+	<!-- ******************************* Music -->
 	<div class="bg-two">
 		<div class="caption" id="music">
 			<span class="border">Music</span>
@@ -67,10 +80,39 @@
 
 	<div class="story-music">
 		<div class="story-text">
-			<p>Need to place a music player here</p>
+			<div class="media-player">
+
+				<!-- Insert to your webpage where you want to display the audio player -->
+				<div id="amazingaudioplayer-1"
+					style="display:block;position:relative;width:100%;max-width:300px;height:auto;margin:0px auto 0px;">
+					<ul class="amazingaudioplayer-audios" style="display:none;">
+						<li data-artist="Cover by Darwiche" data-title="Spotlight kid" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="261">
+							<div class="amazingaudioplayer-source" data-src="audios/Spotlight-kid-20200119_Master-1.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="Foolin" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="269">
+							<div class="amazingaudioplayer-source" data-src="audios/Foolin%2020191130_Master%201.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="The Trooper" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="273">
+							<div class="amazingaudioplayer-source" data-src="audios/DarwichE%20trooper1.2.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+					</ul>
+					<div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com"
+							title="audio player for website">jquery mp3 player</a></div>
+				</div>
+				<!-- End of body section HTML codes -->
+
+			</div>
 		</div>
 	</div>
-	<!---------------------------------------Shows -->
+
+	<!-- *********************** Parallax background three-->
+	<!-- ******************************* Shows -->
 	<div class="bg-three">
 		<div class="caption" id="shows">
 			<span class="border">Shows</span>
@@ -82,7 +124,9 @@
 			<p>List of shows to be placed here</p>
 		</div>
 	</div>
-	<!---------------------------------------Pictures -->
+
+	<!-- *********************** Parallax background four-->
+	<!-- ******************************* Pictures -->
 	<div class="bg-four">
 		<div class="caption" id="pictures">
 			<span class="border">Pictures</span>
@@ -94,7 +138,9 @@
 			<p>Small gallery of pictures to be placed here</p>
 		</div>
 	</div>
-	<!---------------------------------------Contact -->
+
+	<!-- *********************** Parallax background five-->
+	<!-- ******************************* Contact -->
 	<div class="bg-five">
 		<div class="caption" id="contact">
 			<span class="border">Contact</span>
@@ -107,16 +153,19 @@
 		</div>
 	</div>
 
+	<!-- *********************** Parallax background one repeat-->
 	<div class="bg-one">
 		<div class="caption">
-			<span class="border" id="band-name-bottom">DARWICHE</span>
+			<span id="band-name-bottom">DARWICHE</span>
 		</div>
 	</div>
 
-	<!--------------------------------------- Footer -->
+	<!-- ******************************* Footer -->
 
 	<footer class="container-fluid footer">
-		<!--------------------------------------- Sign Up Form-->
+
+		<!-- ******************************* Sign Up Form-->
+
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="container footer-cont" id="sign-up">
@@ -134,7 +183,8 @@
 			</div>
 
 			<br>
-			<!--------------------------------- Social Media -->
+			<!-- ******************************* Social Media -->
+
 			<div class="col-sm-6">
 				<div class="container footer-cont">
 					<h5 class="social-media">Follow us</h5>
@@ -151,20 +201,6 @@
 								<span class="sr-only">Facebook</span>
 							</a>
 						</li>
-
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.twitter.com/">
-								<i class="fab fa-twitter" aria-hidden="true"></i>
-								<span class="sr-only">Twitter</span>
-							</a>
-						</li>
-						<li class="list-inline-item">
-							<a target="_blank" href="https://www.pinterest.com/">
-								<i class="fab fa-pinterest" aria-hidden="true"></i>
-								<span class="sr-only">Pinterest</span>
-							</a>
-						</li>
-
 						<li class="list-inline-item">
 							<a target="_blank" href="https://www.linkedin.com/">
 								<i class="fab fa-linkedin" aria-hidden="true"></i>
@@ -176,13 +212,13 @@
 			</div>
 		</div>
 		<br>
-		<!--------------------------------------- Copyright -->
+		<!-- ******************************* Copyright -->
 
-        <div class="container">
+		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="copyright">
-						<a href="#" class="hvr-icon-bob">
+						<a href="#" class="hvr-icon-bob hvr-color">
 							<i class="fa fa-chevron-up hvr-icon"></i>
 						</a>
 					</div>
@@ -201,9 +237,7 @@
 
 	</footer>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
