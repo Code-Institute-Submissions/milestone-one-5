@@ -104,7 +104,7 @@ body, html {
     color:#ddd;
     background-color:#282E34;
     text-align:center;
-    padding: 25px 80px 50px;
+    padding: 25px 80px;
 }
 
 /* ------------------------------ Scroll Icons*/
@@ -165,12 +165,22 @@ h3 {
     color: #111;
 }
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (width: 1024px) {
+/* --------------------------------- Media Queries */
+
+@media screen and (max-width: 900px) {
 .bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
     background-attachment: scroll;
   }
+
+.story-text {
+    padding: 25px 40px;
 }
+
+.media-player {
+    width: 90%;
+}
+}
+
 
 /* ------------------------------ Footer */
 
