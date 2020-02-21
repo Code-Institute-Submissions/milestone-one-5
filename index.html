@@ -6,47 +6,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 	<title>Darwiche</title>
 </head>
 
 <body>
 
-	<div class="bg-one">
+	<div class="bg-one" id="home">
+		<!---------------------------------------Navbar -->
+		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
+			<a class="nav-home" href="#home">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#music">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#shows">Shows</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pictures">Pictures</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
 		<div class="caption">
 			<span class="border" id="band-name">DARWICHE</span>
 		</div>
 	</div>
-
-	<div class="story-about">
+	<!---------------------------------------About -->
+	<div class="story-about" id="about">
+		<a href="#about" class="hvr-icon-bob">
+			<i class="fa fa-chevron-down hvr-icon"></i>
+		</a>
 		<h3>About</h3>
 		<p>Darwiche is a rock band based in Landskrona Sweden.
-			Originally formed in the 80's the band is back paying
-			tribute to the Rock that made us.</p>
+			Originally formed in the 80's the band is back writing
+			new music and paying tribute to the Rock that made us.</p>
 	</div>
-
+	<!---------------------------------------Music -->
 	<div class="bg-two">
-		<div class="caption">
+		<div class="caption" id="music">
 			<span class="border">Music</span>
 		</div>
 	</div>
 
 	<div class="story-music">
 		<div class="story-text">
-			<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+			<p>Need to place a music player here</p>
 		</div>
 	</div>
-
+	<!---------------------------------------Shows -->
 	<div class="bg-three">
-		<div class="caption">
+		<div class="caption" id="shows">
 			<span class="border">Shows</span>
 		</div>
 	</div>
 
 	<div class="story-shows">
 		<div class="story-text">
-			<p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+			<p>List of shows to be placed here</p>
+		</div>
+	</div>
+	<!---------------------------------------Pictures -->
+	<div class="bg-four">
+		<div class="caption" id="pictures">
+			<span class="border">Pictures</span>
+		</div>
+	</div>
+
+	<div class="story-pictures">
+		<div class="story-text">
+			<p>Small gallery of pictures to be placed here</p>
+		</div>
+	</div>
+	<!---------------------------------------Contact -->
+	<div class="bg-five">
+		<div class="caption" id="contact">
+			<span class="border">Contact</span>
+		</div>
+	</div>
+
+	<div class="story-contact">
+		<div class="story-text">
+			<p>Contact details to be placed here</p>
 		</div>
 	</div>
 
@@ -56,7 +113,97 @@
 		</div>
 	</div>
 
+	<!--------------------------------------- Footer -->
 
+	<footer class="container-fluid footer">
+		<!--------------------------------------- Sign Up Form-->
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="container footer-cont" id="sign-up">
+					<h5 class="footer_titles">Sign up to get news about the band</h5>
+					<form>
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email" />
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<button type="button" class="btn btn-secondary btn-sm btn-orig">Subscribe!</button>
+					</form>
+
+				</div>
+			</div>
+
+			<br>
+			<!--------------------------------- Social Media -->
+			<div class="col-sm-6">
+				<div class="container footer-cont">
+					<h5 class="social-media">Follow us</h5>
+					<ul class="list-inline social-links">
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.instagram.com/">
+								<i class="fab fa-instagram" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.facebook.com/">
+								<i class="fab fa-facebook-f" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+						</li>
+
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.twitter.com/">
+								<i class="fab fa-twitter" aria-hidden="true"></i>
+								<span class="sr-only">Twitter</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.pinterest.com/">
+								<i class="fab fa-pinterest" aria-hidden="true"></i>
+								<span class="sr-only">Pinterest</span>
+							</a>
+						</li>
+
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.linkedin.com/">
+								<i class="fab fa-linkedin" aria-hidden="true"></i>
+								<span class="sr-only">Linkedin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!--------------------------------------- Copyright -->
+
+        <div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright">
+						<a href="#" class="hvr-icon-bob">
+							<i class="fa fa-chevron-up hvr-icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright">
+						<span>© All rights reserved - DARWICHE - 2020</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

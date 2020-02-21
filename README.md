@@ -65,6 +65,10 @@ https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
 Most of the css styling was heavily edited and adapted by myself to fit my vision for the band site
 
+Hover/Chevron buttons sourced from:
+
+https://ianlunn.github.io/Hover/
+
 Content
 The text was written by myself
 

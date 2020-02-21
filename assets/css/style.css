@@ -2,15 +2,6 @@
 
 /* ------------------------------ Welcome/Navbar */
 
-.hero-welcome {
-    
-    text-align: center;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #fafafa;
-
-}
-
 body, html {
   height: 100%;
   margin: 0;
@@ -18,10 +9,32 @@ body, html {
   color: #777;
 }
 
+.nav-fix-position {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    color: #ddd;
+    background-color:#282E34;
+
+}
+
+.nav-item .nav-link {
+    font-family: 'Trade Winds', cursive;
+    color:#ddd;
+    background-color:#282E34;
+}
+
+.nav-home {
+    padding-right: 25px;
+    color: #ddd;
+}
+
+
 /* ------------------------------ All background img styling */
 
 
-.bg-one, .bg-two, .bg-three {
+.bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -29,13 +42,16 @@ body, html {
   background-size: cover;
 }
 
-.bg-two, .bg-three {
+.bg-two, .bg-three, .bg-four, .bg-five {
     opacity: 0.65;
 }
 
 .bg-one {
   background-image: url("../images/logo_main.jpg");
+  height: auto;
   min-height: 90%;
+  top: 0;
+  left: 0;
 }
 
 .bg-two {
@@ -44,6 +60,16 @@ body, html {
 }
 
 .bg-three {
+  background-image: url("../images/band_live.jpg");
+  min-height: 400px;
+}
+
+.bg-four {
+  background-image: url("../images/Gassan2.jpg");
+  min-height: 400px;
+}
+
+.bg-five {
   background-image: url("../images/Jays.jpg");
   min-height: 400px;
 }
@@ -67,15 +93,16 @@ body, html {
     font-weight: 300;
 }
 
-.story-music, .story-shows {
+.story-music, .story-shows, .story-pictures, .story-contact {
     position: relative;
 }
 
 .story-text {
+    z-index: 1;
     color:#ddd;
     background-color:#282E34;
     text-align:center;
-    padding: 50px 80px;
+    padding: 25px 80px 50px;
 }
 
 .span .border {
@@ -83,6 +110,8 @@ body, html {
     font-size:25px;
     color: #f7f7f7;
 }
+
+/* ------------------------------ Scroll Icons*/
 
 /* ------------------------------ Captions and Headers */
 
@@ -122,7 +151,20 @@ h3 {
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (width: 1024px) {
-.bg-one, .bg-two, .bg-three {
+.bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
     background-attachment: scroll;
   }
+}
+
+/* ------------------------------ Footer */
+
+.footer .footer-cont{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.copyright {
+    text-align: center;
+    position: relative;
+    bottom: 0;
 }
