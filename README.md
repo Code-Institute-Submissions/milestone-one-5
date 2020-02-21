@@ -57,9 +57,22 @@ Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 Credits
+Code
+Some of the code for the parallax scrolling style was adapted from these sources:
+
+https://www.w3schools.com/howto/howto_css_parallax.asp
+https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+
+Most of the css styling was heavily edited and adapted by myself to fit my vision for the band site
+
 Content
-The text for section Y was copied from the Wikipedia article Z
+The text was written by myself
+
 Media
-The photos used in this site were obtained from ...
+The photos used in this site are mine and my bands
+
 Acknowledgements
-I received inspiration for this project from X
+I received inspiration for this project from:
+
+https://code-institute-org.github.io/ucfd-example-project/#about
+https://fabibrachetta.github.io/kuua-ms1/#

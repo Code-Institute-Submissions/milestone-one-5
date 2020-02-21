@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Permanent+Marker:100,200,300,400,500,600,700|Trade+Windsa:100,200,300,400,500,600,700');
+
 /* ------------------------------ Welcome/Navbar */
 
 .hero-welcome {
@@ -9,18 +11,118 @@
 
 }
 
-/* ------------------------------ Underlay styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Fjalla One", sans-serif;
+  color: #777;
+}
 
-#underlay-photo-1 {
-    background-image: url('../images/band_live.jpg');
+/* ------------------------------ All background img styling */
+
+
+.bg-one, .bg-two, .bg-three {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-two, .bg-three {
     opacity: 0.65;
 }
-.underlay {
-    height: 500px;
-    padding: 0;
-    margin: 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.bg-one {
+  background-image: url("../images/logo_main.jpg");
+  min-height: 90%;
+}
+
+.bg-two {
+  background-image: url("../images/placeholder_drums.jpg");
+  min-height: 400px;
+}
+
+.bg-three {
+  background-image: url("../images/Jays.jpg");
+  min-height: 400px;
+}
+
+/* ------------------------------ Stories Styling */
+
+.story-about {
+    color: #777;
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.story-about h3 {
+    text-align:center;
+    font-family: 'Trade Winds', cursive;
+}
+
+.story-about p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.story-music, .story-shows {
+    position: relative;
+}
+
+.story-text {
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding: 50px 80px;
+}
+
+.span .border {
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+
+/* ------------------------------ Captions and Headers */
+
+.caption {
+    font-family: 'Trade Winds', cursive;
+    font-weight: 600;
+    position: absolute;
+     left: 0;
+     top: 90%;
+     width: 100%;
+     text-align: center;
+    color: #000;
+}
+
+#band-name {
+    opacity: 0.65;
+}
+#band-name-bottom {
+    opacity: 0.65;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Trade Winds', cursive;
+    color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (width: 1024px) {
+.bg-one, .bg-two, .bg-three {
+    background-attachment: scroll;
+  }
 }
