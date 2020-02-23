@@ -42,13 +42,17 @@ body, html {
   background-size: cover;
 }
 
-.bg-two, .bg-three, .bg-four, .bg-five {
-    opacity: 0.65;
+.bg-parallax-images {
+  opacity: 0.65;
+
+  height: auto;
+  min-height: 400px;
 }
 
 .bg-one {
   background-image: url("../images/logo_main.jpg");
   background-size: contain;
+  background-color: #fff;
   height: auto;
   min-height: 90%;
   top: 0;
@@ -57,22 +61,18 @@ body, html {
 
 .bg-two {
   background-image: url("../images/placeholder_drums.jpg");
-  min-height: 400px;
 }
 
 .bg-three {
   background-image: url("../images/band_live.jpg");
-  min-height: 400px;
 }
 
 .bg-four {
   background-image: url("../images/Gassan2.jpg");
-  min-height: 400px;
 }
 
 .bg-five {
   background-image: url("../images/Jays.jpg");
-  min-height: 400px;
 }
 
 /* ------------------------------ Stories Styling */
@@ -107,10 +107,26 @@ body, html {
     padding: 25px 80px;
 }
 
-/* ------------------------------ Scroll Icons*/
+#story-text-contact {
+    z-index: 1;
+    color:#ddd;
+    background-color:#282E34;
+    text-align:left;
+    padding: 25px 80px;
+}
+
+/* ------------------------------ Scroll Chevrons / Hover.css */
 
 .hvr-color {
     color: #282E34;
+}
+
+.hvr-color-inverse {
+    color: #fafafa;
+}
+
+.up-chevron a i {
+    font-size: 25px;
 }
 
 /* ------------------------------ Media Player */
@@ -193,4 +209,8 @@ h3 {
     text-align: center;
     position: relative;
     bottom: 0;
+}
+
+.social-links {
+    font-size: 25px;
 }
