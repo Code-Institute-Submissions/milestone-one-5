@@ -121,6 +121,13 @@ body, html {
     padding: 5px;
 }
 
+.story-content-wrapper-about-us {
+    display: inline-block; 
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
 /* ------------------------------ Shows */
 
 .shows-display {
@@ -149,18 +156,52 @@ body, html {
 .gallery-display {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 90%;
+    height: 100%;
     margin: 5px 5px;
 }
 
-.circle-picture-wrapper {
-    width: 300px;
-    height: 300px;
-    padding:30px;
-    border-style: solid;
-    border-color:#cccccc;
-    border-width: 1px;
+.test-pictures {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    width: 175px;
+    height: 175px;
+    min-width: 175px;
+    min-height: 175px;
     border-radius: 50%;
-    margin:0 auto;
+}
+
+#tst-pic1 {
+  background-image: url("../images/JaquiSolo.jpg");
+  height: auto;
+}
+
+#tst-pic2 {
+  background-image: url("../images/PatriciaSolo.jpg");
+  height: auto;
+}
+
+#tst-pic3 {
+  background-image: url("../images/GassanSolo.jpg");
+  height: auto;
+}
+
+#tst-pic4 {
+  background-image: url("../images/JaysSolo.jpg");
+  height: auto;
+}
+
+#tst-pic5 {
+  background-image: url("../images/BudSolo.jpg");
+  height: auto;
+}
+
+#tst-pic6 {
+  background-image: url("../images/FadiSolo.jpg");
+  height: auto;
 }
 
 /* ------------------------------ Scroll Chevrons / Icons / Hover.css */
@@ -279,3 +320,9 @@ h3 {
 .story-content-wrapper {
     width: 95%
 }
+
+.gallery-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
