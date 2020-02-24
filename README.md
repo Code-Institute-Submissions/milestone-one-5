@@ -1,12 +1,12 @@
-#Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course
+# Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course
 
 
-###This is a site created for my rock band Darwiche
+### This is a site created for my rock band Darwiche
 
 **UX**
 
-##Owner
-#####For the owner the goals are:
+## Owner
+##### For the owner the goals are:
 
 * Increase band visibility
 * Brand awareness
@@ -14,7 +14,7 @@
 * Inform users of upcoming shows 
 * Generate a mailing list of subscribers 
 
-#####For the user the goals are:
+##### For the user the goals are:
 
 * Gain knowledge about the band
 * Listen to music created by the band
@@ -24,7 +24,7 @@
 * Purchase merch with band branding
 * Book the band for various events
 
-##User Stories
+## User Stories
 
 As a user I want to find out if my favorite band, Darwiche, have any upcoming shows near me. 
 
@@ -36,7 +36,7 @@ diagrams etc. that you created as part of the design process.
 These files should themselves either be included as a pdf file in the project itself (in an separate directory), 
 or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-##Features
+## Features
 
 * About:    This section gives the user a very brief background about the band and its current state
 * Music:    This section allows users to listen to music recorded/created by the band by using the media player
@@ -46,13 +46,13 @@ or just hosted elsewhere online and can be in any format that is viewable inside
 Users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the submit button 
 (**note that the subscribe action does not actually currently function due to this site being simply a static site with no backend**)
 
-##Features not addressed in this iteration of the site and my reasons for not including them
+## Features not addressed in this iteration of the site and my reasons for not including them
 
 * Shop:     I didn't include this section as it requires backend coding far beyond my current level of knowledge
 * Booking:  Similar to the contact section, I didn't include this as I want to have it as a call to action on the 
 landing page and use a automation driven overlay which would require the use of javascript the knowledge of which is beyond my current level.
 
-##Technologies Used
+## Technologies Used
 
 * HTML5
 * Css3
@@ -60,14 +60,14 @@ landing page and use a automation driven overlay which would require the use of 
 * jQuery - Used for the media player which was sourced from http://amazingaudioplayer.com
 * javascript - Used by the media player 
 
-##Sites sourced from
+## Sites sourced from
 
 * https://www.w3schools.com
 * https://ianlunn.github.io/Hover/
 * http://amazingaudioplayer.com
 
 
-##Testing
+## Testing
 
 In this section, you need to convince the assessor that you have conducted enough testing to 
 legitimately believe that the site works well. Essentially, in this part you will want to go 
@@ -101,7 +101,7 @@ Different configuration files?
 Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-##Credits
+## Credits
 
 **Code**
 Some of the code for the parallax scrolling style was adapted from these sources:
@@ -115,14 +115,14 @@ Hover/Chevron buttons sourced from:
 
 https://ianlunn.github.io/Hover/
 
-##Content
+## Content
 
 The text was written by myself
 
 Media
 The photos and music used and presented within this site are owned by myself and my band, Darwiche
 
-##Acknowledgements
+## Acknowledgements
 
 I received inspiration for this project from:
 
