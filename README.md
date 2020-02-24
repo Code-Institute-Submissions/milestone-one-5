@@ -1,11 +1,32 @@
-Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course
+#Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course
 
 
-This is a site created for my rock band Darwiche
+###This is a site created for my rock band Darwiche
 
-UX
-Use this section to provide insight into your UX process, focusing on who this website is for, 
-what it is that they want to achieve and how your project is the best way to help them achieve these things.
+**UX**
+
+##Owner
+#####For the owner the goals are:
+
+* Increase band visibility
+* Brand awareness
+* Showcase music
+* Inform users of upcoming shows 
+* Generate a mailing list of subscribers 
+
+#####For the user the goals are:
+
+* Gain knowledge about the band
+* Listen to music created by the band
+* Get information regarding upcoming shows
+* Find out how to get relevant information from the band on a regular basis
+* Get to know more about their favorite band member or members
+* Purchase merch with band branding
+* Book the band for various events
+
+##User Stories
+
+As a user I want to find out if my favorite band, Darwiche, have any upcoming shows near me. 
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
 
@@ -15,26 +36,39 @@ diagrams etc. that you created as part of the design process.
 These files should themselves either be included as a pdf file in the project itself (in an separate directory), 
 or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-Features
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+##Features
 
-Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
-...
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+* About:    This section gives the user a very brief background about the band and its current state
+* Music:    This section allows users to listen to music recorded/created by the band by using the media player
+* Shows:    This section allows users to get immediate information regarding upcoming shows they might wish to attend
+* Pictures: This section gives the user more specific information about each individual band member
+* Contact:  This section gives the user information as to how to contact the band and also includes a call to action to subscribe
+Users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the submit button 
+(**note that the subscribe action does not actually currently function due to this site being simply a static site with no backend**)
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+##Features not addressed in this iteration of the site and my reasons for not including them
 
-Features Left to Implement
-Another feature idea
-Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, 
-and any other tools that you have used to construct this project. For each, 
-provide its name, a link to its official site and a short sentence of why it was used.
+* Shop:     I didn't include this section as it requires backend coding far beyond my current level of knowledge
+* Booking:  Similar to the contact section, I didn't include this as I want to have it as a call to action on the 
+landing page and use a automation driven overlay which would require the use of javascript the knowledge of which is beyond my current level.
 
-JQuery
-The project uses JQuery to simplify DOM manipulation.
-Testing
+##Technologies Used
+
+* HTML5
+* Css3
+* Bootstrap
+* jQuery - Used for the media player which was sourced from http://amazingaudioplayer.com
+* javascript - Used by the media player 
+
+##Sites sourced from
+
+* https://www.w3schools.com
+* https://ianlunn.github.io/Hover/
+* http://amazingaudioplayer.com
+
+
+##Testing
+
 In this section, you need to convince the assessor that you have conducted enough testing to 
 legitimately believe that the site works well. Essentially, in this part you will want to go 
 over all of your user stories from the UX section and ensure that they all work as intended, 
@@ -67,8 +101,9 @@ Different configuration files?
 Separate git branch?
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
-Credits
-Code
+##Credits
+
+**Code**
 Some of the code for the parallax scrolling style was adapted from these sources:
 
 https://www.w3schools.com/howto/howto_css_parallax.asp
@@ -80,14 +115,17 @@ Hover/Chevron buttons sourced from:
 
 https://ianlunn.github.io/Hover/
 
-Content
+##Content
+
 The text was written by myself
 
 Media
-The photos used in this site are mine and my bands
+The photos and music used and presented within this site are owned by myself and my band, Darwiche
 
-Acknowledgements
+##Acknowledgements
+
 I received inspiration for this project from:
 
 https://code-institute-org.github.io/ucfd-example-project/#about
 https://fabibrachetta.github.io/kuua-ms1/#
+https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
