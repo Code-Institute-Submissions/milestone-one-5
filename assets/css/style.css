@@ -19,6 +19,16 @@ body, html {
 
 }
 
+.nav-fix-position-test {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    color: #ddd;
+    background-color:#282E34;
+
+}
+
 .nav-item .nav-link {
     font-family: 'Trade Winds', cursive;
     color:#ddd;
@@ -29,6 +39,69 @@ body, html {
     padding-right: 25px;
     color: #ddd;
 }
+
+/* ------------------------------ Sidebar */
+
+.sidebar {
+  z-index: 1;
+  margin-top: 30%;
+  padding: 0;
+  width: 65px;
+  background-color: transparent;
+  position: fixed;
+  min-height: 30%;
+  overflow: auto;
+  text-align: center;
+  font-size: 35px;
+}
+
+.sidebar a {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3px 3px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+ 
+.sidebar a.active {
+  background-color: #E98074;
+  color: white;
+}
+
+.sidebar a:hover {
+  background-color: #E85A4F;
+  color: #fff;
+}
+
+.sidebar-icons {
+    opacity: 0.45;
+  color: #E85A4F;
+  padding: 10px 10px;
+}
+
+.sidebar i:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+  .sidebar a {
+      float: left;
+      margin-left: 
+      }
+ 
+}
+
 
 
 /* ------------------------------ All background img styling */
@@ -296,10 +369,6 @@ h3 {
     text-align: center;
     position: relative;
     bottom: 0;
-}
-
-.social-links {
-    font-size: 25px;
 }
 
 /* --------------------------------- Media Queries */

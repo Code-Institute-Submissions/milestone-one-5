@@ -5,24 +5,366 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
+	<link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
 
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+	</script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+	</script>
 
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<script src="audioplayerengine/jquery.js"></script>
+	<script src="audioplayerengine/amazingaudioplayer.js"></script>
+	<script src="audioplayerengine/initaudioplayer-1.js"></script>
 
-	<title>Document</title>
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+	<title>Darwiche</title>
 </head>
 
 <body>
+	<!-- *********************** Main code structure for 'bg-one' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
+    This is the same for the basic html structure of each 'Parallax' on this site-->
 
-	<div class="gallery-display">
-		<a class="test-pictures" id="tst-pic1" data-fancybox="gallery" href="./assets/images/GassanSolo.jpg">wolo</a>
-		<a class="test-pictures" id="tst-pic2" data-fancybox="gallery" href="./assets/images/JaysSolo.jpg">wolo</a>
-        <a class="test-pictures" id="tst-pic3" data-fancybox="gallery" href="./assets/images/placeholder_drums.jpg"></a>
+	<!-- *********************** Parallax background one-->
+
+	<div class="bg-one" id="home">
+
+		<!-- *********************** Navbar sourced from getbootstrap.com-->
+		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position-test">
+			<a class="nav-home" href="#home">
+				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+			<button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link hover-color-adapt" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#music">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#shows">Shows</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pictures">Pictures</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- *************************** Sidebar ***
+
+sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp and adapted/edited accordingly-->
+
+		<div class="sidebar">
+			<a target="_blank" href="https://www.facebook.com/">
+				<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Facebook</span>
+			</a>
+			<a target="_blank" href="https://www.instagram.com/">
+				<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Instagram</span>
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/">
+				<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Linkedin</span>
+			</a>
+		</div>
+
+
+
 	</div>
+
+	<!-- *********************** Main code structure for 'About' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
+
+	<!-- ******************************* About -->
+
+	<div class="story-about" id="about">
+		<div class="caption">
+			<span id="band-name">DARWICHE</span>
+		</div>
+		<a href="#about" class="hvr-icon-bob hvr-color">
+			<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+		</a>
+		<h3>About</h3>
+		<div class="story-content-wrapper">
+			<p>Darwiche is a rock band based in Landskrona Sweden.
+				Originally formed in the 80's and made up of members
+				Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
+				Patricia Darwiche and Rickard 'Bud' Linden, the band came back
+				together in 2019.
+				<br>
+				<br>
+            After adding guitarist John 'Jays' Traas the band made their debut at the
+            2019 Landskrona Festival. Back and writing new music Darwiche also cover bands
+            such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the
+            Rock that made us.</p>
+				<a href="#music" class="hvr-icon-bob hvr-color">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+		</div>
+	</div>
+
+	<!-- *********************** Parallax background two-->
+	<!-- ******************************* Music -->
+
+	<div class="bg-two bg-parallax-images">
+		<div class="caption" id="music">
+			<span class="border">Music</span>
+		</div>
+	</div>
+
+	<div class="story-music">
+		<div class="story-text">
+			<div class="media-player">
+
+				<!-- Sourced from http://amazingaudioplayer.com -->
+				<!-- Insert to your webpage where you want to display the audio player -->
+				<div id="amazingaudioplayer-1"
+					style="display:block;position:relative;width:100%;max-width:300px;height:auto;margin:0px auto 0px;">
+					<ul class="amazingaudioplayer-audios" style="display:none;">
+						<li data-artist="Cover by Darwiche" data-title="Spotlight kid" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="261">
+							<div class="amazingaudioplayer-source" data-src="audios/Spotlight-kid-20200119_Master-1.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="Foolin" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="269">
+							<div class="amazingaudioplayer-source" data-src="audios/Foolin%2020191130_Master%201.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="The Trooper" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="273">
+							<div class="amazingaudioplayer-source" data-src="audios/DarwichE%20trooper1.2.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+					</ul>
+					<div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com"
+							title="audio player for website">jquery mp3 player</a></div>
+				</div>
+				<br>
+				<br>
+				<!-- End of body section HTML codes -->
+				<a href="#shows" class="hvr-icon-bob hvr-color">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- *********************** Parallax background three-->
+	<!-- ******************************* Shows -->
+
+	<div class="bg-three bg-parallax-images">
+		<div class="caption" id="shows">
+			<span class="border">Shows</span>
+		</div>
+	</div>
+
+	<div class="story-shows">
+		<div class="story-text">
+			<div class="story-content-wrapper">
+				<p class="story-heading">Upcoming Shows</p>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Charles Dickens / Helsingborg, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Mythos / Landskrona, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>22/10/2020</span></div>
+					<div class="show-location">Rock Bar / Dresden, Germany</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- *********************** Parallax background four-->
+	<!-- ******************************* Pictures / About Us-->
+
+	<div class="bg-four bg-parallax-images">
+		<div class="caption" id="pictures">
+			<span class="border">The Band</span>
+		</div>
+	</div>
+
+	<div class="story-pictures">
+		<div class="story-text">
+			<div class="story-content-wrapper-about-us">
+				<p class="story-heading">Get To Know Us</p>
+				<div class="gallery-display">
+
+					<a class="test-pictures" id="tst-pic1" name="Jaqueline"></a>
+					<a class="test-pictures" id="tst-pic2" name="Patricia"></a>
+					<a class="test-pictures" id="tst-pic3" name="Gaz"></a>
+					<a class="test-pictures" id="tst-pic4" name="Jays"></a>
+					<a class="test-pictures" id="tst-pic5" name="Bud"></a>
+					<a class="test-pictures" id="tst-pic6" name="Freddie"></a>
+
+				</div>
+				<a href="#contact" class="hvr-icon-bob hvr-color-inverse">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- *********************** Parallax background five-->
+	<!-- ******************************* Contact -->
+	<div class="bg-five bg-parallax-images">
+		<div class="caption" id="contact">
+			<span class="border">Contact</span>
+		</div>
+	</div>
+
+	<div class="story-contact">
+		<div class="story-text">
+			<div class="story-content-wrapper">
+				<p class="story-heading">Get in touch</p>
+				<ul class="list-inline social-links">
+					<li class="list-inline-item">
+						<a>
+							<i class="fas fa-phone contact-icons" aria-hidden="true"></i>
+							<span>555-431-7891</span>
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a>
+							<i class="fas fa-envelope-square contact-icons" aria-hidden="true"></i>
+							<span>booking@darwiche.com</span>
+						</a>
+					</li>
+				</ul>
+				<a href="#sign-up" class="hvr-icon-bob hvr-color-inverse">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- *********************** Parallax background one repeat-->
+	<div class="bg-one">
+		<div class="caption">
+			<span id="band-name-bottom">DARWICHE</span>
+		</div>
+	</div>
+
+	<!-- ******************************* Footer -->
+
+	<footer class="container-fluid footer">
+
+		<!-- ******************************* Sign Up Form-->
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div class="container footer-cont" id="sign-up">
+					<h5 class="footer_titles">Sign up to get news about the band</h5>
+					<form>
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="Enter email" />
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Subscribe!</button>
+					</form>
+
+				</div>
+			</div>
+
+
+			<!-- ******************************* Social Media -->
+
+			<div class="col-sm-6">
+				<div class="container footer-cont">
+					<h5 class="social-media">Follow us</h5>
+					<ul class="list-inline social-links">
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.instagram.com/">
+								<i class="fab fa-instagram contact-icons" aria-hidden="true"></i>
+								<span class="sr-only">Instagram</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.facebook.com/">
+								<i class="fab fa-facebook-f contact-icons" aria-hidden="true"></i>
+								<span class="sr-only">Facebook</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a target="_blank" href="https://www.linkedin.com/">
+								<i class="fab fa-linkedin contact-icons" aria-hidden="true"></i>
+								<span class="sr-only">Linkedin</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<!-- ******************************* Copyright -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright up-chevron">
+						<a href="#" class="hvr-icon-bob hvr-color">
+							<i class="fa fa-chevron-up hvr-icon hover-color-adapt"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright">
+						<span>© All rights reserved - DARWICHE - 2020</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
 
 </body>
 
