@@ -44,7 +44,7 @@ body, html {
 
 .sidebar {
   z-index: 1;
-  margin-top: 30%;
+  margin-top: 10%;
   padding: 0;
   width: 65px;
   background-color: transparent;
@@ -89,7 +89,7 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100%;
     height: auto;
     position: relative;
@@ -97,7 +97,7 @@ body, html {
   }
   .sidebar a {
       float: left;
-      margin-left: 
+      margin-left: 0;
       }
  
 }
@@ -224,13 +224,12 @@ body, html {
     width: 25%;
 }
 
-/* ------------------------------ Gallery / Pictures */
+/* ------------------------------ Gallery / About Us Section / Pictures */
 
 .gallery-display {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    max-width: 90%;
     height: 100%;
     margin: 5px 5px;
 }
@@ -240,6 +239,8 @@ body, html {
     background-size: cover;
     background-position: center;
     background-color: transparent;
+    margin-left: 5px;
+    margin-right: 5px;
     width: 175px;
     height: 175px;
     min-width: 175px;
@@ -247,34 +248,40 @@ body, html {
     border-radius: 50%;
 }
 
-#tst-pic1 {
+#jaqueline-about-us-img {
   background-image: url("../images/JaquiSolo.jpg");
   height: auto;
 }
 
-#tst-pic2 {
+#patricia-about-us-img {
   background-image: url("../images/PatriciaSolo.jpg");
   height: auto;
 }
 
-#tst-pic3 {
+#gaz-about-us-img {
   background-image: url("../images/GassanSolo.jpg");
   height: auto;
 }
 
-#tst-pic4 {
+#jays-about-us-img {
   background-image: url("../images/JaysSolo.jpg");
   height: auto;
 }
 
-#tst-pic5 {
+#bud-about-us-img {
   background-image: url("../images/BudSolo.jpg");
   height: auto;
 }
 
-#tst-pic6 {
+#freddie-about-us-img {
   background-image: url("../images/FadiSolo.jpg");
   height: auto;
+}
+
+/* ------------------------------ Contact Us / Sign up */
+
+.sign-up-header {
+    color: #fafafa;
 }
 
 /* ------------------------------ Scroll Chevrons / Icons / Hover.css */
@@ -395,3 +402,5 @@ h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+}
