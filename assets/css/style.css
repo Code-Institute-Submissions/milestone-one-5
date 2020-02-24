@@ -42,6 +42,7 @@ body, html {
 
 /* ------------------------------ Sidebar */
 
+
 .sidebar {
   z-index: 1;
   margin-top: 10%;
@@ -53,6 +54,7 @@ body, html {
   overflow: auto;
   text-align: center;
   font-size: 35px;
+  
 }
 
 .sidebar a {
@@ -102,6 +104,25 @@ body, html {
  
 }
 
+/* ------------------------------ Band Name Landing Page Animation */
+
+#band-name {
+    animation-name: fadeIn;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
 
 
 /* ------------------------------ All background img styling */
@@ -246,6 +267,10 @@ body, html {
     min-width: 175px;
     min-height: 175px;
     border-radius: 50%;
+}
+
+.gallery-text {
+    height: auto;
 }
 
 #jaqueline-about-us-img {
@@ -397,10 +422,11 @@ h3 {
     width: 95%
 }
 
-.gallery-display {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+#gallery-left, #gallery-left-one {
+    float: left;
+}
+
+#gallery-right, #gallery-right-one {
+    float: right;
 }
 }
