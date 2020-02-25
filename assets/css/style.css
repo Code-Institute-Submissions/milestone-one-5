@@ -19,16 +19,6 @@ body, html {
 
 }
 
-.nav-fix-position-test {
-    position: fixed;
-    z-index: 2;
-    top: 0px;
-    width: 100%;
-    color: #ddd;
-    background-color:#282E34;
-
-}
-
 .nav-item .nav-link {
     font-family: 'Trade Winds', cursive;
     color:#ddd;
@@ -271,7 +261,9 @@ body, html {
     margin: 0;
     text-align: center;
     height: auto;
-   
+    font-family: "Fjalla One", sans-serif;
+    color:#E98074;
+    font-weight: 300;
 }
 
 
@@ -281,7 +273,7 @@ body, html {
     color: #fafafa;
 }
 
-/* ------------------------------ Scroll Chevrons / Icons / Hover.css */
+/* ------------------------------ Scroll Chevrons / Icons / Hover.css / Buttons */
 
 .hvr-color {
     color: #282E34;
@@ -307,6 +299,11 @@ body, html {
     display: inline-block;
     width: 30%;
     color: #E98074;
+}
+
+.btn-adapt {
+    color: #E98074;
+    opacity: 0.45;
 }
 
 
