@@ -86,7 +86,7 @@ body, html {
     color: #fff;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     display: flex;
     flex-direction: row;
@@ -247,12 +247,9 @@ body, html {
 
 /* ------------------------------ Gallery / About Us Section / Pictures */
 
-.gallery-display {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 100%;
-    margin: 5px 5px;
+.gallery {
+    text-align: center;
+    margin: 10px 10px;
 }
 
 .test-pictures {
@@ -267,41 +264,16 @@ body, html {
     min-width: 175px;
     min-height: 175px;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 .gallery-text {
+    margin: 0;
+    text-align: center;
     height: auto;
+   
 }
 
-#jaqueline-about-us-img {
-  background-image: url("../images/JaquiSolo.jpg");
-  height: auto;
-}
-
-#patricia-about-us-img {
-  background-image: url("../images/PatriciaSolo.jpg");
-  height: auto;
-}
-
-#gaz-about-us-img {
-  background-image: url("../images/GassanSolo.jpg");
-  height: auto;
-}
-
-#jays-about-us-img {
-  background-image: url("../images/JaysSolo.jpg");
-  height: auto;
-}
-
-#bud-about-us-img {
-  background-image: url("../images/BudSolo.jpg");
-  height: auto;
-}
-
-#freddie-about-us-img {
-  background-image: url("../images/FadiSolo.jpg");
-  height: auto;
-}
 
 /* ------------------------------ Contact Us / Sign up */
 
@@ -420,13 +392,5 @@ h3 {
 
 .story-content-wrapper {
     width: 95%
-}
-
-#gallery-left, #gallery-left-one {
-    float: left;
-}
-
-#gallery-right, #gallery-right-one {
-    float: right;
 }
 }
