@@ -200,23 +200,28 @@ body, html {
     display: flex;
     flex-direction: row;
     margin-top: 5px;
-    border: 1px solid #E85A4F;
     opacity: 80%;
 }
 
 .show-date {
     width: 25%;
+    border-right: 2px solid rgba(232, 90, 79, 0.6);
 }
 
 .show-location {
     text-align: center;
     width: 50%;
+    border-right: 2px solid rgba(232, 90, 79, 0.6);
 }
 
 .show-tickets {
     width: 25%;
 }
 
+.shows-divider {
+    color: #E98074;
+    opacity: 50%;
+}
 /* ------------------------------ Gallery / About Us Section / Pictures */
 
 .gallery {
@@ -224,7 +229,7 @@ body, html {
     margin: 10px 10px;
 }
 
-.test-pictures {
+.gallery-images {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -239,13 +244,20 @@ body, html {
     margin-bottom: 10px;
 }
 
+.gallery-names {
+    color:#E85A4F;
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+}
+
 .gallery-text {
-    margin: 0;
+    margin: 15px 10px;
     text-align: center;
     height: auto;
     font-family: "Fjalla One", sans-serif;
-    color:#E98074;
-    font-weight: 300;
+    font-weight: 400;
+    color: #282E34;
 }
 
 
@@ -255,7 +267,19 @@ body, html {
     color: #fafafa;
 }
 
+.events-contact a i {
+    text-align: left;
+}
+
 /* ------------------------------ Scroll Chevrons / Icons / Hover.css / Buttons */
+
+.hvr-icon {
+    font-size: 25px;
+}
+
+#work-together-icon {
+    font-size: 40px;
+}
 
 .hvr-color {
     color: #282E34;
@@ -270,7 +294,7 @@ body, html {
 }
 
 .contact-icons {
-    color: #E85A4F
+    color: #E85A4F;
 }
 
 .hover-color-adapt:hover {
@@ -361,7 +385,7 @@ h3 {
 
 /* --------------------------------- Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1280px) {
 .bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
     background-attachment: scroll;
   }
@@ -370,17 +394,16 @@ h3 {
     padding: 25px 40px;
 }
 
+.story-content-wrapper {
+    width: 55%
+}
+
 .media-player {
     width: 90%;
 }
 
-.story-content-wrapper {
-    width: 95%
-}
-}
 
-@media screen and (max-width: 768px) {
-  .sidebar {
+.sidebar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -394,5 +417,16 @@ h3 {
       float: left;
       margin-left: 0;
       }
+}
+
+@media screen and (max-width: 768px) {
+
+.story-about {
+    padding: 50px 5px;
+}
+
+.story-content-wrapper {
+    width: 95%
+}
  
 }
