@@ -76,24 +76,6 @@ body, html {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-  }
-  .sidebar a {
-      float: left;
-      margin-left: 0;
-      }
- 
-}
-
 /* ------------------------------ Band Name Landing Page Animation */
 
 #band-name {
@@ -320,6 +302,7 @@ body, html {
 /* ------------------------------ Captions and Headers */
 
 .caption {
+    display: block;
     font-family: 'Trade Winds', cursive;
     font-weight: 600;
     position: absolute;
@@ -359,6 +342,10 @@ h3 {
     color: #111;
 }
 
+#brief-about-heading {
+    margin-top: 10px;
+}
+
 /* ------------------------------ Footer */
 
 .footer .footer-cont{
@@ -390,4 +377,22 @@ h3 {
 .story-content-wrapper {
     width: 95%
 }
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+  .sidebar a {
+      float: left;
+      margin-left: 0;
+      }
+ 
 }

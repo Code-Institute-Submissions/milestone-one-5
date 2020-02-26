@@ -27,12 +27,239 @@
 	<script src="audioplayerengine/initaudioplayer-1.js"></script>
 
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
-
 	<title>Darwiche</title>
 </head>
 
 <body>
+	<!-- *********************** Main code structure for 'bg-one' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
+    This is the same for the basic html structure of each 'Parallax' on this site-->
+
+	<!-- *********************** Parallax background one / Main logo -->
+
+	<div class="bg-one" id="home">
+
+		<!-- *********************** Navbar sourced from getbootstrap.com-->
+		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
+			<a class="nav-home" href="#home">
+				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+			<button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link hover-color-adapt" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#music">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#shows">Shows</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pictures">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End of Navbar -->
+
+		<!-- *************************** Sidebar ***
+
+    sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp and adapted/edited accordingly-->
+
+		<div class="sidebar">
+			<a target="_blank" href="https://www.facebook.com/">
+				<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Facebook</span>
+			</a>
+			<a target="_blank" href="https://www.instagram.com/">
+				<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Instagram</span>
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/">
+				<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Linkedin</span>
+			</a>
+		</div>
+	</div>
+	<!-- End of Sidebar -->
+	<!-- End of bg-one / Main logo section -->
+
+	<!-- *********************** Main code structure for 'About' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
+
+    ******************************* About -->
+
+	<div class="story-about" id="darwiche-header">
+		<div class="caption">
+			<span id="band-name">DARWICHE</span>
+			<p><a href="#about" class="hvr-icon-bob hvr-color">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a></p>
+		</div>
+		<div class="container">
+		</div>
+	</div>
+	<div class="story-about" id="about">
+		<h3 id="brief-about-heading">About</h3>
+		<div class="story-content-wrapper">
+			<p>Darwiche is a rock band based in Landskrona Sweden.
+				Originally formed in the 80's and made up of members
+				Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
+				Patricia Darwiche and Rickard 'Bud' Linden, the band came back
+				together in 2019.
+				<br>
+				<br>
+                After adding guitarist John 'Jays' Traas the band made their debut at the
+                2019 Landskrona Festival. Back and writing new music Darwiche also cover bands
+                such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the
+                Rock that made us.</p>
+				<a href="#music" class="hvr-icon-bob hvr-color">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+		</div>
+	</div>
+	<!-- End of brief About section-->
+
+	<!-- *********************** Parallax background two-->
+	<!-- ******************************* Music -->
+
+	<div class="bg-two bg-parallax-images">
+		<div class="caption" id="music">
+			<span class="border">Music</span>
+		</div>
+	</div>
+
+	<div class="story-music">
+		<div class="story-text">
+			<div class="media-player">
+
+				<!-- Sourced from http://amazingaudioplayer.com -->
+				<!-- Insert to your webpage where you want to display the audio player -->
+				<div id="amazingaudioplayer-1"
+					style="display:block;position:relative;width:100%;max-width:300px;height:auto;margin:0px auto 0px;">
+					<ul class="amazingaudioplayer-audios" style="display:none;">
+						<li data-artist="Cover by Darwiche" data-title="Spotlight kid" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="261">
+							<div class="amazingaudioplayer-source" data-src="audios/Spotlight-kid-20200119_Master-1.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="Foolin" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="269">
+							<div class="amazingaudioplayer-source" data-src="audios/Foolin%2020191130_Master%201.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+						<li data-artist="Cover by Darwiche" data-title="The Trooper" data-album="" data-info=""
+							data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg" data-duration="273">
+							<div class="amazingaudioplayer-source" data-src="audios/DarwichE%20trooper1.2.mp3"
+								data-type="audio/mpeg"></div>
+						</li>
+					</ul>
+					<div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com"
+							title="audio player for website">jquery mp3 player</a></div>
+				</div>
+				<br>
+				<br>
+				<a href="#shows" class="hvr-icon-bob hvr-color">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+
+			</div>
+		</div>
+	</div>
+	<!-- End of Music Player -->
+
+	<!-- *********************** Parallax background three-->
+	<!-- ******************************* Shows -->
+
+	<div class="bg-three bg-parallax-images">
+		<div class="caption" id="shows">
+			<span class="border">Shows</span>
+		</div>
+	</div>
+
+	<div class="story-shows">
+		<div class="story-text">
+			<div class="story-content-wrapper">
+				<p class="story-heading">Upcoming Shows</p>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Charles Dickens / Helsingborg, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Mythos / Landskrona, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>22/10/2020</span></div>
+					<div class="show-location">Rock Bar / Dresden, Germany</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Charles Dickens / Helsingborg, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>17/06/2020</span></div>
+					<div class="show-location">Mythos / Landskrona, Sweden</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<div class="shows-display">
+					<div class="show-date">
+						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+						<span>22/10/2020</span></div>
+					<div class="show-location">Rock Bar / Dresden, Germany</div>
+					<div class="show-tickets">
+						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+					</div>
+				</div>
+				<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- End of Shows Section -->
+
+	<!-- *********************** Parallax background four-->
+	<!-- ******************************* Pictures / Main About The Band-->
+
+	<div class="bg-four bg-parallax-images">
+		<div class="caption" id="pictures">
+			<span class="border">The Band</span>
+		</div>
+	</div>
+
 	<div class="story-pictures">
 		<div class="story-text">
 			<div class="story-content-wrapper-about-us">
@@ -42,12 +269,12 @@
 						<div class="col-sm gallery">
 							<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="test-pictures">
 							<p class="gallery-text">Jaqui | Vocals</p>
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#jaqui-modal">
                             <a class="hvr-icon-bob hvr-color-inverse">
 					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
 				            </a>
                             </button>
-							<div class="modal" id="myModal">
+							<div class="modal fade" id="jaqui-modal">
 								<div class="modal-dialog">
 									<div class="modal-content">
 
@@ -77,44 +304,190 @@
 						</div>
 						<div class="col-sm gallery">
 							<img src="./assets/images/PatriciaSolo.jpg" alt="Patricia" class="test-pictures">
-							<p class="gallery-text">Patricia, our second amazing vocalist, handles
-								most of the backups and does an incredible job at that!
-								Also multi-talented she writes some of the lyrics to our original songs.
-								She can also belt it out with the best hard rock
-								vocalists out there and sings lead on some songs!</p>
+							<p class="gallery-text">Patricia | Vocals</p>
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#patricia-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="modal fade" id="patricia-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading">Patricia</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											Patricia, our second amazing vocalist, handles
+											most of the backups and does an incredible job at that!
+											Also multi-talented she writes some of the lyrics to our original songs.
+											She can also belt it out with the best hard rock
+											vocalists out there and sings lead on some songs!
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="col-sm gallery">
-							<img src="./assets/images/FadiSolo.jpg" alt="Fadi 'Freddie'" class="test-pictures">
-							<p class="gallery-text">Fadi 'Freddie' Darwiche is our drummer. It is his relentless
-								pursuit of excellence that is the foundation upon which the Darwiche show is built.
-								Specializing in aggressive rock beats and complex drumrolls he hits harder than a train!
-							</p>
+							<img src="./assets/images/FadiSolo.jpg" alt="Freddie" class="test-pictures">
+							<p class="gallery-text">Fadi 'Freddie' | Drums</p>
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#fadi-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="modal fade" id="fadi-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading">Freddie</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											Fadi 'Freddie' Darwiche is our drummer. It is his relentless
+											pursuit of excellence that is the foundation upon which the Darwiche show is
+											built.
+											Specializing in aggressive rock beats and complex drumrolls he hits harder
+											than a train!
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
 						</div>
 
 					</div>
 				</div>
-				<div class="row no-gutters">
-					<div class="col-sm gallery">
-						<img src="./assets/images/GassanSolo.jpg" alt="Gassan" class="test-pictures">
-						<p class="gallery-text">Eddie Van Halen was unavailable,
-							luckily for us Gassan 'Gaz' is a technical master and
-							can shred with the best of them! He mixes searing shredding
-							passages with haunting riffs, superb phrasing,
-							harmonized melodies and thick, dirty, aggressive rhythms.</p>
-					</div>
-					<div class="col-sm gallery">
-						<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="test-pictures">
-						<p class="gallery-text">Jays claims he's not a shredder with his style being
-							more melodic and rooted in the blues, but he's got a few tricks
-							to call on when need be. He enjoys using percussive rhythms and
-							playing on dynamics between fretted and open stringsa all the while
-							mixing solid technique with great phrasing and melodic storytelling.</p>
-					</div>
-					<div class="col-sm gallery">
-						<img src="./assets/images/BudSolo.jpg" alt="Bud" class="test-pictures">
-						<p class="gallery-text">Rickard 'Bud' is simply a superb bassist. Playing
-							in the pocket and driving the music forward with uncanny precision, rumor has it
-							that he was born with the knowledge and ability to play every single song ever written!</p>
+				<div class="container">
+					<div class="row no-gutters">
+						<div class="col-sm gallery">
+							<img src="./assets/images/GassanSolo.jpg" alt="Gaz" class="test-pictures">
+							<p class="gallery-text">Gassan 'Gaz' | Lead Guitar</p>
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#gaz-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="modal fade" id="gaz-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading">Gassan 'Gaz'</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											Eddie Van Halen was unavailable,
+											luckily for us Gassan 'Gaz' is a technical master and
+											can shred with the best of them! He mixes searing shredding
+											passages with haunting riffs, superb phrasing,
+											harmonized melodies and thick, dirty, aggressive rhythms.
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm gallery">
+							<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="test-pictures">
+							<p class="gallery-text">Jays | Guitar</p>
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#jays-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="modal fade" id="jays-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading">Jays</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											Jays claims he's not a shredder with his style being
+											more melodic and rooted in the blues, but he's got a few tricks
+											to call on when need be. He enjoys using percussive rhythms and
+											playing on dynamics between fretted and open stringsa all the while
+											mixing solid technique with great phrasing and melodic storytelling.
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm gallery">
+							<img src="./assets/images/BudSolo.jpg" alt="Bud" class="test-pictures">
+							<p class="gallery-text">Rickard 'Bud' | Bass</p>
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#bud-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="modal fade" id="bud-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading">Bud</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											Bud is simply a superb bassist. Playing
+											in the pocket and driving the music forward with uncanny precision, rumor
+											has it
+											that he was born with the knowledge and ability to play every single song
+											ever
+											written!
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -125,6 +498,142 @@
 			</div>
 		</div>
 	</div>
+	<!-- End of main About The Band section-->
+
+	<!-- *********************** Parallax background five-->
+	<!-- ******************************* Contact -->
+	<div class="bg-five bg-parallax-images">
+		<div class="caption" id="contact">
+			<span class="border">Contact</span>
+		</div>
+	</div>
+
+	<div class="story-contact">
+		<div class="story-text">
+			<div class="story-content-wrapper">
+				<div class="container">
+					<p class="story-heading">Get in touch</p>
+					<ul class="list-inline social-links">
+						<li class="list-inline-item">
+							<a>
+								<i class="fas fa-phone contact-icons" aria-hidden="true"></i>
+								<span>555-431-7891</span>
+							</a>
+						</li>
+						<li class="list-inline-item">
+							<a>
+								<i class="fas fa-envelope-square contact-icons" aria-hidden="true"></i>
+								<span>booking@darwiche.com</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<section class="container-fluid">
+					<div class="row bg-color-contact">
+						<div class="col">
+							<h3 class="contact-heading uppercase text-center">Got an event coming up?</h3>
+							<h5 class="story-heading">Let's work together!</h5>
+
+							<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				            </a>
+                            </button>
+							<div class="center-form">
+								<form method="post" action="https://formdump.codeinstitute.net/">
+									<div class="modal fade" id="work-together-modal">
+										<div class="modal-dialog">
+											<div class="modal-content">
+
+												<!-- Modal Header -->
+												<div class="modal-header">
+													<h4 class="story-heading">
+														<input type="text" name="name" id="book-the-band-fullname" class="form-control" placeholder="Name" required />
+														<input type="email" name="email" id="book-the-band-emailaddress" class="form-control" placeholder="Email" required />
+                                                    </h4>
+														<button type="button" class="close" data-dismiss="modal">&times;</button>
+												</div>
+
+												<!-- Modal body -->
+												<div class="gallery-text">
+													<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control" placeholder="Event description" required></textarea>
+													<div class="form-row text-center">
+														<div class="col">
+															<button type="submit" class="btn btn-secondary">Send Project Request</button>
+														</div>
+													</div>
+												</div>
+
+												<!-- Modal footer -->
+												<div class="modal-footer">
+													<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</form>
+
+							</div>
+
+						</div>
+					</div>
+
+				</section>
+
+				<h3 class="sign-up-header">Sign up to get the latest news about the Band!</h3>
+
+				<form class="signup-form" method="post" action="https://formdump.codeinstitute.net/">
+					<label for="email"></label>
+					<input class="text-input" type="email" name="email_address" placeholder="Email Address" id="email" required>
+					<input class="comments-input" type="text" name="comments-text" placeholder="Comments" id="comments">
+					<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Subscribe!</button>
+				</form>
+				<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
+					<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+				</a>
+			</div>
+		</div>
+	</div>
+	<!-- End of Contact Section -->
+
+	<!-- *********************** Parallax background one repeat-->
+	<div class="bg-one">
+		<div class="caption">
+			<span id="band-name-bottom">DARWICHE</span>
+		</div>
+	</div>
+
+	<!-- ******************************* Footer -->
+	<footer class="container-fluid footer">
+
+
+		<!-- ******************************* Copyright -->
+
+		<div class="container" id="footer">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright up-chevron">
+						<a href="#" class="hvr-icon-bob hvr-color">
+							<i class="fa fa-chevron-up hvr-icon hover-color-adapt"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="copyright">
+						<span>© All rights reserved - DARWICHE - 2020</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End of Copyright Section -->
+
+	</footer>
+	<!-- End of Footer -->
 
 
 </body>
