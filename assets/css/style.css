@@ -38,15 +38,21 @@ body, html {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .cta {
     width: 64%;
 }
 
+.call-to-action {
+    display: inline-block;
+}
+
 .cta-header {
+    padding: 8px 0px;
+}
+
+.cta-header .digital-download{
     text-transform: uppercase;
     color: #E85A4F;
 }
@@ -105,9 +111,32 @@ body, html {
     color: #fff;
 }
 
+/* ------------------------------ Band Name Front Logo */
+
+.band-name {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.band-name-img {
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 50%;
+  height: auto;
+  clear:both;
+}
+
+#band-name-bottom {
+    opacity: 0.90;
+}
+
 /* ------------------------------ Band Name Landing Page Animation */
 
-#band-name {
+.band-name {
     animation-name: fadeIn;
     animation-duration: 5s;
     animation-fill-mode: forwards;
@@ -309,6 +338,10 @@ body, html {
 
 /* ------------------------------ Scroll Chevrons / Icons / Hover.css / Buttons */
 
+.cta-icon {
+    font-size: 15px;
+}
+
 .hvr-icon {
     font-size: 25px;
 }
@@ -373,19 +406,6 @@ body, html {
     color: #000;
 }
 
-
-#band-name, #band-name-bottom {
-    color: #111;
-    background-color: #EAE7DC;
-    font-size: 30px;
-    letter-spacing: 10px;
-    padding: 5px 15px;
-}
-
-#band-name-bottom {
-    opacity: 0.90;
-}
-
 .caption span.border {
     background-color: #111;
     color: #fff;
@@ -421,7 +441,15 @@ h3 {
 
 /* --------------------------------- Media Queries */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
+    .cta {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
 .bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
     background-attachment: scroll;
   }
@@ -438,24 +466,21 @@ h3 {
     width: 90%;
 }
 
-
-.sidebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    position: relative;
-    text-align: center;
-  }
-  .sidebar a {
-      float: left;
-      margin-left: 0;
-      }
+.cta-wrapper {
+    margin-top: 52px;
 }
 
-@media screen and (max-width: 768px) {
+.cta {
+    width: 90%;
+}
+
+.vinyl-discount {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+}
 
 .story-about {
     padding: 50px 5px;
