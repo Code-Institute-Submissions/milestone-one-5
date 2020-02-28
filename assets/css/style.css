@@ -20,7 +20,7 @@ body, html {
 }
 
 .nav-item .nav-link {
-    font-family: 'Trade Winds', cursive;
+    font-family: 'Trade Winds', sans-serif;
     color:#ddd;
     background-color:#282E34;
 }
@@ -34,6 +34,7 @@ body, html {
 
 .cta-wrapper {
     background: #000;
+    margin-top: 55px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -195,7 +196,7 @@ body, html {
 
 .story-about h3 {
     text-align:center;
-    font-family: 'Trade Winds', cursive;
+    font-family: 'Trade Winds', sans-serif;
 }
 
 .story-about p {
@@ -362,7 +363,7 @@ body, html {
 
 .caption {
     display: block;
-    font-family: 'Trade Winds', cursive;
+    font-family: 'Trade Winds', sans-serif;
     font-weight: 600;
     position: absolute;
      left: 0;
