@@ -9,6 +9,10 @@ body, html {
   color: #777;
 }
 
+body.modal-open {
+    overflow: hidden;
+} 
+
 .nav-fix-position {
     position: fixed;
     z-index: 2;
@@ -447,7 +451,6 @@ h3 {
     }
 
 }
-
 
 @media screen and (max-width: 767px) {
 .bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
