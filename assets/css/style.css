@@ -30,6 +30,34 @@ body, html {
     color: #ddd;
 }
 
+/* ------------------------------ Call to Action */
+
+.cta-wrapper {
+    background: #000;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cta {
+    width: 64%;
+}
+
+.cta-header {
+    text-transform: uppercase;
+    color: #E85A4F;
+}
+
+.cta-header span {
+    color: #fff;
+}
+
+.cta-wrapper.cta-header.cta a:hover {
+    color: #fafafa;
+}
+
 /* ------------------------------ Sidebar */
 
 
@@ -66,7 +94,7 @@ body, html {
 }
 
 .sidebar-icons {
-    opacity: 0.45;
+    opacity: 0.65;
   color: #E85A4F;
   padding: 10px 10px;
 }
@@ -96,8 +124,17 @@ body, html {
     }
 }
 
+/* ------------------------------ Brief about us */
+
+#about {
+    color: #111;
+}
 
 /* ------------------------------ All background img styling */
+
+.light-bg-color {
+    background-color: #EAE7DC;
+}
 
 
 .bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
@@ -116,9 +153,8 @@ body, html {
 }
 
 .bg-one {
-  background-image: url("../images/logo_main.jpg");
+  background-image: url("../images/logo_main_transparent.png");
   background-size: contain;
-  background-color: #fff;
   height: auto;
   min-height: 90%;
   top: 0;
@@ -152,7 +188,6 @@ body, html {
 
 .story-about {
     color: #777;
-    background-color: #fff;
     opacity: 0.90;
     text-align: center;
     padding: 50px 80px;
@@ -339,8 +374,8 @@ body, html {
 
 
 #band-name, #band-name-bottom {
-    background-color: #fff;
     color: #111;
+    background-color: #EAE7DC;
     font-size: 30px;
     letter-spacing: 10px;
     padding: 5px 15px;

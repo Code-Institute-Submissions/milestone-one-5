@@ -31,48 +31,66 @@
 </head>
 
 <body>
-	<!-- *********************** Main code structure for 'bg-one' has been sourced from 
+	<!--  Main code structure for 'bg-one' has been sourced from 
     https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
-    This is the same for the basic html structure of each 'Parallax' on this site-->
+    This is the same for the basic html structure of each 'Parallax' on this site *********************** -->
 
-	<!-- *********************** Parallax background one / Main logo -->
+	<!-- Parallax background one / Main logo  
+                        *********************** -->
 
-	<div class="bg-one" id="home">
+	<div class="bg-one light-bg-color" id="home">
 
-		<!-- *********************** Navbar sourced from getbootstrap.com-->
-		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
-			<a class="nav-home" href="#home">
-				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
-			<button class="navbar-toggler" type="button"
+		<!--Navbar sourced from getbootstrap.com 
+                                *********************** -->
+			<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
+				<a class="nav-home" href="#home">
+					<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+				<button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item">
-						<a class="nav-link hover-color-adapt" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#music">Music</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#shows">Shows</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#pictures">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link hover-color-adapt" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#music">Music</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#shows">Shows</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#pictures">Gallery</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
 		<!-- End of Navbar -->
 
-		<!-- *************************** Sidebar ***
+		<!-- Call to Action 
+                        ********************** -->
+		<div class="container-fluid cta-wrapper">
+			<div class="cta">
+				<div class="call-to-action cta-header"><span>Sign up to get 15% Discount on all Vinyl!</span>
+					Free Digital Download of our latest album!
+					<a href="#contact" class="hvr-icon-bob hvr-color-inverse">
+						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+					</a>
+				</div>
+			</div>
+		</div>
 
-    sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp and adapted/edited accordingly-->
+
+		<!-- End of Call to Action -->
+
+
+		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
+                    and adapted/edited accordingly *************************** -->
 
 		<div class="sidebar">
 			<a target="_blank" href="https://www.facebook.com/">
@@ -92,14 +110,15 @@
 	<!-- End of Sidebar -->
 	<!-- End of bg-one / Main logo section -->
 
-	<!-- *********************** Main code structure for 'About' has been sourced from 
-    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly.
+	<!-- Main code structure for 'About' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly. -->
 
-    ******************************* About -->
+	<!--About  
+            ******************************* -->
 
-	<div class="story-about" id="darwiche-header">
+	<div class="story-about light-bg-color" id="darwiche-header">
 		<div class="caption">
-			<span id="band-name">DARWICHE</span>
+			<span class="light-bg-color" id="band-name">DARWICHE</span>
 			<p><a href="#about" class="hvr-icon-bob hvr-color">
 					<i class="fa fa-chevron-down hover-color-adapt"></i>
 				</a></p>
@@ -107,7 +126,7 @@
 		<div class="container">
 		</div>
 	</div>
-	<div class="story-about" id="about">
+	<div class="story-about light-bg-color" id="about">
 		<h3 id="brief-about-heading">About</h3>
 		<div class="story-content-wrapper">
 			<p>Darwiche is a rock band based in Landskrona Sweden.
@@ -128,8 +147,9 @@
 	</div>
 	<!-- End of brief About section-->
 
-	<!-- *********************** Parallax background two-->
-	<!-- ******************************* Music -->
+	<!--Parallax background two 
+                        *********************** -->
+	<!--Music *******************************  -->
 
 	<div class="bg-two bg-parallax-images">
 		<div class="caption" id="music">
@@ -176,8 +196,9 @@
 	</div>
 	<!-- End of Music Player -->
 
-	<!-- *********************** Parallax background three-->
-	<!-- ******************************* Shows -->
+	<!--Parallax background three
+                         *********************** -->
+	<!--Shows  ******************************* -->
 
 	<div class="bg-three bg-parallax-images">
 		<div class="caption" id="shows">
@@ -189,7 +210,6 @@
 		<div class="story-text">
 			<div class="story-content-wrapper">
 				<p class="story-heading">Upcoming Shows</p>
-				<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
 				<div class="shows-display">
 					<div class="show-date">
 						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
@@ -235,16 +255,6 @@
 						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
 						<span>17/06/2020</span></div>
 					<div class="show-location">Mythos - Landskrona, Sweden</div>
-					<div class="show-tickets">
-						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
-					</div>
-				</div>
-				<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
-				<div class="shows-display">
-					<div class="show-date">
-						<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-						<span>22/10/2020</span></div>
-					<div class="show-location">Rock Bar - Dresden, Germany</div>
 					<div class="show-tickets">
 						<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
 					</div>
@@ -257,8 +267,9 @@
 	</div>
 	<!-- End of Shows Section -->
 
-	<!-- *********************** Parallax background four-->
-	<!-- ******************************* Pictures / Main About The Band-->
+	<!--Parallax background four 
+                        *********************** -->
+	<!--Gallery / Main About The Band ******************************* -->
 
 	<div class="bg-four bg-parallax-images">
 		<div class="caption" id="pictures">
@@ -504,10 +515,12 @@
 			</div>
 		</div>
 	</div>
-	<!-- End of main About The Band section-->
+	<!-- End of main Gallery/About The Band section-->
 
-	<!-- *********************** Parallax background five-->
-	<!-- ******************************* Contact -->
+	<!--Parallax background five 
+                        *********************** -->
+	<!--Contact  ******************************* -->
+
 	<div class="bg-five bg-parallax-images">
 		<div class="caption" id="contact">
 			<span class="border">Contact</span>
@@ -530,7 +543,7 @@
 											<span>Corporate Functions</span>
 										</a>
 									</li>
-                                    <li class="list-item">
+									<li class="list-item">
 										<a>
 											<i class="fas fa-glass-cheers contact-icons" aria-hidden="true"></i>
 											<span>Private Parties</span>
@@ -616,18 +629,19 @@
 	</div>
 	<!-- End of Contact Section -->
 
-	<!-- *********************** Parallax background one repeat-->
-	<div class="bg-one">
+	<!--Parallax background one repeat 
+                        *********************** -->
+	<div class="bg-one light-bg-color">
 		<div class="caption">
-			<span id="band-name-bottom">DARWICHE</span>
+			<span class="light-bg-color" id="band-name-bottom">DARWICHE</span>
 		</div>
 	</div>
 
-	<!-- ******************************* Footer -->
-	<footer class="container-fluid footer">
+	<!-- Footer -->
+	<footer class="container-fluid footer light-bg-color">
 
 
-		<!-- ******************************* Copyright -->
+		<!--Copyright -->
 
 		<div class="container" id="footer">
 			<div class="row">
