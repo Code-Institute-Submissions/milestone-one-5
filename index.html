@@ -55,24 +55,23 @@
 
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav nav-list">
-					<li data-toggle="collapse" data-target="#navbarNav" class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#about">About</a>
 					</li>
-					<li data-toggle="collapse" data-target="#navbarNav" class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#music">Music</a>
 					</li>
-					<li data-toggle="collapse" data-target="#navbarNav" class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#shows">Shows</a>
 					</li>
-					<li data-toggle="collapse" data-target="#navbarNav" class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#pictures">Gallery</a>
 					</li>
-					<li data-toggle="collapse" data-target="#navbarNav" class="nav-item">
+					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact</a>
 					</li>
 				</ul>
 			</div>
-
 
 		</nav>
 		<!-- End of Navbar -->
@@ -83,12 +82,14 @@
 			<div class="container cta">
 				<div class="call-to-action cta-header">
 					<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
-					<span class="digital-download">Free Digital Download of our latest album!</span>
-					<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+                    <i class="fas fa-exclamation cta-exclamation-icon"></i>
+					<span class="digital-download">Free Digital Download of our latest album</span>
+                    <i class="fas fa-exclamation cta-exclamation-icon"></i>
+					<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
                             <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fa fa-chevron-down hvr-icon hover-color-adapt cta-icon"></i>
+					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt cta-icon"></i>
 				            </a>
-                            </button>
+                            </span>
 					<div class="center-form">
 						<form method="post" action="https://formdump.codeinstitute.net/">
 							<div class="modal fade" id="cta-modal">
@@ -149,12 +150,14 @@
 		<!-- Band Name Image
              *********************-->
 
-		<div class="container-fluid band-name">
+		<div class="band-name-wrapper">
+				<div class="band-name-container">
+					<div class="band-name-image">
+						<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
 
-			<div class="container">
-				<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-img">
-			</div>
-			</div>
+				    </div>
+					</div>
+				</div>
 
 
 		</div>
@@ -173,21 +176,19 @@
 						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
 					</a></p>
 			</div>
-			<div class="container">
-			</div>
 		</div>
 		<div class="story-about light-bg-color" id="about">
 
 			<h3 id="brief-about-heading">About</h3>
 			<div class="story-content-wrapper">
 				<p>Darwiche is a rock band based in Landskrona Sweden.
-					Originally formed in the 80's and made up of four siblings
+					Originally formed in the 80's the band is made up of four siblings,
 					Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
-					Patricia Darwiche and Rickard 'Bud' Linden, the band came back
-					together in 2019.
+					Patricia Darwiche and bassist Rickard 'Bud' Linden. The band came back together in 2019!. 
 					<br>
 					<br>
-                After adding guitarist John 'Jays' Traas the band made their second debut at the
+                    After adding guitarist John 'Jays' Traas 
+                    the band made their second debut at the
                 2019 Landskrona Festival. Back and writing new original music Darwiche also cover bands
                 such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the guitar bite
                 and the Rard Rock that made us.</p>
@@ -336,15 +337,16 @@
 				<div class="story-content-wrapper-about-us">
 					<p class="story-heading">Get To Know Us</p>
 					<div class="container">
-						<div class="row no-gutters">
+						<div class="row  gallery-row">
 							<div class="col-sm gallery">
 								<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="gallery-images">
 								<p class="gallery-names">Jackie | Vocals</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#jaqui-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+									data-target="#jaqui-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="jaqui-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -376,11 +378,12 @@
 							<div class="col-sm gallery">
 								<img src="./assets/images/PatriciaSolo.jpg" alt="Patricia" class="gallery-images">
 								<p class="gallery-names">Patricia | Vocals</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#patricia-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+									data-target="#patricia-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="patricia-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -412,11 +415,12 @@
 							<div class="col-sm gallery">
 								<img src="./assets/images/FadiSolo.jpg" alt="Freddie" class="gallery-images">
 								<p class="gallery-names">Fadi 'Freddie' | Drums</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#fadi-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+									data-target="#fadi-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="fadi-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -448,18 +452,15 @@
 								</div>
 							</div>
 
-						</div>
-					</div>
-					<div class="container">
-						<div class="row no-gutters">
+
 							<div class="col-sm gallery">
 								<img src="./assets/images/GassanSolo.jpg" alt="Gaz" class="gallery-images">
 								<p class="gallery-names">Gassan 'Gaz' | Lead Guitar</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#gaz-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#gaz-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="gaz-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -491,11 +492,12 @@
 							<div class="col-sm gallery">
 								<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="gallery-images">
 								<p class="gallery-names">Jays | Guitar</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#jays-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+									data-target="#jays-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="jays-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -524,14 +526,15 @@
 									</div>
 								</div>
 							</div>
+							
 							<div class="col-sm gallery">
 								<img src="./assets/images/BudSolo.jpg" alt="Bud" class="gallery-images">
 								<p class="gallery-names">Rickard 'Bud' | Bass</p>
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#bud-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#bud-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+									</a>
+								</p>
 								<div class="modal fade" id="bud-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -623,11 +626,12 @@
 								</div>
 								<h5 class="story-heading">Let's work together!</h5>
 
-								<button type="button" class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
-				            </a>
-                            </button>
+								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+									data-target="#work-together-modal">
+									<a class="hvr-icon-bob hvr-color-inverse">
+										<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
+									</a>
+								</p>
 								<div class="center-form">
 									<form method="post" action="https://formdump.codeinstitute.net/">
 										<div class="modal fade" id="work-together-modal">
@@ -637,30 +641,30 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<div class="story-heading modal-heading">Lets work together!
-															<input type="text" name="name" id="book-the-band-fullname" class="form-control" placeholder="Name" required />
-															<input type="email" name="email" id="book-the-band-emailaddress" class="form-control" placeholder="Email" required />
+															<input type="text" name="name" id="book-the-band-fullname" class="form-control modal-heading" placeholder="Name" required />
+															<input type="email" name="email" id="book-the-band-emailaddress" class="form-control modal-heading" placeholder="Email" required />
                                                     </div>
 															<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-													</div>
+														</div>
 
-													<!-- Modal body -->
-													<div class="gallery-text">
-														<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control" placeholder="Event description" required></textarea>
-														<div class="form-row text-center">
-															<div class="col">
-																<button type="submit" class="btn btn-secondary modal-heading">Send Project Request</button>
+														<!-- Modal body -->
+														<div class="gallery-text">
+															<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control" placeholder="Event description" required></textarea>
+															<div class="form-row text-center">
+																<div class="col">
+																	<button type="submit" class="btn btn-secondary modal-heading">Send Project Request</button>
+																</div>
 															</div>
 														</div>
-													</div>
 
-													<!-- Modal footer -->
-													<div class="modal-footer">
-														
-													</div>
+														<!-- Modal footer -->
+														<div class="modal-footer">
 
+														</div>
+
+													</div>
 												</div>
 											</div>
-										</div>
 									</form>
 
 								</div>
@@ -674,9 +678,9 @@
 
 					<form class="signup-form" method="post" action="https://formdump.codeinstitute.net/">
 						<label for="email"></label>
-						<input class="form-control" type="email" name="email_address" placeholder="Email Address" id="email" required>
-						<textarea rows="4" name="comments" id="comments" class="form-control" placeholder="Comments"></textarea>
-						<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Subscribe!</button>
+						<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
+						<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
+						<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt modal-heading">Subscribe!</button>
 					</form>
 
 					<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
@@ -690,13 +694,16 @@
 		<!--Parallax background one repeat 
                         *********************** -->
 		<div class="bg-one light-bg-color">
-			<div class="caption">
-				<div id="band-name-bottom">
-					<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-img">
+			<div class="band-name-wrapper">
+				<div class="band-name-container">
+					<div class="band-name-image">
+						<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
 
-				</div>
+				    </div>
+					</div>
 				</div>
 			</div>
+
 
 			<!-- Footer -->
 			<footer class="container-fluid footer light-bg-color">

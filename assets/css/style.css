@@ -2,6 +2,10 @@
 
 /* ------------------------------ Modals Styling */
 
+body.modal-open {
+    overflow: hidden;
+} 
+
 .modal-heading {
     margin-top: 2px;
 }
@@ -24,6 +28,11 @@ Scroll Chevrons /
 
 .cta-icon {
     font-size: 15px;
+}
+
+.cta-exclamation-icon {
+    color: yellowgreen;
+    opacity: 90%;
 }
 
 .hvr-icon {
@@ -210,10 +219,6 @@ body, html {
   color: #777;
 }
 
-body.modal-open {
-    overflow: hidden;
-} 
-
 .nav-fix-position {
     position: fixed;
     z-index: 2;
@@ -318,11 +323,16 @@ body.modal-open {
 
 /* ------------------------------ Band Name Front Logo */
 
+/* Positioning solution for 'band-name' and 'band-name-img' provided by Adrien Zaganelli 
+source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/
+*/
+
+/*
 .band-name {
   position: relative;
   background-color: transparent;
   text-align: center;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%; 
 }
 
 .band-name-img {
@@ -334,9 +344,37 @@ body.modal-open {
   height: auto;
   clear:both;
 }
+*/
 
-#band-name-bottom {
-    opacity: 0.90;
+.band-name-wrapper {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.band-name-container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.band-name-image {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.band-name-footer-img {
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+
+  width: 50%;
+  height: auto;
 }
 
 /* ------------------------------ Band Name Landing Page Animation */
@@ -408,6 +446,10 @@ body.modal-open {
 .gallery {
     text-align: center;
     margin: 10px 10px;
+}
+
+.gallery-row {
+    column-count: 3;
 }
 
 .gallery-images {
@@ -485,7 +527,7 @@ body.modal-open {
 }
 
 .story-content-wrapper {
-    width: 55%
+    width: 95%
 }
 
 .media-player {
@@ -515,5 +557,11 @@ body.modal-open {
 .story-content-wrapper {
     width: 95%
 }
- 
+
+@media screen and (max-width: 460px) {
+
+.cta-wrapper {
+    display: none;
+}
+}
 }
