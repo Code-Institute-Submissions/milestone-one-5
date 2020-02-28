@@ -1,5 +1,206 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Permanent+Marker:100,200,300,400,500,600,700|Trade+Windsa:100,200,300,400,500,600,700');
 
+/* ------------------------------ Modals Styling */
+
+.modal-heading {
+    margin-top: 2px;
+}
+
+.modal-content {
+    background-color: #EAE7DC;
+}
+
+.close-modal {
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+/* ------------------------------ 
+
+Scroll Chevrons / 
+                 Icons / 
+                        Hover.css / 
+                                   Buttons */
+
+.cta-icon {
+    font-size: 15px;
+}
+
+.hvr-icon {
+    font-size: 25px;
+}
+
+#work-together-icon {
+    font-size: 40px;
+}
+
+.hvr-color {
+    color: #282E34;
+}
+
+.hvr-color-inverse {
+    color: #fafafa;
+}
+
+.up-chevron a i {
+    font-size: 25px;
+}
+
+.contact-icons {
+    color: #E85A4F;
+}
+
+.hover-color-adapt:hover {
+    color: #E85A4F
+}
+
+.calendar-shows {
+    display: inline-block;
+    width: 30%;
+    color: #E98074;
+}
+
+.btn-adapt {
+    color: #E98074;
+    opacity: 0.45;
+}
+
+
+/* ------------------------------ Captions and Headers */
+
+.caption {
+    display: block;
+    font-family: 'Trade Winds', sans-serif;
+    font-weight: 600;
+    position: absolute;
+     left: 0;
+     top: 90%;
+     width: 100%;
+     text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 1px 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-family: 'Trade Winds', cursive;
+    color: #111;
+}
+
+#brief-about-heading {
+    margin-top: 10px;
+}
+
+
+/* ------------------------------ All background image and parallax styling */
+
+.light-bg-color {
+    background-color: #EAE7DC;
+}
+
+
+.bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-parallax-images {
+  opacity: 0.65;
+
+  height: auto;
+  min-height: 400px;
+}
+
+.bg-one {
+  background-image: url("../images/logo_main_transparent.png");
+  background-size: contain;
+  height: auto;
+  min-height: 90%;
+  top: 0;
+  left: 0;
+}
+
+.bg-two {
+  background-image: url("../images/placeholder_drums.jpg");
+}
+
+.bg-three {
+  background-image: url("../images/band_live.jpg");
+}
+
+.bg-four {
+  background-image: url("../images/Gassan2.jpg");
+}
+
+.bg-five {
+  background-image: url("../images/Jays.jpg");
+}
+
+/* ------------------------------ Stories Styling */
+
+.story-heading {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    color: #E85A4F
+}
+
+.story-about {
+    color: #777;
+    opacity: 0.90;
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.story-about h3 {
+    text-align:center;
+    font-family: 'Trade Winds', sans-serif;
+}
+
+.story-about p {
+    text-align: center;
+    font-weight: 300;
+}
+
+.story-music, .story-shows, .story-pictures, .story-contact {
+    position: relative;
+}
+
+.story-text {
+    z-index: 1;
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding: 25px 80px;
+}
+
+.story-content-wrapper {
+    display: inline-block; 
+    width: 50%;
+    margin: auto;
+    padding: 5px;
+}
+
+.story-content-wrapper-about-us {
+    display: inline-block; 
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+
 /* ------------------------------ Welcome/Navbar */
 
 body, html {
@@ -164,102 +365,13 @@ body.modal-open {
     color: #111;
 }
 
-/* ------------------------------ All background img styling */
+/* ------------------------------ Music / Media Player */
 
-.light-bg-color {
-    background-color: #EAE7DC;
-}
-
-
-.bg-one, .bg-two, .bg-three, .bg-four, .bg-five {
-  position: relative;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-parallax-images {
-  opacity: 0.65;
-
-  height: auto;
-  min-height: 400px;
-}
-
-.bg-one {
-  background-image: url("../images/logo_main_transparent.png");
-  background-size: contain;
-  height: auto;
-  min-height: 90%;
-  top: 0;
-  left: 0;
-}
-
-.bg-two {
-  background-image: url("../images/placeholder_drums.jpg");
-}
-
-.bg-three {
-  background-image: url("../images/band_live.jpg");
-}
-
-.bg-four {
-  background-image: url("../images/Gassan2.jpg");
-}
-
-.bg-five {
-  background-image: url("../images/Jays.jpg");
-}
-
-/* ------------------------------ Stories Styling */
-
-.story-heading {
-    text-transform: uppercase;
-    font-weight: 300;
-    letter-spacing: 2px;
-    color: #E85A4F
-}
-
-.story-about {
-    color: #777;
-    opacity: 0.90;
-    text-align: center;
-    padding: 50px 80px;
-}
-
-.story-about h3 {
-    text-align:center;
-    font-family: 'Trade Winds', sans-serif;
-}
-
-.story-about p {
-    text-align: center;
-    font-weight: 300;
-}
-
-.story-music, .story-shows, .story-pictures, .story-contact {
-    position: relative;
-}
-
-.story-text {
-    z-index: 1;
-    color:#ddd;
-    background-color:#282E34;
-    text-align:center;
-    padding: 25px 80px;
-}
-
-.story-content-wrapper {
+.media-player {
     display: inline-block; 
     width: 50%;
     margin: auto;
-    padding: 5px;
-}
-
-.story-content-wrapper-about-us {
-    display: inline-block; 
-    width: 90%;
-    margin: auto;
+    background-color: #EAE7DC;
     padding: 5px;
 }
 
@@ -340,95 +452,6 @@ body.modal-open {
     text-align: left;
 }
 
-/* ------------------------------ Scroll Chevrons / Icons / Hover.css / Buttons */
-
-.cta-icon {
-    font-size: 15px;
-}
-
-.hvr-icon {
-    font-size: 25px;
-}
-
-#work-together-icon {
-    font-size: 40px;
-}
-
-.hvr-color {
-    color: #282E34;
-}
-
-.hvr-color-inverse {
-    color: #fafafa;
-}
-
-.up-chevron a i {
-    font-size: 25px;
-}
-
-.contact-icons {
-    color: #E85A4F;
-}
-
-.hover-color-adapt:hover {
-    color: #E85A4F
-}
-
-.calendar-shows {
-    display: inline-block;
-    width: 30%;
-    color: #E98074;
-}
-
-.btn-adapt {
-    color: #E98074;
-    opacity: 0.45;
-}
-
-
-/* ------------------------------ Media Player */
-
-.media-player {
-    display: inline-block; 
-    width: 50%;
-    margin: auto;
-    background-color: #EAE7DC;
-    padding: 5px;
-}
-
-/* ------------------------------ Captions and Headers */
-
-.caption {
-    display: block;
-    font-family: 'Trade Winds', sans-serif;
-    font-weight: 600;
-    position: absolute;
-     left: 0;
-     top: 90%;
-     width: 100%;
-     text-align: center;
-    color: #000;
-}
-
-.caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 1px 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-}
-
-h3 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-bottom: 25px;
-    font-family: 'Trade Winds', cursive;
-    color: #111;
-}
-
-#brief-about-heading {
-    margin-top: 10px;
-}
 
 /* ------------------------------ Footer */
 
