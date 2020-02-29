@@ -2,9 +2,13 @@
 
 /* ------------------------------ Modals Styling */
 
-body.modal-open {
+body .modal-open {
     overflow: hidden;
 } 
+
+.btn-close-modal {
+    background-color: #E98074;
+}
 
 .modal-heading {
     margin-top: 2px;
@@ -280,7 +284,7 @@ body, html {
 
 .sidebar {
   z-index: 1;
-  margin-top: 8%;
+  margin-top: 5%;
   padding: 0;
   width: 65px;
   background-color: transparent;
