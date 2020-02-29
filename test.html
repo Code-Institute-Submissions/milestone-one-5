@@ -31,198 +31,69 @@
 </head>
 
 <body>
-		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
-			<a class="nav-home" href="#home">
-				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
-			<button class="navbar-toggler" type="button"
-            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
 
+	<div class="work-together">
+		<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
+			<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
+			<a class="hvr-icon-bob hvr-color-inverse">
+				<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
+			</a>
+			<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
+		</p>
+	</div>
+	<div class="center-form">
+		<form method="post" action="https://formdump.codeinstitute.net/">
+			<div class="modal fade" id="work-together-modal">
+				<div class="modal-dialog">
+					<div class="modal-content">
 
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav nav-list">
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#music">Music</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#shows">Shows</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#pictures">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<div class="story-heading modal-heading">Lets work together!
+								<input type="text" name="name" id="book-the-band-fullname" class="form-control modal-heading" placeholder="Name" required />
+								<input type="email" name="email" id="book-the-band-emailaddress" class="form-control modal-heading" placeholder="Email" required />
+                                                    </div>
+								<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+							</div>
 
-		</nav>
-		<!-- End of Navbar -->
-
-        <!-- Small device Navbar -->
-
-        <nav class="navbar navbar-expand-sm navbar-dark d-sm-none nav-fix-position-sm">
-			<a class="nav-home" href="#home">
-				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
-			<button class="navbar-toggler" type="button"
-            data-toggle="collapse" data-target="#navbarNavSm" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-			<div class="collapse navbar-collapse" id="navbarNavSm">
-				<ul class="navbar-nav nav-list">
-					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
-						<a class="nav-link" href="#music">Music</a>
-					</li>
-					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
-						<a class="nav-link" href="#shows">Shows</a>
-					</li>
-					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
-						<a class="nav-link" href="#pictures">Gallery</a>
-					</li>
-					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-
-		</nav>
-
-        <!-- End of Small device Navbar -->
-
-		<!-- Call to Action 
-                        ********************** -->
-		<div class="container-fluid cta-wrapper">
-			<div class="container cta">
-				<div class="call-to-action cta-header">
-					<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
-					<i class="fas fa-exclamation cta-exclamation-icon"></i>
-					<span class="digital-download">Free Digital Download of our latest album</span>
-					<i class="fas fa-exclamation cta-exclamation-icon"></i>
-					<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt cta-icon"></i>
-				            </a>
-                            </span>
-					<div class="center-form">
-						<form method="post" action="https://formdump.codeinstitute.net/">
-							<div class="modal fade" id="cta-modal">
-								<div class="modal-dialog">
-									<div class="modal-content">
-
-										<!-- Modal Header -->
-										<div class="modal-header">
-											<h4 class="story-heading modal-heading">Sign up!
-												<input type="text" name="name" id="sign-up-fullname" class="form-control modal-heading" placeholder="Name" required="">
-												<input type="email" name="email" id="sign-up-emailaddress" class="form-control modal-heading" placeholder="Email" required="">
-                                                    </h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-										</div>
-
-										<!-- Modal body -->
-										<div class="gallery-text">
-											<div class="form-row text-center">
-												<div class="col">
-													<button type="submit" class="btn btn-secondary hover-color-adapt">Get My Free Download</button>
-												</div>
-											</div>
-										</div>
-
+							<!-- Modal body -->
+							<div class="gallery-text">
+								<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control" placeholder="Event description" required></textarea>
+								<div class="form-row text-center">
+									<div class="col">
+										<button type="submit" class="btn btn-secondary modal-heading">Send Project Request</button>
 									</div>
 								</div>
 							</div>
-						</form>
 
+							<!-- Modal footer -->
+							<div class="modal-footer">
+
+							</div>
+
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	
+		</form>
 
-	<!-- End of Call to Action -->
-
-	<div class="bg-one light-bg-color" id="home">
-		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
-                    and adapted/edited accordingly *************************** -->
-
-		<div class="sidebar">
-			<a target="_blank" href="https://www.facebook.com/">
-				<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Facebook</span>
-			</a>
-			<a target="_blank" href="https://www.instagram.com/">
-				<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Instagram</span>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/">
-				<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Linkedin</span>
-			</a>
-		</div>
-
-		<!-- End of Sidebar -->
-
-		<!-- Band Name Image
-             *********************-->
-
-		<div class="band-name-wrapper">
-			<div class="band-name-container">
-				<div class="band-name-image">
-					<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
-
-				    </div>
-				</div>
-			</div>
+	</div>
 
 
-		</div>
 
-		<!-- End of bg-one / Main logo section -->
 
-		<!-- Main code structure for 'About' has been sourced from 
-    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly. -->
 
-		<!--About  
-            ******************************* -->
+	<h4 class="sign-up-header">Sign up to get the latest news about the Band!</h4>
 
-		<div class="story-about light-bg-color">
-			<div class="caption">
-				<p><a href="#about" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
-					</a></p>
-			</div>
-		</div>
-		<div class="story-about light-bg-color" id="about">
+	<form class="signup-form" method="post" action="https://formdump.codeinstitute.net/">
+		<label for="email"></label>
+		<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
+		<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
+		<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt modal-heading">Subscribe!</button>
+	</form>
 
-			<h3 id="brief-about-heading">About</h3>
-			<div class="story-content-wrapper">
-				<p>Darwiche is a rock band based in Landskrona Sweden.
-					Originally formed in the 80's the band is made up of four siblings,
-					Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
-					Patricia Darwiche and bassist Rickard 'Bud' Linden. The band came back together in 2019!.
-					<br>
-					<br>
-                    After adding guitarist John 'Jays' Traas
-                    the band made their second debut at the
-                2019 Landskrona Festival. Back and writing new original music Darwiche also cover bands
-                such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the guitar bite
-                and the Rard Rock that made us.</p>
-					<a href="#music" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
-					</a>
-			</div>
-		</div>
-			
+	<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
+		<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+	</a>
 
 </body>
 

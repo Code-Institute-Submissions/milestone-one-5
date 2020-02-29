@@ -35,8 +35,17 @@ Scroll Chevrons /
     opacity: 90%;
 }
 
-.hvr-icon {
+.work-tg-exclamation-icon {
+    color: yellowgreen;
+    filter: brightness(150%);
+}
+
+.hvr-icon-small {
     font-size: 25px;
+}
+
+.hvr-icon-modals {
+    font-size: 35px;
 }
 
 #work-together-icon {
@@ -79,7 +88,7 @@ Scroll Chevrons /
 
 .caption {
     display: block;
-    font-family: 'Trade Winds', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     font-weight: 600;
     position: absolute;
      left: 0;
@@ -101,7 +110,7 @@ h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
-    font-family: 'Trade Winds', cursive;
+    font-family: 'Fjalla One', sans-serif;
     color: #111;
 }
 
@@ -175,7 +184,7 @@ h3 {
 
 .story-about h3 {
     text-align:center;
-    font-family: 'Trade Winds', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .story-about p {
@@ -239,7 +248,7 @@ body, html {
 }
 
 .nav-item .nav-link {
-    font-family: 'Trade Winds', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
     color:#ddd;
     background-color:#282E34;
 }
@@ -503,6 +512,17 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     text-align: left;
 }
 
+.work-together {
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+}
+
+#work-together-icon.work-together p a i {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* ------------------------------ Footer */
 
@@ -554,9 +574,7 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     display: none;
 }
 
-.sidebar {
-    display: none;
-}
+
 
 .story-about {
     padding: 50px 5px;
@@ -570,9 +588,22 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 
 @media screen and (max-width: 576px) {
 
-.cta-wrapper {
-    display: none;
+.sidebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+
+.social-media-sm {
+    padding-top: 55px;
 }
+
+
 
 
 .nav-fix-position {

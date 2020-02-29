@@ -38,111 +38,154 @@
 	<!-- Parallax background one / Main logo  
                         *********************** -->
 
-	<div class="bg-one light-bg-color" id="home">
 
-		<!--Navbar sourced from getbootstrap.com 
+
+	<!--Navbar sourced from getbootstrap.com 
                                 *********************** -->
 
-		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
-			<a class="nav-home" href="#home">
-				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
-			<button class="navbar-toggler" type="button"
+	<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
+		<a class="nav-home" href="#home">
+			<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+		<button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
 
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav nav-list">
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#music">Music</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#shows">Shows</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#pictures">Gallery</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-			</div>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav nav-list">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#music">Music</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#shows">Shows</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#pictures">Gallery</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
 
-		</nav>
-		<!-- End of Navbar -->
+	</nav>
+	<!-- End of Navbar -->
 
-		<!-- Call to Action 
+	<!-- Small device Navbar -->
+
+	<nav class="navbar navbar-expand-sm navbar-dark d-sm-none nav-fix-position-sm">
+		<a class="nav-home" href="#home">
+			<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+		<button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNavSm" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+		<div class="collapse navbar-collapse" id="navbarNavSm">
+			<ul class="navbar-nav nav-list">
+				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+					<a class="nav-link" href="#music">Music</a>
+				</li>
+				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+					<a class="nav-link" href="#shows">Shows</a>
+				</li>
+				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+					<a class="nav-link" href="#pictures">Gallery</a>
+				</li>
+				<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+	</nav>
+
+	<!-- End of Small device Navbar -->
+
+	<!-- Call to Action 
                         ********************** -->
-		<div class="container-fluid cta-wrapper">
-			<div class="container cta">
-				<div class="call-to-action cta-header">
-					<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
-                    <i class="fas fa-exclamation cta-exclamation-icon"></i>
-					<span class="digital-download">Free Digital Download of our latest album</span>
-                    <i class="fas fa-exclamation cta-exclamation-icon"></i>
-					<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+	<div class="container-fluid cta-wrapper">
+		<div class="container cta">
+			<div class="call-to-action cta-header">
+				<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
+				<i class="fas fa-exclamation cta-exclamation-icon"></i>
+				<span class="digital-download">Free Digital Download of our latest album</span>
+				<i class="fas fa-exclamation cta-exclamation-icon"></i>
+				<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
                             <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt cta-icon"></i>
+					        <i class="fas fa-caret-square-down hvr-icon hvr-icon-small hover-color-adapt cta-icon"></i>
 				            </a>
                             </span>
-					<div class="center-form">
-						<form method="post" action="https://formdump.codeinstitute.net/">
-							<div class="modal fade" id="cta-modal">
-								<div class="modal-dialog">
-									<div class="modal-content">
+				<div class="center-form">
+					<form method="post" action="https://formdump.codeinstitute.net/">
+						<div class="modal fade" id="cta-modal">
+							<div class="modal-dialog">
+								<div class="modal-content">
 
-										<!-- Modal Header -->
-										<div class="modal-header">
-											<h4 class="story-heading modal-heading">Sign up!
-												<input type="text" name="name" id="sign-up-fullname" class="form-control modal-heading" placeholder="Name" required="">
-												<input type="email" name="email" id="sign-up-emailaddress" class="form-control modal-heading" placeholder="Email" required="">
+									<!-- Modal Header -->
+									<div class="modal-header">
+										<h4 class="story-heading modal-heading">Sign up!
+											<input type="text" name="name" id="sign-up-fullname" class="form-control modal-heading" placeholder="Name" required="">
+											<input type="email" name="email" id="sign-up-emailaddress" class="form-control modal-heading" placeholder="Email" required="">
                                                     </h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-										</div>
+											<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+									</div>
 
-										<!-- Modal body -->
-										<div class="gallery-text">
-											<div class="form-row text-center">
-												<div class="col">
-													<button type="submit" class="btn btn-secondary hover-color-adapt">Get My Free Download</button>
-												</div>
+									<!-- Modal body -->
+									<div class="gallery-text">
+										<div class="form-row text-center">
+											<div class="col">
+												<button type="submit" class="btn btn-secondary hover-color-adapt">Get My Free Download</button>
 											</div>
 										</div>
-
 									</div>
+
 								</div>
 							</div>
-						</form>
+						</div>
+					</form>
 
-					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- End of Call to Action -->
 
+	<!-- End of Call to Action -->
 
+	<div class="bg-one light-bg-color" id="home">
 		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
                     and adapted/edited accordingly *************************** -->
 
 		<div class="sidebar">
-			<a target="_blank" href="https://www.facebook.com/">
-				<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Facebook</span>
-			</a>
-			<a target="_blank" href="https://www.instagram.com/">
-				<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Instagram</span>
-			</a>
-			<a target="_blank" href="https://www.linkedin.com/">
-				<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
-				<span class="sr-only">Linkedin</span>
-			</a>
+			<div class="social-media-sm">
+				<a target="_blank" href="https://www.facebook.com/">
+					<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
+					<span class="sr-only">Facebook</span>
+				</a>
+			</div>
+			<div class="social-media-sm">
+				<a target="_blank" href="https://www.instagram.com/">
+					<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
+					<span class="sr-only">Instagram</span>
+				</a>
+			</div>
+			<div class="social-media-sm">
+				<a target="_blank" href="https://www.linkedin.com/">
+					<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
+					<span class="sr-only">Linkedin</span>
+				</a>
+			</div>
 		</div>
 
 		<!-- End of Sidebar -->
@@ -150,11 +193,13 @@
 		<!-- Band Name Image
              *********************-->
 
-		<div class="container-fluid band-name">
+		<div class="band-name-wrapper">
+			<div class="band-name-container">
+				<div class="band-name-image">
+					<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
 
-			<div class="container">
-				<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-img">
-			</div>
+				    </div>
+				</div>
 			</div>
 
 
@@ -171,7 +216,7 @@
 		<div class="story-about light-bg-color">
 			<div class="caption">
 				<p><a href="#about" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
 					</a></p>
 			</div>
 		</div>
@@ -182,16 +227,16 @@
 				<p>Darwiche is a rock band based in Landskrona Sweden.
 					Originally formed in the 80's the band is made up of four siblings,
 					Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
-					Patricia Darwiche and bassist Rickard 'Bud' Linden. The band came back together in 2019!. 
+					Patricia Darwiche and bassist Rickard 'Bud' Linden.
 					<br>
 					<br>
-                    After adding guitarist John 'Jays' Traas 
-                    the band made their second debut at the
+                    The band came back together in 2019 and after adding guitarist John 'Jays' Traas
+                    Darwiche made their second debut at the
                 2019 Landskrona Festival. Back and writing new original music Darwiche also cover bands
                 such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the guitar bite
-                and the Rard Rock that made us.</p>
+                and the Hard Rock that made us.</p>
 					<a href="#music" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
 					</a>
 			</div>
 		</div>
@@ -241,7 +286,7 @@
 					<br>
 					<br>
 					<a href="#shows" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
 					</a>
 
 				</div>
@@ -313,7 +358,7 @@
 						</div>
 					</div>
 					<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
 					</a>
 				</div>
 			</div>
@@ -342,7 +387,7 @@
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#jaqui-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="jaqui-modal">
@@ -366,7 +411,7 @@
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
@@ -379,7 +424,7 @@
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#patricia-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="patricia-modal">
@@ -394,16 +439,16 @@
 
 											<!-- Modal body -->
 											<div class="gallery-text">
-												Patricia is our second amazing vocalist! She handles
+												Patricia is our second fantastic vocalist! She handles
 												most of the backups and does an incredible job at that.
 												Also multi-talented she writes some of the lyrics to our original songs.
-												She can also belt it out with the best hard rock
+												She can belt it out with the best hard rock
 												vocalists out there and sings lead on some songs.
 											</div>
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
@@ -416,7 +461,7 @@
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#fadi-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="fadi-modal">
@@ -442,7 +487,7 @@
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
@@ -456,7 +501,7 @@
 								<p class="gallery-names">Gassan 'Gaz' | Lead Guitar</p>
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#gaz-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="gaz-modal">
@@ -480,7 +525,7 @@
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
@@ -493,7 +538,7 @@
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#jays-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="jays-modal">
@@ -517,20 +562,20 @@
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
 									</div>
 								</div>
 							</div>
-							
+
 							<div class="col-sm gallery">
 								<img src="./assets/images/BudSolo.jpg" alt="Bud" class="gallery-images">
 								<p class="gallery-names">Rickard 'Bud' | Bass</p>
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#bud-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
+										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
 								</p>
 								<div class="modal fade" id="bud-modal">
@@ -557,7 +602,7 @@
 
 											<!-- Modal footer -->
 											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+												<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 											</div>
 
 										</div>
@@ -569,7 +614,7 @@
 				</div>
 				<div class="col-sm">
 					<a href="#contact" class="hvr-icon-bob hvr-color-inverse">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
 					</a>
 				</div>
 			</div>
@@ -623,13 +668,16 @@
 									</ul>
 								</div>
 								<h5 class="story-heading">Let's work together!</h5>
-
+                                <div class="work-together">
 								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#work-together-modal">
+                                    <i class="fas fa-exclamation work-tg-exclamation-icon"></i>
 									<a class="hvr-icon-bob hvr-color-inverse">
 										<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
 									</a>
+                                    <i class="fas fa-exclamation work-tg-exclamation-icon"></i>
 								</p>
+                                </div>
 								<div class="center-form">
 									<form method="post" action="https://formdump.codeinstitute.net/">
 										<div class="modal fade" id="work-together-modal">
