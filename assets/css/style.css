@@ -2,7 +2,7 @@
 
 /* ------------------------------ Modals Styling */
 
-body.modal-open {
+body .modal-open {
     overflow: hidden;
 } 
 
@@ -28,6 +28,7 @@ Scroll Chevrons /
 
 .cta-icon {
     font-size: 15px;
+    color: #EAE7DC;
 }
 
 .cta-exclamation-icon {
@@ -202,6 +203,14 @@ h3 {
     background-color:#282E34;
     text-align:center;
     padding: 25px 80px;
+}
+
+.story-text-contact {
+    z-index: 1;
+    color:#ddd;
+    background-color:#282E34;
+    text-align:center;
+    padding: 25px 80px 0px 80px;
 }
 
 .story-content-wrapper {
@@ -570,7 +579,7 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     width: 90%;
 }
 
-.vinyl-discount {
+.sign-up-cta {
     display: none;
 }
 
