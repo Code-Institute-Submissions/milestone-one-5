@@ -31,247 +31,195 @@
 </head>
 
 <body>
-		<div class="story-pictures">
-			<div class="story-text">
-				<div class="story-content-wrapper-about-us">
-					<p class="story-heading">Get To Know Us</p>
-					<div class="container">
-						<div class="row  gallery-row">
-							<div class="col-sm gallery">
-								<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="gallery-images">
-								<p class="gallery-names">Jackie | Vocals</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#jaqui-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="jaqui-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
+		<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
+			<a class="nav-home" href="#home">
+				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+			<button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Jackie</h4>
+
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav nav-list">
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#music">Music</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#shows">Shows</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#pictures">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+		<!-- End of Navbar -->
+
+        <!-- Small device Navbar -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark d-sm-none nav-fix-position-sm">
+			<a class="nav-home" href="#home">
+				<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+			<button class="navbar-toggler" type="button"
+            data-toggle="collapse" data-target="#navbarNavSm" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+			<div class="collapse navbar-collapse" id="navbarNavSm">
+				<ul class="navbar-nav nav-list">
+					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+						<a class="nav-link" href="#music">Music</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+						<a class="nav-link" href="#shows">Shows</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+						<a class="nav-link" href="#pictures">Gallery</a>
+					</li>
+					<li class="nav-item" data-toggle="collapse" data-target="#navbarNavSm">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+		</nav>
+
+        <!-- End of Small device Navbar -->
+
+		<!-- Call to Action 
+                        ********************** -->
+		<div class="container-fluid cta-wrapper">
+			<div class="container cta">
+				<div class="call-to-action cta-header">
+					<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
+					<i class="fas fa-exclamation cta-exclamation-icon"></i>
+					<span class="digital-download">Free Digital Download of our latest album</span>
+					<i class="fas fa-exclamation cta-exclamation-icon"></i>
+					<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+                            <a class="hvr-icon-bob hvr-color-inverse">
+					        <i class="fas fa-caret-square-down hvr-icon hover-color-adapt cta-icon"></i>
+				            </a>
+                            </span>
+					<div class="center-form">
+						<form method="post" action="https://formdump.codeinstitute.net/">
+							<div class="modal fade" id="cta-modal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="story-heading modal-heading">Sign up!
+												<input type="text" name="name" id="sign-up-fullname" class="form-control modal-heading" placeholder="Name" required="">
+												<input type="email" name="email" id="sign-up-emailaddress" class="form-control modal-heading" placeholder="Email" required="">
+                                                    </h4>
 												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Jaqui is our amazing vocalist! Being multi-talented
-												she also writes most of the lyrics to our original songs.
-												She loves hard rock and if you close your eyes while listening to our
-												Iron Maiden covers you'd be forgiven for believing Bruce Dickinson
-												was on stage with us!
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
 										</div>
+
+										<!-- Modal body -->
+										<div class="gallery-text">
+											<div class="form-row text-center">
+												<div class="col">
+													<button type="submit" class="btn btn-secondary hover-color-adapt">Get My Free Download</button>
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
 							</div>
-							<div class="col-sm gallery">
-								<img src="./assets/images/PatriciaSolo.jpg" alt="Patricia" class="gallery-images">
-								<p class="gallery-names">Patricia | Vocals</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#patricia-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="patricia-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
+						</form>
 
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Patricia</h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Patricia is our second amazing vocalist! She handles
-												most of the backups and does an incredible job at that.
-												Also multi-talented she writes some of the lyrics to our original songs.
-												She can also belt it out with the best hard rock
-												vocalists out there and sings lead on some songs.
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm gallery">
-								<img src="./assets/images/FadiSolo.jpg" alt="Freddie" class="gallery-images">
-								<p class="gallery-names">Fadi 'Freddie' | Drums</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#fadi-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="fadi-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
-
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Freddie</h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Fadi 'Freddie' Darwiche is our drummer. It is his relentless
-												pursuit of excellence that is the foundation for our music and upon
-												which
-												the Darwiche show is built.
-												Specializing in aggressive rock beats and complex drumrolls he hits
-												harder
-												than a train!
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-
-					
-							<div class="col-sm gallery">
-								<img src="./assets/images/GassanSolo.jpg" alt="Gaz" class="gallery-images">
-								<p class="gallery-names">Gassan 'Gaz' | Lead Guitar</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#gaz-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="gaz-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
-
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Gassan 'Gaz'</h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Eddie Van Halen was unavailable, but
-												luckily for us Gassan 'Gaz' is a technical master and
-												can shred with the best of them! He mixes searing shredding
-												passages with haunting riffs, superb phrasing,
-												harmonized melodies and thick, dirty, aggressive rhythms.
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm gallery">
-								<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="gallery-images">
-								<p class="gallery-names">Jays | Guitar</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#jays-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="jays-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
-
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Jays</h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Jays claims he's not a shredder with his style being
-												more melodic and rooted in the blues, but he's got a few tricks
-												to call on when need be. He enjoys using percussive rhythms and
-												playing on dynamics between fretted and open strings all the while
-												mixing solid technique with great phrasing and melodic storytelling.
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-sm gallery">
-								<img src="./assets/images/BudSolo.jpg" alt="Bud" class="gallery-images">
-								<p class="gallery-names">Rickard 'Bud' | Bass</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#bud-modal">
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-caret-square-down hvr-icon hover-color-adapt"></i>
-									</a>
-								</p>
-								<div class="modal fade" id="bud-modal">
-									<div class="modal-dialog modal-dialog-centered">
-										<div class="modal-content">
-
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<h4 class="story-heading">Bud</h4>
-												<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-											</div>
-
-											<!-- Modal body -->
-											<div class="gallery-text">
-												Bud is simply a superb bassist. Playing
-												in the pocket and driving the music forward with uncanny precision,
-												rumor
-												has it
-												that he was born with the knowledge and ability to play every single
-												song
-												ever
-												written!
-											</div>
-
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-											</div>
-
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-				<div class="col-sm">
-					<a href="#contact" class="hvr-icon-bob hvr-color-inverse">
+			</div>
+		</div>
+	
+
+	<!-- End of Call to Action -->
+
+	<div class="bg-one light-bg-color" id="home">
+		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
+                    and adapted/edited accordingly *************************** -->
+
+		<div class="sidebar">
+			<a target="_blank" href="https://www.facebook.com/">
+				<i class="fab fa-facebook-square sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Facebook</span>
+			</a>
+			<a target="_blank" href="https://www.instagram.com/">
+				<i class="fab fa-instagram sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Instagram</span>
+			</a>
+			<a target="_blank" href="https://www.linkedin.com/">
+				<i class="fab fa-linkedin sidebar-icons" aria-hidden="true"></i>
+				<span class="sr-only">Linkedin</span>
+			</a>
+		</div>
+
+		<!-- End of Sidebar -->
+
+		<!-- Band Name Image
+             *********************-->
+
+		<div class="band-name-wrapper">
+			<div class="band-name-container">
+				<div class="band-name-image">
+					<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
+
+				    </div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- End of bg-one / Main logo section -->
+
+		<!-- Main code structure for 'About' has been sourced from 
+    https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly. -->
+
+		<!--About  
+            ******************************* -->
+
+		<div class="story-about light-bg-color">
+			<div class="caption">
+				<p><a href="#about" class="hvr-icon-bob hvr-color">
+						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+					</a></p>
+			</div>
+		</div>
+		<div class="story-about light-bg-color" id="about">
+
+			<h3 id="brief-about-heading">About</h3>
+			<div class="story-content-wrapper">
+				<p>Darwiche is a rock band based in Landskrona Sweden.
+					Originally formed in the 80's the band is made up of four siblings,
+					Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
+					Patricia Darwiche and bassist Rickard 'Bud' Linden. The band came back together in 2019!.
+					<br>
+					<br>
+                    After adding guitarist John 'Jays' Traas
+                    the band made their second debut at the
+                2019 Landskrona Festival. Back and writing new original music Darwiche also cover bands
+                such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the guitar bite
+                and the Rard Rock that made us.</p>
+					<a href="#music" class="hvr-icon-bob hvr-color">
 						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
 					</a>
-				</div>
 			</div>
 		</div>
 			

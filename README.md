@@ -87,7 +87,19 @@ Try to submit the form with an invalid email address and verify that a relevant 
 Try to submit the form with all inputs valid and verify that a success message appears.
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+## Bugs
+
+Bugs found during initial testing and fixed 
+
+* Collapsed Navbar data toggle found to be unresponsive once triggered - 
+* Issue found with selected Fonts not displaying correctly on smaller devices -
+* 
+
+Bugs not yet fixed
+
+* Issue with background images shifting slightly to the right when a modal is opened on a PC - this is due to the scroll bar on the right side of PC browsers, I was unable to find a fix 
+
+
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 

@@ -2,13 +2,9 @@
 
 /* ------------------------------ Modals Styling */
 
-body .modal-open {
+body.modal-open {
     overflow: hidden;
 } 
-
-.btn-close-modal {
-    background-color: #E98074;
-}
 
 .modal-heading {
     margin-top: 2px;
@@ -231,6 +227,15 @@ body, html {
     color: #ddd;
     background-color:#282E34;
 
+}
+
+.nav-fix-position-sm {
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    color: #ddd;
+    background-color:#282E34;
 }
 
 .nav-item .nav-link {
@@ -563,11 +568,15 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 
 
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 576px) {
 
 .cta-wrapper {
     display: none;
 }
 
+
+.nav-fix-position {
+    display: none;
+}
 }
 }
