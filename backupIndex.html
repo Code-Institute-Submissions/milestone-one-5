@@ -117,11 +117,12 @@
 	<div class="container-fluid cta-wrapper">
 		<div class="container cta">
 			<div class="call-to-action cta-header">
-				<span class="vinyl-discount">Sign up to get 15% Discount on all Vinyl!</span>
+				<span class="sign-up-cta">Sign up to get news about the Band!</span>
+                <span class="btn contact-icons hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
 				<span class="digital-download">Free Digital Download of our latest album</span>
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
-				<span class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+				
                             <a class="hvr-icon-bob hvr-color-inverse">
 					        <i class="fas fa-caret-square-down hvr-icon hvr-icon-small hover-color-adapt cta-icon"></i>
 				            </a>
@@ -129,7 +130,7 @@
 				<div class="center-form">
 					<form method="post" action="https://formdump.codeinstitute.net/">
 						<div class="modal fade" id="cta-modal">
-							<div class="modal-dialog">
+							<div class="modal-dialog modal-dialog-centered">
 								<div class="modal-content">
 
 									<!-- Modal Header -->
@@ -632,7 +633,7 @@
 		</div>
 
 		<div class="story-contact">
-			<div class="story-text">
+			<div class="story-text-contact">
 				<div class="story-content-wrapper">
 					<section class="container-fluid">
 						<div class="row bg-color-contact">
@@ -655,33 +656,47 @@
 										</li>
 										<li class="list-item">
 											<a>
-												<i class="fas fa-cloud-sun contact-icons" aria-hidden="true"></i>
-												<span>Festivals</span>
-											</a>
-										</li>
-										<li class="list-item">
-											<a>
 												<i class="fas fa-birthday-cake contact-icons" aria-hidden="true"></i>
 												<span>Birthdays</span>
 											</a>
 										</li>
+										<li class="list-item">
+											<a>
+												<i class="fas fa-cloud-sun contact-icons" aria-hidden="true"></i>
+												<span>Festivals</span>
+											</a>
+										</li>
 									</ul>
+                                    <h3 class="story-heading">Let's work together!</h3>
 								</div>
-								<h5 class="story-heading">Let's work together!</h5>
-                                <div class="work-together">
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#work-together-modal">
-                                    <i class="fas fa-exclamation work-tg-exclamation-icon"></i>
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
-									</a>
-                                    <i class="fas fa-exclamation work-tg-exclamation-icon"></i>
-								</p>
-                                </div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="story-contact">
+			<div class="work-together box">
+				
+				<div class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
+					<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
+					<a class="hvr-icon-bob hvr-color-inverse">
+						<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
+					</a>
+					<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
+				</div>
+			</div>
+		</div>
+		<div class="story-contact">
+			<div class="story-text">
+				<div class="story-content-wrapper">
+					<section class="container-fluid">
+						<div class="row bg-color-contact">
+							<div class="col">
 								<div class="center-form">
 									<form method="post" action="https://formdump.codeinstitute.net/">
 										<div class="modal fade" id="work-together-modal">
-											<div class="modal-dialog">
+											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
 
 													<!-- Modal Header -->
@@ -714,24 +729,21 @@
 									</form>
 
 								</div>
+								<h4 class="sign-up-header">Sign up to get the latest news about the Band!</h4>
 
+								<form class="signup-form" method="post" action="https://formdump.codeinstitute.net/">
+									<label for="email"></label>
+									<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
+									<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
+									<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt modal-heading">Subscribe!</button>
+								</form>
+
+								<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
+									<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+								</a>
 							</div>
 						</div>
-
 					</section>
-
-					<h4 class="sign-up-header">Sign up to get the latest news about the Band!</h4>
-
-					<form class="signup-form" method="post" action="https://formdump.codeinstitute.net/">
-						<label for="email"></label>
-						<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
-						<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
-						<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt modal-heading">Subscribe!</button>
-					</form>
-
-					<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
-					</a>
 				</div>
 			</div>
 		</div>

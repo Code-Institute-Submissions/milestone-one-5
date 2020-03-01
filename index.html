@@ -118,15 +118,15 @@
 		<div class="container cta">
 			<div class="call-to-action cta-header">
 				<span class="sign-up-cta">Sign up to get news about the Band!</span>
-                <span class="btn contact-icons hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+				<span class="btn contact-icons hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
 				<span class="digital-download">Free Digital Download of our latest album</span>
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
-				
-                            <a class="hvr-icon-bob hvr-color-inverse">
-					        <i class="fas fa-caret-square-down hvr-icon hvr-icon-small hover-color-adapt cta-icon"></i>
-				            </a>
-                            </span>
+
+				<a class="hvr-icon-bob hvr-color-inverse">
+					<i class="fas fa-caret-square-down hvr-icon hvr-icon-small hover-color-adapt cta-icon"></i>
+				</a>
+				</span>
 				<div class="center-form">
 					<form method="post" action="https://formdump.codeinstitute.net/">
 						<div class="modal fade" id="cta-modal">
@@ -202,7 +202,11 @@
 				    </div>
 				</div>
 			</div>
-
+			<div class="caption">
+				<p><a href="#about" class="hvr-icon-bob hvr-color">
+						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
+					</a></p>
+			</div>
 
 		</div>
 
@@ -211,34 +215,31 @@
 		<!-- Main code structure for 'About' has been sourced from 
     https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm and adapted/edited/added to accordingly. -->
 
-		<!--About  
+		<!--Brief About  
             ******************************* -->
 
-		<div class="story-about light-bg-color">
-			<div class="caption">
-				<p><a href="#about" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
-					</a></p>
-			</div>
-		</div>
-		<div class="story-about light-bg-color" id="about">
 
-			<h3 id="brief-about-heading">About</h3>
-			<div class="story-content-wrapper">
-				<p>Darwiche is a rock band based in Landskrona Sweden.
-					Originally formed in the 80's the band is made up of four siblings,
-					Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
-					Patricia Darwiche and bassist Rickard 'Bud' Linden.
-					<br>
-					<br>
+		<div class="story">
+			<div class="story-text" id="about">
+				<h3 class="story-heading">About</h3>
+				<div class="rounded story-border">
+					<div class="story-content-wrapper">
+						<p>Darwiche is a rock band based in Landskrona Sweden.
+							Originally formed in the 80's the band is made up of four siblings,
+							Fadi 'Freddie' Darwiche, Jaqueline Darwiche, Gassan 'Gaz' Darwiche,
+							Patricia Darwiche and bassist Rickard 'Bud' Linden.
+							<br>
+							<br>
                     The band came back together in 2019 and after adding guitarist John 'Jays' Traas
                     Darwiche made their second debut at the
                 2019 Landskrona Festival. Back and writing new original music Darwiche also cover bands
                 such as Iron Maiden, Rainbow, Black Sabbath and many more paying tribute to the guitar bite
                 and the Hard Rock that made us.</p>
-					<a href="#music" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
-					</a>
+							<a href="#music" class="hvr-icon-bob hvr-color">
+								<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
+							</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- End of brief About section-->
@@ -253,8 +254,10 @@
 			</div>
 		</div>
 
-		<div class="story-music">
+		<div class="story">
 			<div class="story-text">
+				<h3 class="story-heading">Music</h3>
+
 				<div class="media-player">
 
 					<!-- Sourced from http://amazingaudioplayer.com -->
@@ -266,7 +269,8 @@
 								data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg"
 								data-duration="261">
 								<div class="amazingaudioplayer-source"
-									data-src="audios/Spotlight-kid-20200119_Master-1.mp3" data-type="audio/mpeg"></div>
+									data-src="audios/Spotlight-kid-20200119_Master-1.mp3" data-type="audio/mpeg">
+								</div>
 							</li>
 							<li data-artist="Cover by Darwiche" data-title="Foolin" data-album="" data-info=""
 								data-image="audios/83886979_858289901291442_4223724126545641472_n.jpg"
@@ -291,6 +295,7 @@
 					</a>
 
 				</div>
+
 			</div>
 		</div>
 		<!-- End of Music Player -->
@@ -305,65 +310,69 @@
 			</div>
 		</div>
 
-		<div class="story-shows">
+		<div class="story">
 			<div class="story-text">
-				<div class="story-content-wrapper">
-					<p class="story-heading">Upcoming Shows</p>
-					<div class="shows-display">
-						<div class="show-date">
-							<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-							<span>17/06/2020</span></div>
-						<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
-						<div class="show-tickets">
-							<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+				<h3 class="story-heading">Upcoming Shows</h3>
+				<div class="rounded story-border">
+					<div class="story-content-wrapper">
+
+						<div class="shows-display">
+							<div class="show-date">
+								<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+								<span>17/06/2020</span></div>
+							<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
+							<div class="show-tickets">
+								<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+							</div>
 						</div>
-					</div>
-					<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
-					<div class="shows-display">
-						<div class="show-date">
-							<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-							<span>17/06/2020</span></div>
-						<div class="show-location">Mythos - Landskrona, Sweden</div>
-						<div class="show-tickets">
-							<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+						<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
+						<div class="shows-display">
+							<div class="show-date">
+								<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+								<span>17/06/2020</span></div>
+							<div class="show-location">Mythos - Landskrona, Sweden</div>
+							<div class="show-tickets">
+								<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+							</div>
 						</div>
-					</div>
-					<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
-					<div class="shows-display">
-						<div class="show-date">
-							<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-							<span>22/10/2020</span></div>
-						<div class="show-location">Rock Bar - Dresden, Germany</div>
-						<div class="show-tickets">
-							<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+						<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
+						<div class="shows-display">
+							<div class="show-date">
+								<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+								<span>22/10/2020</span></div>
+							<div class="show-location">Rock Bar - Dresden, Germany</div>
+							<div class="show-tickets">
+								<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+							</div>
 						</div>
-					</div>
-					<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
-					<div class="shows-display">
-						<div class="show-date">
-							<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-							<span>17/06/2020</span></div>
-						<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
-						<div class="show-tickets">
-							<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+						<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
+						<div class="shows-display">
+							<div class="show-date">
+								<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+								<span>17/06/2020</span></div>
+							<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
+							<div class="show-tickets">
+								<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+							</div>
 						</div>
-					</div>
-					<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
-					<div class="shows-display">
-						<div class="show-date">
-							<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-							<span>17/06/2020</span></div>
-						<div class="show-location">Mythos - Landskrona, Sweden</div>
-						<div class="show-tickets">
-							<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+						<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
+						<div class="shows-display">
+							<div class="show-date">
+								<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
+								<span>17/06/2020</span></div>
+							<div class="show-location">Mythos - Landskrona, Sweden</div>
+							<div class="show-tickets">
+								<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+							</div>
 						</div>
+						<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
+							<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
+						</a>
 					</div>
-					<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
-						<i class="fa fa-chevron-down hvr-icon hvr-icon-small hover-color-adapt"></i>
-					</a>
 				</div>
 			</div>
 		</div>
+
 		<!-- End of Shows Section -->
 
 		<!--Parallax background four 
@@ -376,21 +385,24 @@
 			</div>
 		</div>
 
-		<div class="story-pictures">
+		<div class="story">
 			<div class="story-text">
 				<div class="story-content-wrapper-about-us">
-					<p class="story-heading">Get To Know Us</p>
+					<h3 class="story-heading">Get To Know Us</h3>
 					<div class="container">
-						<div class="row  gallery-row">
+						<div class="row">
 							<div class="col-sm gallery">
 								<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="gallery-images">
-								<p class="gallery-names">Jackie | Vocals</p>
-								<p class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+								<div class="rounded band-member-modal-button">
+									<span class="gallery-names">Jackie</span>
+									<span class="btn btn-adapt hover-color-adapt" data-toggle="modal"
 									data-target="#jaqui-modal">
 									<a class="hvr-icon-bob hvr-color-inverse">
 										<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
 									</a>
-								</p>
+								</span>
+									<span class="gallery-names">Vocals</span>
+								</div>
 								<div class="modal fade" id="jaqui-modal">
 									<div class="modal-dialog modal-dialog-centered">
 										<div class="modal-content">
@@ -495,6 +507,8 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="row">
 
 
 							<div class="col-sm gallery">
@@ -632,7 +646,7 @@
 			</div>
 		</div>
 
-		<div class="story-contact">
+		<div class="story">
 			<div class="story-text-contact">
 				<div class="story-content-wrapper">
 					<section class="container-fluid">
@@ -667,7 +681,7 @@
 											</a>
 										</li>
 									</ul>
-                                    <h3 class="story-heading">Let's work together!</h3>
+									<h3 class="story-heading">Let's work together!</h3>
 								</div>
 							</div>
 						</div>
@@ -675,9 +689,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="story-contact">
+		<div class="story">
 			<div class="work-together box">
-				
+
 				<div class="btn btn-adapt hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
 					<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
 					<a class="hvr-icon-bob hvr-color-inverse">
@@ -687,7 +701,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="story-contact">
+		<div class="story">
 			<div class="story-text">
 				<div class="story-content-wrapper">
 					<section class="container-fluid">
@@ -793,7 +807,6 @@
 
 			</footer>
 			<!-- End of Footer -->
-
 
 </body>
 

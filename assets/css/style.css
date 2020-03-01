@@ -46,7 +46,8 @@ Scroll Chevrons /
 }
 
 .hvr-icon-modals {
-    font-size: 35px;
+    margin: 0;
+    font-size: 15px;
 }
 
 #work-together-icon {
@@ -112,12 +113,8 @@ h3 {
     text-transform: uppercase;
     margin-bottom: 25px;
     font-family: 'Fjalla One', sans-serif;
-    color: #111;
 }
 
-#brief-about-heading {
-    margin-top: 10px;
-}
 
 
 /* ------------------------------ All background image and parallax styling */
@@ -169,6 +166,10 @@ h3 {
 
 /* ------------------------------ Stories Styling */
 
+.story {
+    position: relative;
+}
+
 .story-heading {
     text-transform: uppercase;
     font-weight: 300;
@@ -176,25 +177,38 @@ h3 {
     color: #E85A4F
 }
 
-.story-about {
-    color: #777;
-    opacity: 0.90;
-    text-align: center;
-    padding: 50px 80px;
+.story-content-wrapper {
+    display: inline-block; 
+    width: 50%;
+    margin: auto;
+    padding: 5px;
 }
 
-.story-about h3 {
+.story-border {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px #E85A4F;
+    padding: 10px;
+}
+
+.story-content-wrapper-about-us {
+    display: inline-block; 
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+}
+
+.story h3 {
     text-align:center;
     font-family: 'Fjalla One', sans-serif;
-}
-
-.story-about p {
-    text-align: center;
     font-weight: 300;
 }
 
-.story-music, .story-shows, .story-pictures, .story-contact {
-    position: relative;
+.story p {
+    text-align: center;
+    font-weight: 300;
+    color: #EAE7DC;
 }
 
 .story-text {
@@ -211,20 +225,6 @@ h3 {
     background-color:#282E34;
     text-align:center;
     padding: 25px 80px 0px 80px;
-}
-
-.story-content-wrapper {
-    display: inline-block; 
-    width: 50%;
-    margin: auto;
-    padding: 5px;
-}
-
-.story-content-wrapper-about-us {
-    display: inline-block; 
-    width: 90%;
-    margin: auto;
-    padding: 5px;
 }
 
 
@@ -436,7 +436,7 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     display: inline-block; 
     width: 50%;
     margin: auto;
-    background-color: #EAE7DC;
+    background-color: #282E34;
     padding: 5px;
 }
 
@@ -475,10 +475,6 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     margin: 10px 10px;
 }
 
-.gallery-row {
-    column-count: 3;
-}
-
 .gallery-images {
     background-repeat: no-repeat;
     background-size: cover;
@@ -486,16 +482,17 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     background-color: transparent;
     margin-left: 5px;
     margin-right: 5px;
-    width: 175px;
-    height: 175px;
-    min-width: 175px;
-    min-height: 175px;
+    width: 125px;
+    height: 125px;
+    min-width: 125px;
+    min-height: 125px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
 .gallery-names {
     color:#E85A4F;
+    margin: 0;
     text-align: center;
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
@@ -510,7 +507,9 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     color: #282E34;
 }
 
-
+.band-member-modal-button {
+    border: 1px solid #E98074;
+}
 /* ------------------------------ Contact Us / Sign up */
 
 .sign-up-header {
@@ -583,14 +582,13 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     display: none;
 }
 
-
-
-.story-about {
-    padding: 50px 5px;
-}
-
-.story-content-wrapper {
-    width: 95%
+.gallery-images {
+    
+    width: 85px;
+    height: 85px;
+    min-width: 85px;
+    min-height: 85px;
+    margin-bottom: 8px;
 }
 
 
