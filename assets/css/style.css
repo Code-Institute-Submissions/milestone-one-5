@@ -31,17 +31,14 @@ Scroll Chevrons /
     color: #EAE7DC;
 }
 
-.cta-exclamation-icon {
+
+.cta-exclamation-icon, .work-tg-exclamation-icon  {
+    margin: 0px 4px;
     color: yellowgreen;
-    opacity: 90%;
+    font-weight: 700;
 }
 
-.work-tg-exclamation-icon {
-    color: yellowgreen;
-    filter: brightness(150%);
-}
-
-.hvr-icon-small {
+.hvr-icon {
     font-size: 25px;
 }
 
@@ -82,7 +79,8 @@ Scroll Chevrons /
 
 .btn-adapt {
     color: #E98074;
-    opacity: 0.45;
+    padding: 2px;
+ 
 }
 
 
@@ -192,9 +190,19 @@ h3 {
     padding: 10px;
 }
 
+.story-border-shows {
+    border: solid 1px #E85A4F;
+    padding: 10px;
+}
+
+.story-border-gallery {
+    border: solid 1px #E98074;
+    
+}
+
 .story-content-wrapper-about-us {
     display: inline-block; 
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 5px;
 }
@@ -434,7 +442,7 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 
 .media-player {
     display: inline-block; 
-    width: 50%;
+    width: 90%;
     margin: auto;
     background-color: #282E34;
     padding: 5px;
@@ -480,14 +488,13 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     background-size: cover;
     background-position: center;
     background-color: transparent;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 5px 8px;
     width: 125px;
     height: 125px;
     min-width: 125px;
     min-height: 125px;
+    border: solid 5px #777;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 .gallery-names {
@@ -507,9 +514,7 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     color: #282E34;
 }
 
-.band-member-modal-button {
-    border: 1px solid #E98074;
-}
+
 /* ------------------------------ Contact Us / Sign up */
 
 .sign-up-header {
@@ -566,10 +571,6 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     width: 95%
 }
 
-.media-player {
-    width: 90%;
-}
-
 .cta-wrapper {
     margin-top: 52px;
 }
@@ -610,11 +611,13 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     padding-top: 55px;
 }
 
-
-
-
 .nav-fix-position {
     display: none;
+}
+
+#caption-sm {
+    font-weight: 400;
+     top: 80%;
 }
 }
 }
