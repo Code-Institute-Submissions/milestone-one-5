@@ -1,7 +1,8 @@
-# Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course by Jays-T
+# <a href="https://www.facebook.com/DarwicheRock">Darwiche</a> Band - Milestone One Project for Code Institute Fullstack Web Developer course
 
 
-### Hello and welcome! This is a site created and designed to promote my hard rock band Darwiche - Jays-T
+### Hello and welcome! This is a site created and designed to promote my hard rock band <a href="https://www.facebook.com/DarwicheRock">Darwiche</a> - Jays-T
+* Site is deployed <a href="https://jays-t.github.io/milestone-one/">here</a>.
 
 # CONTENTS
 * UX
@@ -37,13 +38,14 @@
 1. Links to open Modals (a small overlay box with content)
 1. Links to close Modals
 1. All scrolling chevrons
+1. All 'Tickets' links are functional but currently click through to https://www.ticketmaster.com
 
 ## **Areas where a link or interaction will not function as intended:**
 
 1. The 'Get my free download' in the Call to Action modal opened by clicking on the ! Free Download of our latest Album ! and the icon on the right side.
-1. All of the 'Tickets' buttons in the 'Shows' section
 1. The 'Send project request' in the Lets Work Together modal in the 'Contact' section.
 1. The 'Sign Up' form at the bottom of the 'Contact' section.
+1. No form submit actions will work and will simply reload the page
 
 ### **This is because this is a static site with no backend currently.**
 
@@ -76,7 +78,7 @@
 1. "As a **music blogger** I would like to find out a little bit more about each member of the band." -- Music blogger
 
 # Design process
-* You'll see my initial idea, noted as Darwiche Idea 1 in my site mockup, is quite different to Darwiche Idea 2.
+* You'll see my initial idea, noted as Darwiche Idea 1 in my site mockup, is quite different to my final design for the site.
 
 * <a href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1-mockup1.pdf">Initial site mockup</a>
 * <a href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1SiteMap.pdf">Site Map mockup</a>
@@ -89,25 +91,42 @@ My decision to go with a smooth scrolling/fixed background image 'Parallax' effe
 I looked into the 'Parallax' effect and found a great resource here:
 * https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
+I decided to use the 'Parallax' effect and to have the site flow as one continuous page instead of using multiple pages.
 
 
 # Features
 
 * **Navigation Bar:**  This section allows the user to easily navigate to any section of the site
-* **About:**    This section gives the user a very brief background about the band and its current state
-* **Music:**    This section allows users to listen to music recorded/created by the band by using the media player
-* **Shows:**    This section allows users to get immediate information regarding upcoming shows they might wish to attend
-* **Gallery:** This section gives the user access to more specific information about each individual band member
-* **Contact:**  This section gives the user information as to how to contact the band and also includes a call to action to subscribe
-Users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the submit button 
-(**note that the subscribe action does not actually currently function due to this site being simply a static site with no backend**)
-
+  * I implemented this feature using Bootstrap classes and amended the styling to suit the design and color scheme of the site
 * **Call to Action:** This section allows users to subscribe to get a free download of the bands latest album and also informs users that they can sign up to get news about the band
+  * Implemented using basic HTML and CSS within a Bootstrap class of .container-fluid 
+  * The 'Free Download' opens up a modal which hosts a 'sign up' form.
+>**NOTE - See note at the bottom of the Features section**
+* **Sidebar/Social Media Links:** This section allows the user to easily navigate to our social media links
+  * Sourced from: https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp I heavily modified this via CSS 
+  * Implemented using css flex box
+* **About:**    This section gives the user a very brief background about the band and its current state
+  * Implemented using basic HTML and CSS - The 'rounded' class is a bootstrap class which I used in each main section of the site
+* **Music:**    This section allows users to listen to music recorded/created by the band by using the media player
+  * Implemented using a free media player sourced from http://amazingaudioplayer.com
+* **Shows:**    This section allows users to get immediate information regarding upcoming shows they might wish to attend
+  * Implemented using css flex box
+* **Gallery:** This section gives the user access to more specific information about each individual band member
+  * Implemented using Bootstrap Grid row/columns
+* **Contact:**  This section gives the user information as to how to contact the band and also includes a call to action to subscribe
+  * Implemented using Bootstrap Grid row/columns
+  * Let's Work Together enables the user to submit a request to work together with/hire the band and includes a text area to give a 'project description'.
+  * This is accessed by clicking on the 'handshake' icon which opens a modal inside which the form is nested.
+  * Users can fill in the form, describe the project they wish to collaborate on, and submit the request through the 'Send Project Request' button.
+  * Sign up: users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the 'subscribe' button 
+>**NOTE - See note at the bottom of the Features section**
 
 ## Features not addressed in this iteration of the site and my reasons for not including them
 
 * **Shop:**     I didn't include this section as it requires backend coding far beyond my current level of knowledge
 * **News:**     I didn't include this section as I under the current scope of this project it wasn't urgent or relevant enough to the project to include
+
+>(**NOTE that because the site is simply a static site, the form submit features triggered by the 'Get My Free Download' / 'Send Project Request' / and 'Subscribe' buttons will not work as intended**)
 
 # Technologies Used
 
@@ -116,23 +135,24 @@ Users can subscribe to a mailing list if they wish to be regularly informed abou
 * <a href="https://getbootstrap.com">Bootstrap</a> - for responsive Grid structures and Modals
 * <a href="https://jquery.com/">jQuery</a> - Used for the media player which was sourced from http://amazingaudioplayer.com
 * <a href="https://www.javascript.com/">JavaScript</a> - Used by the media player and Boostrap Modals
-* <a href="https://fontawesome.com/">Font Awesome</a> - for icons
-* <a href="https://fonts.google.com/">Google Fonts</a> - for fonts
 * <a href="https://www.gitpod.io/">Gitpod</a> - as my development environment
 * <a href="https://github.com/">GitHub</a> - for version control and site Deployment
 
 
 # Sites sourced from
 
-* https://www.w3schools.com
-* https://ianlunn.github.io/Hover/
-* http://amazingaudioplayer.com
-* https://css-tricks.com/
-
+* <a href="https://www.w3schools.com">w3schools</a> - used for the initial 'Parallax' structure coding
+* <a href="https://ianlunn.github.io/Hover/">Hover.Css</a> by Ian Lunn - Used for the icon animations
+* <a href="http://amazingaudioplayer.com">Amazing Audio Player</a> - for the audio player
+* <a href="https://css-tricks.com/">Css Tricks</a> - to solve styling and element placement issues
+* <a href="https://fontawesome.com/">Font Awesome</a> - for icons
+* <a href="https://fonts.google.com/">Google Fonts</a> - for fonts
 
 # Testing
 
 ## This site has been tested manually
+
+
 
 Browsers tested in: 
 * Chrome
@@ -146,11 +166,13 @@ Site also tested with Chrome's built in 'Inspect Element' preview panes simulati
 
 
 1. All links in the NavBar were tested at various sizes both at full screen and collapsed. Links worked across platforms and devices
-1. Home icon on the NavBar tested and working
+1. Home icon on the NavBar tested and working across all platforms and devices
 1. Call to action "Free download" link was tested, modal opened across platforms and devices
 1. Clicked through each scrolling chevron to ensure that they worked and that they were targetting the correct id and section
 1. Verified that each clickable section of the band members in the 'Gallery' worked and that the correct modal opened.
 1. All modals/pop ups across the site were found to open and close without issue *(apart from the issue listed under **bugs not yet fixed**).
+1. All features were found to work as intended except the form submit buttons **See NOTE at bottom of Features section**
+1. Site ran smoothly across the various platforms upon which it was tested and was responsive across platforms and devices
 
 * I tested each form to make sure that the required sections such as 'name' and 'email' triggered a fail if they were not filled in.
 
@@ -172,7 +194,7 @@ commands would be added to each individual list item within the NavBar.
 
 ### **In subsequent versions of the site I plan on only having one NavBar and fixing the issues found using jQuery or JavaScript**
 
-* Issue found with selected Fonts not displaying correctly on smaller devices - 
+* Issue found with selected Fonts not displaying correctly on smaller devices -
 
 ### Bugs not yet fixed
 
@@ -200,7 +222,7 @@ To clone this project from GitHub:
   1. Type git clone, and then paste the URL you copied in Step 3.
   1. The command should look like this:  git clone https://github.com/Jays-T/milestone-one.git
   1. Press enter and your local clone will be created and the response should be something like this:
-  * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > * Cloning into `Spoon-Knife`...
 > * remote: Counting objects: 10, done.
 > * remote: Compressing objects: 100% (8/8), done.
@@ -234,8 +256,21 @@ https://ianlunn.github.io/Hover/
 
 The text was written by myself
 
-Media
-The photos and music used and presented within this site are owned by myself and my band, Darwiche
+## Media
+
+* Photos
+  * The photos used and presented within this site are owned by myself and my band, Darwiche
+* Logo 
+  * The main Logo was designed and used by permission of Antonio Darwiche and <a href="https://www.facebook.com/FilmStudio24B">Studio24B</a>
+* Music
+  * I do not own the rights to the original songs but have included them under the Fair-Use allowance of the Copyright Act 1976
+
+# FAIR-USE COPYRIGHT DISCLAIMER
+
+* Copyright Disclaimer Under Section 107 of the Copyright Act 1976, 
+ * allowance is made for "fair use" for purposes such as criticism, commenting, news reporting, teaching, scholarship, and research. 
+ * Fair use is a use permitted by copyright statute that might otherwise be infringing. 
+ * Non-profit, educational or personal use tips the balance in favour of fair use.
 
 ## Acknowledgements
 
@@ -244,3 +279,5 @@ I received inspiration for this project from:
 * https://code-institute-org.github.io/ucfd-example-project/#about
 * https://fabibrachetta.github.io/kuua/
 * https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+
+## Thank you to my mentor @rheyannmagcalas_mentor for all the help and great tips she gave me while I was developing and then working on this project

@@ -44,8 +44,10 @@
                                 *********************** -->
 
 	<nav class="navbar navbar-expand-sm navbar-dark nav-fix-position">
-		<a class="nav-home" href="#home">
-			<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+		<a href="#home" class="hvr-icon-bob nav-home">
+			<i class="fa fa-home hvr-icon contact-icons" aria-hidden="true"></i>
+		</a>
+
 		<button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +82,7 @@
 
 	<nav class="navbar navbar-expand-sm navbar-dark d-sm-none nav-fix-position-sm">
 		<a class="nav-home" href="#home">
-			<i class="fa fa-home contact-icons" aria-hidden="true"></i></a>
+			<i class="fa fa-home contact-icons home-icon-adapt" aria-hidden="true"></i></a>
 		<button class="navbar-toggler" type="button"
             data-toggle="collapse" data-target="#navbarNavSm" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
@@ -119,42 +121,37 @@
 			<div class="call-to-action cta-header">
 
 				<span class="sign-up-cta"><i class="fas fa-bullhorn cta-exclamation-icon"></i>Sign up to get news about the Band!</span>
-				<span class="btn contact-icons hover-color-adapt" data-toggle="modal" data-target="#cta-modal">
+				<span class="btn contact-icons hvr-color-adapt" data-toggle="modal" data-target="#cta-modal">
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
 				<span class="digital-download">Free Download of our latest album</span>
 				<i class="fas fa-exclamation cta-exclamation-icon"></i>
 
 				<a class="hvr-icon-bob hvr-color-inverse">
-					<i class="fas fa-caret-square-down hvr-icon hover-color-adapt cta-icon"></i>
+					<i class="fas fa-caret-square-down hvr-icon hvr-color-adapt cta-icon"></i>
 				</a>
 				</span>
 				<div class="center-form">
-					<form method="post" action="https://formdump.codeinstitute.net/">
+					 <form> <!--  method="#" action="#" not used as site is not live -->
+						<!-- Modal -->
 						<div class="modal fade" id="cta-modal">
 							<div class="modal-dialog modal-dialog-centered">
 								<div class="modal-content">
+									<!-- Modal body -->
+									<div class="modal-content-text">
 
-									<!-- Modal Header -->
-									<div class="modal-header">
 										<h4 class="story-heading modal-heading">Sign up!
+											<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
 											<input type="text" name="name" id="sign-up-fullname" class="form-control modal-heading" placeholder="Name" required="">
 											<input type="email" name="email" id="sign-up-emailaddress" class="form-control modal-heading" placeholder="Email" required="">
                                                     </h4>
-											<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-									</div>
+											<button type="submit" class="btn btn-secondary hvr-color-adapt">Get My Free Download</button>
 
-									<!-- Modal body -->
-									<div class="gallery-text">
-										<div class="form-row text-center">
-											<div class="col">
-												<button type="submit" class="btn btn-secondary hover-color-adapt">Get My Free Download</button>
-											</div>
-										</div>
 									</div>
 
 								</div>
 							</div>
 						</div>
+						<!-- End of Modal -->
 					</form>
 
 				</div>
@@ -166,6 +163,8 @@
 	<!-- End of Call to Action -->
 
 	<div class="bg-one light-bg-color" id="home">
+    <div class="caption-one" id="about">
+			</div>
 		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
                     and adapted/edited accordingly *************************** -->
 
@@ -204,9 +203,9 @@
 				</div>
 
 			</div>
-			<div class="caption" id="caption-sm">
+			<div class="caption-two" id="caption-sm">
 				<p><a href="#about" class="hvr-icon-bob hvr-color">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 					</a></p>
 			</div>
 
@@ -222,7 +221,7 @@
 
 
 		<div class="story">
-			<div class="story-text" id="about">
+			<div class="story-text">
 				<h3 class="story-heading">About</h3>
 				<div class="story-content-wrapper">
 					<div class="rounded story-border">
@@ -239,7 +238,7 @@
                 and the Hard Rock that made us.</p>
 					</div>
 					<a href="#music" class="hvr-icon-bob hvr-color-inverse">
-						<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+						<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 					</a>
 				</div>
 			</div>
@@ -252,13 +251,13 @@
 
 		<div class="bg-two bg-parallax-images">
 			<div class="caption" id="music">
-				<span class="border">Music</span>
+				
 			</div>
 		</div>
 
 		<div class="story">
 			<div class="story-text">
-				<h3 class="story-heading"></h3>
+				<h3 class="story-heading">Music</h3>
 				<div class="story-content-wrapper">
 					<div class="rounded story-border">
 						<div class="media-player">
@@ -300,7 +299,7 @@
                         </div>
 						</div>
 						<a href="#shows" class="hvr-icon-bob hvr-color-inverse">
-							<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+							<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 						</a>
 					</div>
 				</div>
@@ -313,68 +312,78 @@
 
 			<div class="bg-three bg-parallax-images">
 				<div class="caption" id="shows">
-					<span class="border">Shows</span>
+					
 				</div>
 			</div>
 
 			<div class="story">
 				<div class="story-text">
-					<h3 class="story-heading">Upcoming</h3>
+					<h3 class="story-heading">Upcoming Shows</h3>
 
 					<div class="story-content-wrapper">
 						<div class="rounded story-border-shows">
 							<div class="shows-display">
 								<div class="show-date">
 									<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-									<span>17/06/2020</span></div>
+									<span>09/04</span></div>
 								<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
 								<div class="show-tickets">
-									<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+                                <a target="_blank" href="https://ticketmaster.com">
+									<button type="button" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">Tickets</button>
+                                    </a>
 								</div>
 							</div>
 							<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
 							<div class="shows-display">
 								<div class="show-date">
 									<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-									<span>17/06/2020</span></div>
+									<span>28/04</span></div>
 								<div class="show-location">Mythos - Landskrona, Sweden</div>
 								<div class="show-tickets">
-									<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+                                <a target="_blank" href="https://ticketmaster.com">
+									<button type="button" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">Tickets</button>
+                                    </a>
 								</div>
 							</div>
 							<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
 							<div class="shows-display">
 								<div class="show-date">
 									<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-									<span>22/10/2020</span></div>
+									<span>22/06</span></div>
 								<div class="show-location">Rock Bar - Dresden, Germany</div>
 								<div class="show-tickets">
-									<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+                                <a target="_blank" href="https://ticketmaster.com">
+									<button type="button" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">Tickets</button>
+                                    </a>
 								</div>
 							</div>
 							<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
 							<div class="shows-display">
 								<div class="show-date">
 									<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-									<span>17/06/2020</span></div>
+									<span>17/10</span></div>
 								<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
 								<div class="show-tickets">
-									<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+                                <a target="_blank" href="https://ticketmaster.com">
+									<button type="button" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">Tickets</button>
+                                    </a>
 								</div>
 							</div>
 							<a><i class="fas fa-ellipsis-h shows-divider"></i></a>
 							<div class="shows-display">
 								<div class="show-date">
 									<span><i class="far fa-calendar-alt calendar-shows" aria-hidden="true"></i></span>
-									<span>17/06/2020</span></div>
+									<span>20/11</span></div>
 								<div class="show-location">Mythos - Landskrona, Sweden</div>
 								<div class="show-tickets">
-									<button type="button" class="btn btn-secondary btn-sm btn-orig hover-color-adapt">Tickets</button>
+                                <a target="_blank" href="https://ticketmaster.com">
+									<button type="button" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">Tickets</button>
+                                    </a>
 								</div>
 							</div>
 						</div>
 						<a href="#pictures" class="hvr-icon-bob hvr-color-inverse">
-							<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+							<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 						</a>
 					</div>
 				</div>
@@ -388,30 +397,30 @@
 
 			<div class="bg-four bg-parallax-images">
 				<div class="caption" id="pictures">
-					<span class="border">The Band</span>
+					
 				</div>
 			</div>
 
 			<div class="story">
 				<div class="story-text">
 					<div class="story-content-wrapper-about-us">
-						<h3 class="story-heading">Get To Know Us</h3>
+						<h3 class="story-heading">The Band</h3>
 						<div class="container">
 							<div class="row">
 								<div class="col-sm gallery">
-                                
+
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-									data-target="#jaqui-modal">
-										<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="gallery-images">
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
+											data-target="#jaqui-modal">
+											<img src="./assets/images/JaquiSolo.jpg" alt="Jaqui" class="gallery-images">
 
-										<p class="gallery-names">Jackie</p>
-										
-									<a class="hvr-icon-bob hvr-color-inverse">
-										<i class="fas fa-microphone hvr-icon hvr-icon-modals hover-color-adapt"></i>
-									</a>
-								</div>
+											<p class="gallery-names">Jackie</p>
 
+											<a class="hvr-icon-bob hvr-color-inverse">
+												<i class="fas fa-microphone hvr-icon hvr-icon-modals hvr-color-adapt"></i>
+											</a>
+										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="jaqui-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -419,7 +428,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Jackie</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -442,19 +451,21 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 								<div class="col-sm gallery">
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
 											data-target="#patricia-modal">
-										<img src="./assets/images/PatriciaSolo.jpg" alt="Patricia" class="gallery-images">
-										<p class="gallery-names">Patricia</p>
-										
+											<img src="./assets/images/PatriciaSolo.jpg" alt="Patricia" class="gallery-images">
+											<p class="gallery-names">Patricia</p>
+
 											<a class="hvr-icon-bob hvr-color-inverse">
-												<i class="fas fa-microphone hvr-icon hvr-icon-modals hover-color-adapt"></i>
+												<i class="fas fa-microphone hvr-icon hvr-icon-modals hvr-color-adapt"></i>
 											</a>
 										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="patricia-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -462,7 +473,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Patricia</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -484,19 +495,21 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 								<div class="col-sm gallery">
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
 											data-target="#fadi-modal">
-										<img src="./assets/images/FadiSolo.jpg" alt="Freddie" class="gallery-images">
-										<p class="gallery-names">Fadi 'Freddie'</p>
-										
+											<img src="./assets/images/FadiSolo.jpg" alt="Freddie" class="gallery-images">
+											<p class="gallery-names">Fadi 'Freddie'</p>
+
 											<a class="hvr-icon-bob hvr-color-inverse">
-												<i class="fas fa-drum hvr-icon hvr-icon-modals hover-color-adapt"></i>
+												<i class="fas fa-drum hvr-icon hvr-icon-modals hvr-color-adapt"></i>
 											</a>
 										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="fadi-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -504,7 +517,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Freddie</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -528,6 +541,7 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 							</div>
@@ -536,15 +550,16 @@
 
 								<div class="col-sm gallery">
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
-										data-target="#gaz-modal">
-										<img src="./assets/images/GassanSolo.jpg" alt="Gaz" class="gallery-images">
-										<p class="gallery-names">Gassan 'Gaz'</p>
-										
-										<a class="hvr-icon-bob hvr-color-inverse">
-											<i class="fas fa-guitar hvr-icon hvr-icon-modals hover-color-adapt"></i>
-										</a>
-									</div>
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
+											data-target="#gaz-modal">
+											<img src="./assets/images/GassanSolo.jpg" alt="Gaz" class="gallery-images">
+											<p class="gallery-names">Gassan 'Gaz'</p>
+
+											<a class="hvr-icon-bob hvr-color-inverse">
+												<i class="fas fa-guitar hvr-icon hvr-icon-modals hvr-color-adapt"></i>
+											</a>
+										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="gaz-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -552,7 +567,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Gassan 'Gaz'</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -572,19 +587,21 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 								<div class="col-sm gallery">
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
 											data-target="#jays-modal">
-										<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="gallery-images">
-										<p class="gallery-names">Jays</p>
-										
+											<img src="./assets/images/JaysSolo.jpg" alt="Jays" class="gallery-images">
+											<p class="gallery-names">Jays</p>
+
 											<a class="hvr-icon-bob hvr-color-inverse">
-												<i class="fas fa-guitar hvr-icon hvr-icon-modals hover-color-adapt"></i>
+												<i class="fas fa-guitar hvr-icon hvr-icon-modals hvr-color-adapt"></i>
 											</a>
 										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="jays-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -592,7 +609,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Jays</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -614,20 +631,22 @@
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 
 								<div class="col-sm gallery">
 									<div class="rounded story-border-gallery">
-                                    <div class="btn btn-adapt hover-color-adapt" data-toggle="modal"
+										<div class="btn btn-adapt hvr-color-adapt" data-toggle="modal"
 											data-target="#bud-modal">
-										<img src="./assets/images/BudSolo.jpg" alt="Bud" class="gallery-images">
-										<p class="gallery-names">Rickard 'Bud'</p>
-										
+											<img src="./assets/images/BudSolo.jpg" alt="Bud" class="gallery-images">
+											<p class="gallery-names">Rickard 'Bud'</p>
+
 											<a class="hvr-icon-bob hvr-color-inverse">
-												<i class="fas fa-book-open hvr-icon hvr-icon-modals hover-color-adapt"></i>
+												<i class="fas fa-book-open hvr-icon hvr-icon-modals hvr-color-adapt"></i>
 											</a>
 										</div>
+										<!-- Modal -->
 										<div class="modal fade" id="bud-modal">
 											<div class="modal-dialog modal-dialog-centered">
 												<div class="modal-content">
@@ -635,7 +654,7 @@
 													<!-- Modal Header -->
 													<div class="modal-header">
 														<h4 class="story-heading">Bud</h4>
-														<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
+														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
@@ -656,16 +675,16 @@
 													<div class="modal-footer">
 														<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
 													</div>
-
 												</div>
 											</div>
 										</div>
+										<!-- End of Modal -->
 									</div>
 								</div>
 							</div>
-						</div>					
+						</div>
 						<a href="#contact" class="hvr-icon-bob hvr-color-inverse">
-							<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+							<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 						</a>
 					</div>
 				</div>
@@ -678,7 +697,7 @@
 
 			<div class="bg-five bg-parallax-images">
 				<div class="caption" id="contact">
-					<span class="border">Contact</span>
+					
 				</div>
 			</div>
 
@@ -701,10 +720,10 @@
 			<div class="story">
 				<div class="work-together box">
 
-					<div class="btn hover-color-adapt" data-toggle="modal" data-target="#work-together-modal">
+					<div class="btn hvr-color-adapt" data-toggle="modal" data-target="#work-together-modal">
 						<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
 						<a class="hvr-icon-bob hvr-color-inverse">
-							<i class="far fa-handshake hvr-color-inverse hover-color-adapt" id="work-together-icon"></i>
+							<i class="far fa-handshake hvr-color-inverse hvr-color-adapt" id="work-together-icon"></i>
 						</a>
 						<i class="fas fa-exclamation work-tg-exclamation-icon"></i>
 					</div>
@@ -717,54 +736,43 @@
 							<div class="row bg-color-contact">
 								<div class="col">
 									<div class="center-form">
-										<form method="post" action="https://formdump.codeinstitute.net/">
+										<form> <!--  method="#" action="#" not used as site is not live -->
+											<!-- Modal -->
 											<div class="modal fade" id="work-together-modal">
 												<div class="modal-dialog modal-dialog-centered">
 													<div class="modal-content">
 
-														<!-- Modal Header -->
-														<div class="modal-header">
-															<div class="story-heading modal-heading">Lets work together!
+
+														<!-- Modal body -->
+														<div class="modal-content-text">
+															<button type="button" class="close close-modal" data-dismiss="modal">×</button>
+															<h4 class="story-heading modal-heading">Lets work together!
 																<input type="text" name="name" id="book-the-band-fullname" class="form-control modal-heading" placeholder="Name" required />
 																<input type="email" name="email" id="book-the-band-emailaddress" class="form-control modal-heading" placeholder="Email" required />
-                                                    </div>
-																<button type="button" class="close close-modal hvr-icon-bob" data-dismiss="modal">×</button>
-															</div>
-
-															<!-- Modal body -->
-															<div class="gallery-text">
-																<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control" placeholder="Event description" required></textarea>
-																<div class="form-row text-center">
-																	<div class="col">
-																		<button type="submit" class="btn btn-secondary modal-heading">Send Project Request</button>
-																	</div>
-																</div>
-															</div>
-
-															<!-- Modal footer -->
-															<div class="modal-footer">
-
-															</div>
-
+																<textarea rows="5" name="projectsummary" id="book-the-band-event-description" class="form-control modal-heading
+                                                                " placeholder="Event description" required></textarea>
+															</h4>
+															<button type="submit" class="btn btn-secondary modal-heading">Send Project Request</button>
 														</div>
 													</div>
 												</div>
+											</div>
+											<!-- End of Modal -->
 										</form>
 
 									</div>
 									<div class="rounded story-border-shows">
 										<h4 class="sign-up-header">Sign up to get the latest news about the Band!</h4>
 
-										<form class="signup-form" method="post"
-											action="https://formdump.codeinstitute.net/">
+										<form class="signup-form">  <!--  method="#" action="#" not used as site is not live -->
 											<label for="email"></label>
 											<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
 											<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
-											<button type="submit" class="btn btn-secondary btn-sm btn-orig hover-color-adapt modal-heading">Subscribe!</button>
+											<button type="submit" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt modal-heading">Subscribe!</button>
 										</form>
 									</div>
 									<a href="#footer" class="hvr-icon-bob hvr-color-inverse">
-										<i class="fa fa-chevron-down hvr-icon hover-color-adapt"></i>
+										<i class="fa fa-chevron-down hvr-icon hvr-color-adapt"></i>
 									</a>
 								</div>
 							</div>
@@ -799,7 +807,7 @@
 							<div class="col-sm-12">
 								<div class="copyright up-chevron">
 									<a href="#" class="hvr-icon-bob hvr-color">
-										<i class="fa fa-chevron-up hvr-icon hover-color-adapt"></i>
+										<i class="fa fa-chevron-up hvr-icon hvr-color-adapt"></i>
 									</a>
 								</div>
 							</div>

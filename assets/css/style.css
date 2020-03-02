@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Permanent+Marker:100,200,300,400,500,600,700|Trade+Windsa:100,200,300,400,500,600,700');
 
+/* I've put a 'Contents' here showing the styling structure in order of appearance within this style.css.
+   I hope this helps navigation of the styling.
+
+CONTENTS:
+
+In order of appearance the first part is organized by relevant groups. The rest is organized by section in order as they appear on the index.html from top to bottom
+
+By Groups:
+
+* Modals Styling - Contains styling for the various
+* Scroll Chevrons / Icons / Hover / Buttons
+* Captions and Headers
+* Background Image/Parallax styling
+* Stories Styling (refers to the wrappers/divs that are common and used across sections within the site)
+
+By Section:
+
+* Welcome / NavBar
+* Call to Action
+* Sidebar / Social Media Links
+* Band Name / Landing page Logo
+* Band Name Animation
+* Brief About Us
+* Music / Media Player
+* Shows
+* Gallery / About Us Section / Pictures
+* Contact Us / Sign Up 
+* Footer 
+* Media Queries
+
+*/
+
 /* ------------------------------ Modals Styling */
 
 body .modal-open {
@@ -14,7 +46,18 @@ body .modal-open {
     background-color: #EAE7DC;
 }
 
+.modal-content-text {
+    padding: 0 10px;
+    margin: 10px 10px;
+    text-align: center;
+    height: auto;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    color: #282E34;
+}
+
 .close-modal {
+    padding: 0;
     text-transform: uppercase;
     font-size: 35px;
 }
@@ -67,14 +110,8 @@ Scroll Chevrons /
     color: #E85A4F;
 }
 
-.hover-color-adapt:hover {
+.hvr-color-adapt:hover {
     color: #E85A4F
-}
-
-.calendar-shows {
-    display: inline-block;
-    width: 30%;
-    color: #E98074;
 }
 
 .btn-adapt {
@@ -87,6 +124,18 @@ Scroll Chevrons /
 /* ------------------------------ Captions and Headers */
 
 .caption {
+    position: absolute;
+     left: 0;
+     top: 90%;
+}
+
+.caption-one {
+    position: absolute;
+     left: 0;
+     top: 92%;
+}
+
+.caption-two {
     display: block;
     font-family: 'Fjalla One', sans-serif;
     font-weight: 600;
@@ -272,7 +321,6 @@ body, html {
 
 .nav-home {
     padding-right: 25px;
-    color: #ddd;
 }
 
 /* ------------------------------ Call to Action */
@@ -310,7 +358,7 @@ body, html {
     color: #fafafa;
 }
 
-/* ------------------------------ Sidebar */
+/* ------------------------------ Sidebar / Social Media Links */
 
 
 .sidebar {
@@ -476,6 +524,12 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     color: #E98074;
     opacity: 50%;
 }
+
+.calendar-shows {
+    display: inline-block;
+    width: 30%;
+    color: #E98074;
+}
 /* ------------------------------ Gallery / About Us Section / Pictures */
 
 .gallery {
@@ -504,6 +558,8 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
 }
+
+/* styles the text within the gallery modals */
 
 .gallery-text {
     margin: 15px 10px;
@@ -563,8 +619,12 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     background-attachment: scroll;
   }
 
-.story-text {
+.story-text{
     padding: 25px 40px;
+}
+
+.story-text-contact {
+    padding: 25px 40px 0px 25px;
 }
 
 .story-content-wrapper {
@@ -596,6 +656,11 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 
 @media screen and (max-width: 576px) {
 
+.story-text, .story-text-contact {
+    padding: 15px 20px 0px 20px;
+}
+
+
 .sidebar {
     display: flex;
     flex-direction: row;
@@ -618,6 +683,19 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 #caption-sm {
     font-weight: 400;
      top: 80%;
+}
+
+.digital-download{
+    font-size: 12px;
+}
+
+.cta-icon {
+    font-size: 13px;
+}
+
+.cta-exclamation-icon, .work-tg-exclamation-icon  {
+    margin: 0px 2px;
+    font-size: 13px;
 }
 }
 }
