@@ -11,7 +11,21 @@
 * The smooth scrolling overlap feature and fixed background images are disabled on smaller devices and the site reverts to a single page long scroll site at a width of 1024px
 * There is a Navigation bar at the top of the site - This bar is fixed and does not dissapear when scrolling - The Navigation bar collapses on smaller devices and a button appears which gives access to the Nav-Links on smaller devices
 * Users can navigate to each section on the site by clicking the appropriate link within the Navigation bar - The buttons/links are designated by name corresponding to their respective sections
+* Users can also scroll through the site by clicking on the small down facing chevrons located at the bottom of each section.
 
+## **Interactions that are fully functional include:**
+1. The Local Site Navigation links located in the Navigation Bar fixed at the top of the site - These links also function on smaller devices and are accessed via the Toggle at the top right of the screen
+1. The Social Media links in the sidebar which are linked to external sites
+1. Links to open Modals (a small overlay box with content)
+1. Links to close Modals
+1. All scrolling chevrons
+
+## **Areas where a link or interaction will not function as intended:**
+### **This is because this is a static site with no backend currently.**
+1. The 'Get my free download' in the Call to Action modal opened by clicking on the ! Free Download of our latest Album ! and the icon on the right side.
+1. All of the 'Tickets' buttons in the 'Shows' section
+1. The 'Send project request' in the Lets Work Together modal in the 'Contact' section.
+1. The 'Sign Up' form at the bottom of the 'Contact' section.
 
 ## Owner Goals
 #### For the owner the goals are:
@@ -42,14 +56,18 @@
 1. "As a **music blogger** I would like to find out a little bit more about each member of the band." -- Music blogger
 
 # Design process
+* You'll see my initial idea, noted as Darwiche Idea 1 in my site mockup, is quite different to Darwiche Idea 2.
+
+* <a target="_blank" href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1-mockup1.pdf">Initial site mockup</a>
+
 My decision to go with a smooth scrolling/fixed background image 'Parallax' effect was made when I saw these projects:
+
 * https://fabibrachetta.github.io/kuua/
 * https://code-institute-org.github.io/ucfd-example-project/#about
 
 I looked into the 'Parallax' effect and found a great resource here:
 * https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
-<a href="https://github.com/Jays-T/workspace/milestone-one/wireframes/ms1-mockup1.pdf">site mockup</a>
 
 # Features
 
@@ -57,7 +75,7 @@ I looked into the 'Parallax' effect and found a great resource here:
 * About:    This section gives the user a very brief background about the band and its current state
 * Music:    This section allows users to listen to music recorded/created by the band by using the media player
 * Shows:    This section allows users to get immediate information regarding upcoming shows they might wish to attend
-* Gallery: This section gives the user more specific information about each individual band member
+* Gallery: This section gives the user access to more specific information about each individual band member
 * Contact:  This section gives the user information as to how to contact the band and also includes a call to action to subscribe
 Users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the submit button 
 (**note that the subscribe action does not actually currently function due to this site being simply a static site with no backend**)
@@ -90,16 +108,11 @@ Users can subscribe to a mailing list if they wish to be regularly informed abou
 
 # Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to 
-legitimately believe that the site works well. Essentially, in this part you will want to go 
-over all of your user stories from the UX section and ensure that they all work as intended, 
-with the project providing an easy and straightforward way for the users to achieve their goals.
+## This site has been tested manually
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, 
-provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+Browsers tested in:
 
-For any scenarios that have not been automated, test the user stories manually and provide as much 
-detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+
 
 Contact form:
 Go to the "Contact Us" page
