@@ -1,20 +1,30 @@
-# Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course
+# Darwiche Band - Milestone One Project for Code Institute Fullstack Web Developer course by Jays-T
 
 
-### This is a site created for my rock band Darwiche
+### Hello and welcome! This is a site created and designed to promote my hard rock band Darwiche - Jays-T
 
-**UX**
+# **UX**
+* The site is structured as a one page website scrolling over fixed background images or 'Parallax' sections.
+* The landing page features the Band Logo front and center with the Band name image fading in 
+* I placed the Band Logo as the Hero Image on the landing page with the intention of developing further Brand Awareness for the band. 
+* The'Parallax' effect sometimes causes display issues on smaller devices
+* The smooth scrolling overlap feature and fixed background images are disabled on smaller devices and the site reverts to a single page long scroll site at a width of 1024px
+* There is a Navigation bar at the top of the site - This bar is fixed and does not dissapear when scrolling - The Navigation bar collapses on smaller devices and a button appears which gives access to the Nav-Links on smaller devices
+* Users can navigate to each section on the site by clicking the appropriate link within the Navigation bar - The buttons/links are designated by name corresponding to their respective sections
 
-## Owner
-##### For the owner the goals are:
 
-* Increase band visibility
-* Brand awareness
+## Owner Goals
+#### For the owner the goals are:
+
+* Increase Band visibility
+* Increase Brand awareness
 * Showcase music
 * Inform users of upcoming shows 
-* Generate a mailing list of subscribers 
+* Generate a mailing list of subscribers
 
-##### For the user the goals are:
+## User Goals
+
+#### For the user the goals are:
 
 * Gain knowledge about the band
 * Listen to music created by the band
@@ -26,48 +36,59 @@
 
 ## User Stories
 
-As a user I want to find out if my favorite band, Darwiche, have any upcoming shows near me. 
+1. "As a **Fan** of the band I want to find out if my favorite band, Darwiche, have any upcoming shows near me so that I can go and see them live." -- Fan X
+1. "As a **Fan** I'd like to support the band and would like to know if they have any merch for sale, maybe some t-shirts?" -- Fan Y
+1. "As a **music lover** I would like to hear what the music of this band I've just discovered sounds like." -- Random Music Lover
+1. "As a **music blogger** I would like to find out a little bit more about each member of the band." -- Music blogger
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+# Design process
+My decision to go with a smooth scrolling/fixed background image 'Parallax' effect was made when I saw these projects:
+* https://fabibrachetta.github.io/kuua/
+* https://code-institute-org.github.io/ucfd-example-project/#about
 
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, 
-diagrams etc. that you created as part of the design process. 
-These files should themselves either be included as a pdf file in the project itself (in an separate directory), 
-or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+I looked into the 'Parallax' effect and found a great resource here:
+* https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
-## Features
 
+
+# Features
+
+* Navigation Bar:  This section allows the user to easily navigate to any section of the site
 * About:    This section gives the user a very brief background about the band and its current state
 * Music:    This section allows users to listen to music recorded/created by the band by using the media player
 * Shows:    This section allows users to get immediate information regarding upcoming shows they might wish to attend
-* Pictures: This section gives the user more specific information about each individual band member
+* Gallery: This section gives the user more specific information about each individual band member
 * Contact:  This section gives the user information as to how to contact the band and also includes a call to action to subscribe
 Users can subscribe to a mailing list if they wish to be regularly informed about relevant band news by filling out the email form and clicking the submit button 
 (**note that the subscribe action does not actually currently function due to this site being simply a static site with no backend**)
 
+* Call to Action: This section allows users to subscribe to get a free download of the bands latest album and also informs users that they can sign up to get news about the band
+
 ## Features not addressed in this iteration of the site and my reasons for not including them
 
 * Shop:     I didn't include this section as it requires backend coding far beyond my current level of knowledge
-* Booking:  Similar to the contact section, I didn't include this as I want to have it as a call to action on the 
-landing page and use a automation driven overlay which would require the use of javascript the knowledge of which is beyond my current level.
 
-## Technologies Used
+# Technologies Used
 
-* HTML5
-* Css3
-* Bootstrap
+* HTML5 - for overall structure
+* Css3 - to style the site
+* Bootstrap - for responsive Grid structures and Modals
 * jQuery - Used for the media player which was sourced from http://amazingaudioplayer.com
-* javascript - Used by the media player 
+* javascript - Used by the media player and Boostrap Modals
+* Font Awesome - for icons
+* Google Fonts - for fonts
+* Gitpod - as my development environment
+* GitHub - for version control and site Deployment
 
-## Sites sourced from
+
+# Sites sourced from
 
 * https://www.w3schools.com
 * https://ianlunn.github.io/Hover/
 * http://amazingaudioplayer.com
 
 
-## Testing
+# Testing
 
 In this section, you need to convince the assessor that you have conducted enough testing to 
 legitimately believe that the site works well. Essentially, in this part you will want to go 
@@ -87,43 +108,55 @@ Try to submit the form with an invalid email address and verify that a relevant 
 Try to submit the form with all inputs valid and verify that a success message appears.
 In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
 
-## Bugs
+# Bugs
 
-Bugs found during initial testing and fixed 
+###Bugs found during initial testing and fixed 
 
-* Collapsed Navbar data toggle found to be unresponsive once triggered - 
-* Issue found with selected Fonts not displaying correctly on smaller devices -
-* 
+**NavBar Bug #1**
+* Collapsed NavBar data toggle found to be unresponsive once triggered and collapsible link section of the NavBar found to not automatically collapse after a link had been clicked -
+### **I fixed this issue by adding the 'data-toggle' and 'data-target' commands to each individual list item within the NavBar - This fixed NavBar Bug #1 but caused NavBar Bug #2**
+**NavBar Bug #2**
+* Main Navbar found to be collapsing each time one of the list items was engaged(clicked) causing a wierd visual effect - The solution I eventually went with to this issue was
+not the most elegant or efficient solution but I wanted to stick to HTML and CSS as much as possible since I found that when trying to solve the issue using jQuery or javascript
+I was unable to understand what was required. My solution was to have two instances of the NavBar:
+   1. One which would only be visible on larger devices which would not collapse and for 
+I used the standard bootstrap NavBar code
+   1. One which would only be visible on devices at the original bootstrap breakpoint and for which 'data-toggle' and 'data-target' 
+commands would be added to each individual list item within the NavBar.
 
-Bugs not yet fixed
+### **In subsequent versions of the site I plan on only having one NavBar and fixing the issues found using jQuery or JavaScript**
 
-* Issue with background images shifting slightly to the right when a modal is opened on a PC - this is due to the scroll bar on the right side of PC browsers, I was unable to find a fix 
+* Issue found with selected Fonts not displaying correctly on smaller devices - 
+
+###Bugs not yet fixed
+
+* Issue with background images shifting slightly to the right when a modal is opened on a PC - 
+this is due to the scroll bar on the right side of PC browsers, I was unable to find a fix via HTML or CSS and so I plan to fix this issue in subsequent versions of the site
 
 
+# Deployment
+* This project and all project files are hosted on GitHub via my GitHub repository at https://github.com/Jays-T/milestone-one 
+* To deploy the project I went to the 'Settings' tab near the top of the page and scrolled down to the 'GitHub Pages' section.
+* I selected the Source as the 'Master Branch' and the site is built from the 'Master Branch'.
+* There are no differences between the currently deployed site and the development version at this time.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+# To run locally
+The project runs only from the Master branch the main directory of which is:  /workspace/milestone-one
+When in the main directory enter the following into the command prompt
+1. python3 -m http.server
+1. This will run the contents of the directory on a local web server, on port 8000.
+1. If you are working in Gitpod this will give you an option to 'open browser' which will open the default 'index.html'
+1. If you want to stop the local server from running simply press crtl + C
 
-Deployment
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-
-Different values for environment variables (Heroku Config Vars)?
-Different configuration files?
-Separate git branch?
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-## Credits
+# **Credits**
 
 **Code**
 Some of the code for the parallax scrolling style was adapted from these sources:
 
-https://www.w3schools.com/howto/howto_css_parallax.asp
-https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+* https://www.w3schools.com/howto/howto_css_parallax.asp
+* https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
-Most of the css styling was heavily edited and adapted by myself to fit my vision for the band site
-
-Hover/Chevron buttons sourced from:
+Hover/Chevron animation sourced from:
 
 https://ianlunn.github.io/Hover/
 
@@ -138,6 +171,6 @@ The photos and music used and presented within this site are owned by myself and
 
 I received inspiration for this project from:
 
-https://code-institute-org.github.io/ucfd-example-project/#about
-https://fabibrachetta.github.io/kuua-ms1/#
-https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
+* https://code-institute-org.github.io/ucfd-example-project/#about
+* https://fabibrachetta.github.io/kuua/
+* https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
