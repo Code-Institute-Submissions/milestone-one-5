@@ -49,7 +49,7 @@ My decision to go with a smooth scrolling/fixed background image 'Parallax' effe
 I looked into the 'Parallax' effect and found a great resource here:
 * https://www.w3schools.com/howto/tryhow_css_parallax_demo.htm
 
-
+<a href="https://github.com/Jays-T/workspace/milestone-one/wireframes/ms1-mockup1.pdf">site mockup</a>
 
 # Features
 
@@ -110,17 +110,17 @@ In addition, you should mention in this section how your project looks and works
 
 # Bugs
 
-###Bugs found during initial testing and fixed 
+### Bugs found during initial testing and fixed 
 
 **NavBar Bug #1**
 * Collapsed NavBar data toggle found to be unresponsive once triggered and collapsible link section of the NavBar found to not automatically collapse after a link had been clicked -
 ### **I fixed this issue by adding the 'data-toggle' and 'data-target' commands to each individual list item within the NavBar - This fixed NavBar Bug #1 but caused NavBar Bug #2**
 **NavBar Bug #2**
-* Main Navbar found to be collapsing each time one of the list items was engaged(clicked) causing a wierd visual effect - The solution I eventually went with to this issue was
-not the most elegant or efficient solution but I wanted to stick to HTML and CSS as much as possible since I found that when trying to solve the issue using jQuery or javascript
-I was unable to understand what was required. My solution was to have two instances of the NavBar:
-   1. One which would only be visible on larger devices which would not collapse and for 
-I used the standard bootstrap NavBar code
+* Main Navbar found to be collapsing each time one of the list items was engaged(clicked) causing a wierd visual effect 
+* The solution I eventually went with to this issue was not the most elegant or efficient solution but I wanted to stick to HTML and CSS as much as possible 
+* I found that when trying to solve the issue using jQuery or javascript I was unable to understand what was required. 
+* My solution was to have two instances of the NavBar:
+   1. One which would only be visible on larger devices which would not collapse and for this I used the standard bootstrap NavBar code
    1. One which would only be visible on devices at the original bootstrap breakpoint and for which 'data-toggle' and 'data-target' 
 commands would be added to each individual list item within the NavBar.
 
@@ -128,7 +128,7 @@ commands would be added to each individual list item within the NavBar.
 
 * Issue found with selected Fonts not displaying correctly on smaller devices - 
 
-###Bugs not yet fixed
+### Bugs not yet fixed
 
 * Issue with background images shifting slightly to the right when a modal is opened on a PC - 
 this is due to the scroll bar on the right side of PC browsers, I was unable to find a fix via HTML or CSS and so I plan to fix this issue in subsequent versions of the site
