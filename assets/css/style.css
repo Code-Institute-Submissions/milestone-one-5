@@ -406,6 +406,29 @@ body, html {
 
 /* ------------------------------ Band Name Front Logo */
 
+/* Positioning solution for 'band-name' and 'band-name-img' provided by Adrien Zaganelli 
+source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/
+*/
+
+/*
+.band-name {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  padding-top: 56.25%; 
+}
+
+.band-name-img {
+  display: inline-block;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  width: 50%;
+  height: auto;
+  clear:both;
+}
+
+
 .band-name-wrapper {
   display: table;
   position: absolute;
@@ -417,29 +440,50 @@ body, html {
 
 .band-name-container {
   display: table-cell;
-  position: relative;
   vertical-align: middle;
-  width: 100%;
-  height: 100%;
+}
+
+.band-name-image {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
+*/
+.band-name-wrapper
+{
+    top: 0;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
 
+    .band-name-wrapper:before
+    {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
 
-
+.band-name-container
+{
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .band-name-footer-img {
-  display: inline-block;
+  display: block;
   position: absolute;
   left: 25%;
-
   width: 50%;
   height: auto;
 }
 
 /* ------------------------------ Band Name Landing Page Animation */
 
-.band-name-image {
+.band-name-container {
     animation-name: fadeIn;
     animation-duration: 5s;
     animation-fill-mode: forwards;
