@@ -406,29 +406,6 @@ body, html {
 
 /* ------------------------------ Band Name Front Logo */
 
-/* Positioning solution for 'band-name' and 'band-name-img' provided by Adrien Zaganelli 
-source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/
-*/
-
-/*
-.band-name {
-  position: relative;
-  background-color: transparent;
-  text-align: center;
-  padding-top: 56.25%; 
-}
-
-.band-name-img {
-  display: inline-block;
-  position: absolute;
-  left: 25%;
-  top: 40%;
-  width: 50%;
-  height: auto;
-  clear:both;
-}
-*/
-
 .band-name-wrapper {
   display: table;
   position: absolute;
@@ -441,6 +418,8 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 .band-name-container {
   display: table-cell;
   vertical-align: middle;
+  width: 100%;
+  height: 100%;
 }
 
 .band-name-image {
