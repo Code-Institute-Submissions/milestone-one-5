@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700|Permanent+Marker:100,200,300,400,500,600,700|Trade+Windsa:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One:100,200,300,400,500,600,700');
 
 /* I've put a 'Contents' here showing the styling structure in order of appearance within this style.css.
-   I hope this helps navigation of the styling.
+   I hope this helps navigation of the css styling.
 
 CONTENTS:
 
@@ -36,7 +36,7 @@ By Section:
 
 body .modal-open {
     overflow: hidden;
-} 
+}
 
 .modal-heading {
     margin-top: 2px;
@@ -406,49 +406,6 @@ body, html {
 
 /* ------------------------------ Band Name Front Logo */
 
-/* Positioning solution for 'band-name' and 'band-name-img' provided by Adrien Zaganelli 
-source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-responsive-images-ebb1e84f90d5/
-*/
-
-/*
-.band-name {
-  position: relative;
-  background-color: transparent;
-  text-align: center;
-  padding-top: 56.25%; 
-}
-
-.band-name-img {
-  display: inline-block;
-  position: absolute;
-  left: 25%;
-  top: 40%;
-  width: 50%;
-  height: auto;
-  clear:both;
-}
-
-
-.band-name-wrapper {
-  display: table;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.band-name-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.band-name-image {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-}
-*/
 .band-name-wrapper
 {
     top: 0;
@@ -629,6 +586,30 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
 
 /* --------------------------------- Media Queries */
 
+@media screen and (max-height: 1024px) {
+    .caption-one {
+        top: 94%;
+    }
+}
+
+@media screen and (max-height: 1280px) {
+    .caption-one {
+        top: 95%;
+    }
+}
+
+@media screen and (max-height: 1460px) {
+    .caption-one {
+        top: 97%;
+    }
+}
+
+@media screen and (max-height: 1920px) {
+    .caption-one {
+        top: 98%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .cta {
         width: 80%;
@@ -673,14 +654,11 @@ source https://www.freecodecamp.org/news/time-saving-css-techniques-to-create-re
     margin-bottom: 8px;
 }
 
-
-
 @media screen and (max-width: 576px) {
 
 .story-text, .story-text-contact {
     padding: 15px 20px 0px 20px;
 }
-
 
 .sidebar {
     display: flex;
