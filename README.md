@@ -121,9 +121,8 @@
 
 ## For the fonts I decided to use:
 
-**Cinzel Decorative** - For all the major headings and the links in the NavBar
-**Cinzel** - For most of the rest of the visible text on the site
-**Fjalla One)** - For the text content within the modals and for the various forms
+**Cinzel Decorative** - For all the major headings on the site and the links in the NavBar
+**Cinzel** - For the rest of the visible text on the site For the text content within the modals and for the various forms
 
 # Features
 

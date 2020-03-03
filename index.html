@@ -10,7 +10,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" />
 	<link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Fjalla+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,500,700,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400&display=swap" rel="stylesheet">
+	
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
@@ -163,8 +167,7 @@
                         *********************** -->
 
 	<div class="bg-one light-bg-color" id="home">
-		<div class="caption-one" id="about">
-		</div>
+
 		<!-- Sidebar *** sourced from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
                     and adapted/edited accordingly *************************** -->
 
@@ -196,10 +199,10 @@
 
 		<div class="band-name-wrapper">
 			<div class="band-name-container">
-				
-					<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
 
-				    
+				<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
+
+
 				</div>
 
 			</div>
@@ -218,7 +221,7 @@
             ******************************* -->
 
 
-		<div class="story">
+		<div class="story" id="about">
 			<div class="story-text">
 				<h3 class="story-heading">About</h3>
 				<div class="story-content-wrapper">
@@ -326,7 +329,8 @@
 									<span>09/04</span></div>
 								<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
 								<div class="show-tickets">
-									<a target="_blank" href="https://ticketmaster.com" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
+									<a target="_blank" href="https://ticketmaster.com"
+										class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
 										Tickets
 									</a>
 								</div>
@@ -338,7 +342,8 @@
 									<span>28/04</span></div>
 								<div class="show-location">Mythos - Landskrona, Sweden</div>
 								<div class="show-tickets">
-									<a target="_blank" href="https://ticketmaster.com" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
+									<a target="_blank" href="https://ticketmaster.com"
+										class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
 										Tickets
 									</a>
 								</div>
@@ -350,7 +355,8 @@
 									<span>22/06</span></div>
 								<div class="show-location">Rock Bar - Dresden, Germany</div>
 								<div class="show-tickets">
-									<a target="_blank" href="https://ticketmaster.com" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
+									<a target="_blank" href="https://ticketmaster.com"
+										class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
 										Tickets
 									</a>
 								</div>
@@ -362,7 +368,8 @@
 									<span>17/10</span></div>
 								<div class="show-location">Charles Dickens - Helsingborg, Sweden</div>
 								<div class="show-tickets">
-									<a target="_blank" href="https://ticketmaster.com" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
+									<a target="_blank" href="https://ticketmaster.com"
+										class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
 										Tickets
 									</a>
 								</div>
@@ -374,7 +381,8 @@
 									<span>20/11</span></div>
 								<div class="show-location">Mythos - Landskrona, Sweden</div>
 								<div class="show-tickets">
-									<a target="_blank" href="https://ticketmaster.com" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
+									<a target="_blank" href="https://ticketmaster.com"
+										class="btn btn-secondary btn-sm btn-orig hvr-color-adapt">
 										Tickets
 									</a>
 								</div>
@@ -564,14 +572,14 @@
 
 													<!-- Modal Header -->
 													<div class="modal-header">
-														<h4 class="story-heading">Gassan 'Gaz'</h4>
+														<h4 class="story-heading">Gaz</h4>
 														<button type="button" class="close close-modal" data-dismiss="modal">×</button>
 													</div>
 
 													<!-- Modal body -->
 													<div class="gallery-text">
 														Eddie Van Halen was unavailable, but
-														luckily for us Gassan 'Gaz' is a technical master and
+														luckily for us Gaz is a technical master and
 														can shred with the best of them! He mixes searing shredding
 														passages with haunting riffs, superb phrasing,
 														harmonized melodies and thick, dirty, aggressive rhythms.
@@ -767,8 +775,8 @@
 										<form class="signup-form">
 											<!-- Form method="#" action="#" not used as site is not live -->
 											<label for="email"></label>
-											<input class="form-control modal-heading" type="email" name="email_address" placeholder="Email Address" id="email" required>
-											<textarea rows="4" name="comments" id="comments" class="form-control modal-heading" placeholder="Comments"></textarea>
+											<input class="form-control modal-heading bg-sign-up" type="email" name="email_address" placeholder="Email Address" id="email" required>
+											<textarea rows="4" name="comments" id="comments" class="form-control modal-heading bg-sign-up" placeholder="Comments"></textarea>
 											<button type="submit" class="btn btn-secondary btn-sm btn-orig hvr-color-adapt modal-heading">Subscribe!</button>
 										</form>
 									</div>
@@ -788,11 +796,11 @@
 			<div class="bg-one light-bg-color">
 				<div class="band-name-wrapper">
 					<div class="band-name-container">
-						
-							<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
+
+						<img src="./assets/images/darwiche_name_transparent.png" alt="Darwiche" class="band-name-footer-img">
 
 				    </div>
-						
+
 					</div>
 				</div>
 

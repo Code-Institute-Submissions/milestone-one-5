@@ -49,7 +49,7 @@ body .modal-open {
     margin: 10px 10px;
     text-align: center;
     height: auto;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Cinzel", sans-serif;
     font-weight: 400;
     color: #282E34;
 }
@@ -97,7 +97,7 @@ Scroll Chevrons /
 }
 
 .hvr-color-inverse {
-    color: #fafafa;
+    color: #EAE7DC;
 }
 
 .up-chevron a i {
@@ -135,8 +135,6 @@ Scroll Chevrons /
 
 .caption-two {
     display: block;
-    font-family: 'Fjalla One', sans-serif;
-    font-weight: 600;
     position: absolute;
      left: 0;
      top: 90%;
@@ -157,7 +155,7 @@ h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-bottom: 25px;
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Cinzel Decorative', sans-serif;
 }
 
 
@@ -216,8 +214,9 @@ h3 {
 }
 
 .story-heading {
+    font-family: 'Cinzel Decorative', sans-serif;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     letter-spacing: 2px;
     color: #E85A4F
 }
@@ -257,12 +256,12 @@ h3 {
 .story h3 {
     text-align:center;
     font-family: 'Cinzel Decorative', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .story p {
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     color: #EAE7DC;
 }
 
@@ -314,6 +313,7 @@ body, html {
 .nav-item .nav-link {
     font-family: 'Cinzel Decorative', sans-serif;
     font-size: 15px;
+    font-weight: 700;
     color:#ddd;
     background-color:#282E34;
 }
@@ -460,6 +460,8 @@ body, html {
 /* ------------------------------ Brief about us */
 
 #about {
+    padding-top: 52px;
+    background-color:#EAE7DC;
     color: #111;
 }
 
@@ -543,16 +545,21 @@ body, html {
     margin: 15px 10px;
     text-align: center;
     height: auto;
-    font-family: "Fjalla One", sans-serif;
-    font-weight: 400;
-    color: #282E34;
+    font-family: "Cinzel", sans-serif;
+    font-weight: 700;
+    color: #000;
 }
 
 
 /* ------------------------------ Contact Us / Sign up */
 
 .sign-up-header {
+    font-family: 'Cinzel', sans-serif;
     color: #fafafa;
+}
+
+.bg-sign-up {
+    background-color: #EAE7DC;
 }
 
 .events-contact a i {
@@ -585,30 +592,6 @@ body, html {
 }
 
 /* --------------------------------- Media Queries */
-
-@media screen and (min-height: 1024px) {
-    #about {
-        top: 94%;
-    }
-}
-
-@media screen and (min-height: 1280px) {
-    #about {
-        top: 95%;
-    }
-}
-
-@media screen and (min-height: 1460px) {
-    #about {
-        top: 97%;
-    }
-}
-
-@media screen and (min-height: 1920px) {
-    #about {
-        top: 98%;
-    }
-}
 
 @media screen and (max-width: 1024px) {
     .cta {
