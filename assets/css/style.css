@@ -36,7 +36,7 @@ body .modal-open {
     overflow: hidden;
 }
 
-.modal-heading {
+.modal-elements-margin {
     margin-top: 2px;
 }
 
@@ -49,14 +49,16 @@ body .modal-open {
     margin: 10px 10px;
     text-align: center;
     height: auto;
-    font-family: "Cinzel", sans-serif;
-    font-weight: 400;
     color: #282E34;
+}
+
+.modal-form-input-font {
+    font-family: 'Open Sans', sans-serif;
 }
 
 .close-modal {
     padding: 0;
-    text-transform: uppercase;
+    font-family: 'Cinzel Decorative', serif;
     font-size: 35px;
 }
 

@@ -123,6 +123,7 @@
 
 **Cinzel Decorative** - For all the major headings on the site and the links in the NavBar
 **Cinzel** - For the rest of the visible text on the site For the text content within the modals and for the various forms
+**Open Sans** - Used only for the Email input areas on all forms
 
 # Features
 
