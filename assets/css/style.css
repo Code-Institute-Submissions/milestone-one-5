@@ -586,25 +586,25 @@ body, html {
 
 /* --------------------------------- Media Queries */
 
-@media screen and (max-height: 1024px) {
+@media screen and (min-height: 1024px) {
     .caption-one {
         top: 94%;
     }
 }
 
-@media screen and (max-height: 1280px) {
+@media screen and (min-height: 1280px) {
     .caption-one {
         top: 95%;
     }
 }
 
-@media screen and (max-height: 1460px) {
+@media screen and (min-height: 1460px) {
     .caption-one {
         top: 97%;
     }
 }
 
-@media screen and (max-height: 1920px) {
+@media screen and (min-height: 1920px) {
     .caption-one {
         top: 98%;
     }
