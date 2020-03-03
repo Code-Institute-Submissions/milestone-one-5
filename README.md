@@ -3,6 +3,7 @@
 
 ### Hello and welcome! This is a site created and designed to promote my hard rock band <a href="https://www.facebook.com/DarwicheRock">Darwiche</a> - Jays-T
 * Site is deployed <a href="https://jays-t.github.io/milestone-one/">here</a>.
+> **NOTE: Any links included in this README will not automatically open in a new tab - press ctrl + click on the link to open the target in a new tab.**
 
 # CONTENTS
 * UX
@@ -42,11 +43,11 @@
 
 ## **Areas where a link or interaction will not function as intended:**
 
-1. The 'Get my free download' in the Call to Action modal opened by clicking on the ! Free Download of our latest Album ! and the icon on the right side.
+1. The 'Get my free download' in the Call to Action modal. The modal can be opened by clicking on the ! Free Download of our latest Album !.
 1. The 'Send project request' in the Lets Work Together modal in the 'Contact' section.
-1. The 'Sign Up' form at the bottom of the 'Contact' section.
-1. No form submit actions will work and will simply reload the page
+1. The 'Sign Up' button in the form at the bottom of the 'Contact' section.
 
+### **No form submit actions will work and will simply reload the page.**
 ### **This is because this is a static site with no backend currently.**
 
 ## Owner Goals
@@ -54,9 +55,11 @@
 
 * Increase Band visibility
 * Increase Brand awareness
-* Showcase music
+* Showcase Music
 * Inform users of upcoming shows 
 * Generate a mailing list of subscribers
+* Showcase Videos
+* Generate income through a Store by selling Band Merchandise
 
 ## User Goals
 
@@ -64,6 +67,7 @@
 
 * Gain knowledge about the band
 * Listen to music created by the band
+* Watch videos of the band
 * Get information regarding upcoming shows
 * Find out how to get relevant information from the band on a regular basis
 * Get to know more about their favorite band member or members
@@ -84,9 +88,10 @@
 * If you take a look at this initial site mockup you'll see both my initial idea, and the idea that eventually became the landing page for the site.
 * <a href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1-mockup1.pdf">Initial site mockup</a>
 * You'll see my initial idea, noted as Darwiche Idea 1 in my site mockup, is quite different to my final design for the site.
-* As I thought about the site from a 'User' perspective I wanted to create a cleaner landing page with a light comfortable feeling.
+* As I thought about the site from a 'User' perspective I decided that I wanted to create a cleaner landing page with a light comfortable feeling.
+* While I went for lighter colors on the landing page instead of a perhaps expected darker landing page, I didn't want to lose the feeling of this being a Rock Band site.
 
-* My decision to go with a smooth scrolling/fixed background image 'Parallax' effect was made when I saw these projects:
+* My decision to go with a smooth scrolling/fixed background image 'Parallax' effect was made when I saw, and was inspired by, these projects:
   * https://fabibrachetta.github.io/kuua/
   * https://code-institute-org.github.io/ucfd-example-project/#about
 
@@ -97,14 +102,14 @@
 
 * I decided, based on feasibility and importance to include the following features
   1. About section – Brief 'about us'
-  1. Music section 
-  1. Shows/Calendar section
-  1. Gallery Section – Further information about the band 
-  1. Contact/Bookings section
+  2. Music section 
+  3. Shows/Calendar section
+  4. Gallery Section – Further information about the band 
+  5. Contact/Bookings section
 * Future Features I decided were not going to be in this version
   1. Merch Store 
-  1. News section
-  1. Video section
+  2. News section
+  3. Video section
 
 * Regarding structure of the site, I decided to have the site flow as one continuous page instead of using multiple pages.
 * <a href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1SiteMap.pdf">Site Map mockup</a>
@@ -198,36 +203,36 @@ Site also tested with Chrome's built in 'Inspect Element' preview panes simulati
 
 * NavBar 
   1. I scrolled to various areas within the site and with my mouse pointer hovered over the 'Home' icon to trigger the animation -> The animation triggered successfully ->
-    * -> clicking on the 'Home' icon automatically brought me back to the top of the page.
-  1. clicked on the About link which brought me to the about section -> The information displayed correctly and clearly.
-  1. clicked on the Music link which brought me to the music section -> I clicked on the Media Player and played all three tracks without any issues.
-  1. clicked on the Shows link which brought me to the shows section -> The information displayed correctly -> I tested each 'tickets' button and found them to be working correctly.
-  1. clicked on the Gallery link which brought me to the gallery section -> The content displayed correctly -> I tested each photo and icon which are clickable 
-    * -> each clickable photo and icon successfully opened the correct modal and I was able to clearly see and read the content within -> clicking both the close button and the 'x' successfully closed each modal
-  1. clicked on the Contact link which brought me to the contact section -> The Call to Action displayed clearly -> I hovered my mouse pointer over the 'handshake' icon and the color adapted as intended ->
-    * -> I clicked on the 'handshake' icon which opened up the 'submit project request' modal -> I tested that the input sections worked as intended
-    * -> The modal closed correctly when clicking on the 'x' located at the top right of the modal.
+     clicking on the 'Home' icon automatically brought me back to the top of the page.
+  2. clicked on the About link which brought me to the about section -> The information displayed correctly and clearly.
+  3. clicked on the Music link which brought me to the music section -> I clicked on the Media Player and played all three tracks without any issues.
+  4. clicked on the Shows link which brought me to the shows section -> The information displayed correctly -> I tested each 'tickets' button and found them to be working correctly.
+  5. clicked on the Gallery link which brought me to the gallery section -> The content displayed correctly -> I tested each photo and icon which are clickable 
+     -> each clickable photo and icon successfully opened the correct modal and I was able to clearly see and read the content within -> clicking both the close button and the 'x' successfully closed each modal
+  6. clicked on the Contact link which brought me to the contact section -> The Call to Action displayed clearly -> I hovered my mouse pointer over the 'handshake' icon and the color adapted as intended ->
+   -> I clicked on the 'handshake' icon which opened up the 'submit project request' modal -> I tested that the input sections worked as intended
+   -> The modal closed correctly when clicking on the 'x' located at the top right of the modal.
 * NavBar - I repeated each of the above steps with the site while on a phone using the collapsed toggle button on the top right of the screen to access the links within the NavBar.
 * All of the links and sections functioned correctly.
 
 * Main Call to Action at the top of the site
   1. I hovered my mouse pointer over the icon in the cta bar to trigger the animation effect - the animation effect triggered without any issues.
-  1. I clicked on the call to action which successfully opened up the 'get my free download' modal.
-  1. I tested to ensure that the form would not submit without the required fields being filled.
+  2. I clicked on the call to action which successfully opened up the 'get my free download' modal.
+  3. I tested to ensure that the form would not submit without the required fields being filled.
 
 * Sidebar
  1. I hovered my mouse pointer over all three icons to trigger the animation effect -> the animation effect triggered without any problems.
- 1. I clicked through each link, Facebook, Instagram and LinkedIn - each link worked correctly and opened up the targetted website in a new tab.
+ 2. I clicked through each link, Facebook, Instagram and LinkedIn - each link worked correctly and opened up the targetted website in a new tab.
 
 1. All links in the NavBar were tested at various sizes both at full screen and collapsed. Links worked across platforms and devices.
-1. Home icon on the NavBar tested and working across all platforms and devices.
-1. Call to action "Free download" link was tested, modal opened across platforms and devices.
-1. Clicked through each scrolling chevron to ensure that they worked and that they were targetting the correct id and section.
-1. Verified that each clickable section of the band members in the 'Gallery' worked and that the correct modal opened.
-1. All modals/pop ups across the site were found to open and close without issue *(apart from the issue listed under **bugs not yet fixed**).
-1. All features were found to work as intended.
-1. All form submit buttons will not submit any information due to this being a static site**See NOTE at bottom of Features section**.
-1. Site ran smoothly across the various platforms upon which it was tested and was responsive across platforms and devices.
+2. Home icon on the NavBar tested and working across all platforms and devices.
+3. Call to action "Free download" link was tested, modal opened across platforms and devices.
+4. Clicked through each scrolling chevron to ensure that they worked and that they were targetting the correct id and section.
+5. Verified that each clickable section of the band members in the 'Gallery' worked and that the correct modal opened.
+6. All modals/pop ups across the site were found to open and close without issue *(apart from the issue listed under **bugs not yet fixed**).
+7. All features were found to work as intended.
+8. All form submit buttons will not submit any information due to this being a static site**See NOTE at bottom of Features section**.
+9. Site ran smoothly across the various platforms upon which it was tested and was responsive across platforms and devices.
 
 ## **I tested each form to make sure that the required sections such as 'name' and 'email' triggered a fail if they were not filled in.**
 
@@ -247,57 +252,61 @@ Site also tested with Chrome's built in 'Inspect Element' preview panes simulati
 * The solution I eventually went with to this issue was not the most elegant or efficient solution but I wanted to stick to HTML and CSS as much as possible 
 * I found that when trying to solve the issue using jQuery or javascript I was unable to understand what was required. 
 * My solution was to have two instances of the NavBar:
-   1. One which would only be visible on larger devices which would not collapse and for this I used the standard bootstrap NavBar code
-   1. One which would only be visible on devices at the original bootstrap breakpoint and for which 'data-toggle' and 'data-target' 
+   1. One NavBar which would only be visible on larger devices which would not collapse and for this I used the standard bootstrap NavBar code
+   2. A second NavBar which would only be visible on devices at the original bootstrap breakpoint and for which 'data-toggle' and 'data-target' 
 commands would be added to each individual list item within the NavBar.
 
 ### **In subsequent versions of the site I plan on only having one NavBar and fixing the issues found using jQuery or JavaScript**
 
-* Issue found with selected Fonts not displaying correctly on smaller devices -
-
 ### Bugs not yet fixed
 
-* Issue with background images shifting slightly to the right when a modal is opened on a PC - 
-this is due to the scroll bar on the right side of PC browsers, I was unable to find a fix via HTML or CSS and so I plan to fix this issue in subsequent versions of the site
+* Issue with background images shifting 17px to the right when a modal is opened on a PC - 
+this is due to the scroll bar on the right side of PC browsers dissapearing when the modal is opened, I was unable to find a fix via HTML or CSS and so I plan to fix this issue in subsequent versions of the site
 
 
 # Deployment
 * This project and all project files are hosted on GitHub via my GitHub repository at https://github.com/Jays-T/milestone-one 
 * I coded the project using GitPod as my development environment. 
-* To deploy the project I first used commits regularly while coding. I then pushed the committed files from the GitPod IDE to the master branch of the main repository on GitHub.
-* After pushing the files I went to my repository and clicked on the 'Settings' tab near the top of the page and scrolled down to the 'GitHub Pages' section.
-* I selected the Source as the 'Master Branch' as all the site content and files stored in and built from the 'Master Branch'.
-* You can view the deployed site here: https://jays-t.github.io/milestone-one/
-* There are no differences between the currently deployed site and the development version at this time.
+* To deploy the project 
+   1. I began by adding the files using the command 'git add filename' in the command prompt.
+   2. I then used commits regularly while coding using the command 'git commit -m "commit message here". 
+   3. I then pushed the committed files from the GitPod IDE to the master branch of the main repository on GitHub.
+   4. After pushing the files I went to my repository.
+   5. I clicked on the 'Settings' tab near the top of the page and scrolled down to the 'GitHub Pages' section.
+   6. I selected the Source as the 'Master Branch' as all the site content and files are stored in and built from the 'Master Branch'.
+   7. GitHub provided me with a direct link to the deployed site.
+   8. You can view the deployed site here: https://jays-t.github.io/milestone-one/
 
-# To run locally
+## There are no differences between the currently deployed site and the development version at this time.
+
+# To run the project locally
 
 To clone this project from GitHub:
 
 * Under the repository name, click "Clone or download".
   1. In the Clone with HTTPs section, copy the clone URL for the repository ( For this repository: https://github.com/Jays-T/milestone-one.git ).
-  1. In your local IDE open Git Bash.
-  1. Change the current working directory to the location where you want the cloned directory to be made.
-  1. Type git clone, and then paste the URL you copied in Step 3.
-  1. The command should look like this:  git clone https://github.com/Jays-T/milestone-one.git
-  1. Press enter and your local clone will be created and the response should be something like this:
+  2. In your local IDE open Git Bash.
+  3. Change the current working directory to the location where you want the cloned directory to be made.
+  4. Type git clone, and then paste the URL you copied in Step 3.
+  5. The command should look like this:  git clone https://github.com/Jays-T/milestone-one.git
+  6. Press enter and your local clone will be created and the response should be something like this:
 > * $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 > * Cloning into `Spoon-Knife`...
 > * remote: Counting objects: 10, done.
 > * remote: Compressing objects: 100% (8/8), done.
 > * remove: Total 10 (delta 1), reused 10 (delta 1)
 > * Unpacking objects: 100% (10/10), done.
-* For further reading and troubleshooting on cloning a repository from GitHub <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">here</a>.
+* For further reading and troubleshooting on cloning a repository from GitHub you can go <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">here</a>.
 
-# To preview in browser
+# To preview in your browser
 
 If you are using gitpod as your IDE:
 The project runs only from the Master branch the main directory of which is:  /workspace/milestone-one
 When in the main directory enter the following into the command prompt
 1. python3 -m http.server
-1. This will run the contents of the directory on a local web server, on port 8000.
-1. If you are working in Gitpod this will give you an option to 'open browser' which will open the default 'index.html'
-1. If you want to stop the local server from running simply press crtl + C
+2. This will run the contents of the directory on a local web server, on port 8000.
+3. If you are working in Gitpod this will give you an option to 'open browser' which will open the default 'index.html'
+4. If you want to stop the local server from running simply press crtl + C
 
 # **Credits**
 
