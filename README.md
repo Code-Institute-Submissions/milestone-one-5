@@ -113,6 +113,9 @@
 
 * Regarding structure of the site, I decided to have the site flow as one continuous page instead of using multiple pages.
 * <a href="https://github.com/Jays-T/milestone-one/tree/master/wireframes/ms1SiteMap.pdf">Site Map mockup</a>
+* If you looked at the above linked Site Map mockup you'll notice that I originally planned to have the 'Call to Action' offering a free download  
+   at the bottom of the site. In the end I decided instead to have this at the top of the site just underneath the NavBar as I wanted to give users  
+   who might not scroll or navigate all the way to the footer of the site the option to sign up. 
 
 * I chose to present the content and various features within enclosed areas that would be separated by fixed 'Parallax' background images
 * Users would be able to navigate to the various features using either the NavBar located at the top of the page or by clicking on the down facing chevrons
@@ -126,9 +129,9 @@
 
 ## For the fonts I decided to use:
 
-**Cinzel Decorative** - For all the major headings on the site and the links in the NavBar
-**Cinzel** - For the rest of the visible text on the site For the text content within the modals and for the various forms
-**Open Sans** - Used only for the Email input areas on all forms
+* **Cinzel Decorative** - For all the major headings on the site and the links in the NavBar  
+* **Cinzel** - For the rest of the visible text on the site For the text content within the modals and for the various forms  
+* **Open Sans** - Used only for the Email input areas on all forms
 
 # Features
 
@@ -189,11 +192,11 @@
 
 ## This site has been tested manually
 
-Browsers tested manually: 
+Browsers tested: 
 * Chrome
 * Microsoft Edge
 
-Phones tested manually: 
+Phones tested: 
 * Huawei P20Lite
 * iPhone 6
 
