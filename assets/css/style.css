@@ -417,16 +417,14 @@ body, html {
 
 .band-name-container {
   display: table-cell;
+  position: relative;
   vertical-align: middle;
   width: 100%;
   height: 100%;
-}
-
-.band-name-image {
-  position: relative;
   margin-left: auto;
   margin-right: auto;
 }
+
 
 
 
